@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using Microsoft.IdentityModel.Tokens;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.OpenSsl;
@@ -12,6 +13,14 @@ namespace StudioDrydock.AppStoreConnect.Api
     {
         readonly Uri baseUri = new Uri("https://api.appstoreconnect.apple.com");
         HttpClient client;
+
+        readonly JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions()
+        {
+            // Null fields must not be serialized in requests, as the App Store API requires
+            // that certain fields are not submitted if not updating (for example, whatsNew
+            // text for an initial version).
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        };
 
         public AppStoreClient(TextReader privateKey, string keyId, string issuerId)
         {
@@ -66,12 +75,21 @@ namespace StudioDrydock.AppStoreConnect.Api
             return encodedToken;
         }
 
+        StringContent Serialize(object obj)
+        {
+            string text = JsonSerializer.Serialize(obj, options: jsonSerializerOptions);
+            return new StringContent(text, encoding: Encoding.UTF8, mediaType: "application/json");
+        }
+
         async Task SendAsync(HttpRequestMessage request)
         {
             Trace.TraceInformation($"{request.Method} {request.RequestUri}");
             var response = await client.SendAsync(request);
             if (!response.IsSuccessStatusCode)
+            {
+                Trace.TraceError(await response.Content.ReadAsStringAsync());
                 throw new Exception($"Status code {response.StatusCode}");
+            }
         }
 
         async Task<T> SendAsync<T>(HttpRequestMessage request)
@@ -79,12 +97,18 @@ namespace StudioDrydock.AppStoreConnect.Api
             Trace.TraceInformation($"{request.Method} {request.RequestUri}");
             var response = await client.SendAsync(request);
             if (!response.IsSuccessStatusCode)
+            {
+                Trace.TraceError(await response.Content.ReadAsStringAsync());
                 throw new Exception($"Status code {response.StatusCode}");
+            }
 
             string responseText = await response.Content.ReadAsStringAsync();
             var responseObject = JsonSerializer.Deserialize<T>(responseText);
             if (responseObject == null)
+            {
+                Trace.TraceError(await response.Content.ReadAsStringAsync());
                 throw new Exception($"Deserialization failed");
+            }
 
             return responseObject;
         }

@@ -77,8 +77,19 @@ Writes summary information about all apps, including their IDs, which are requir
 ### Get application versions and localizations
 
 ```
-dotnet run -- get-app-versions --appId=12345678 --state=READY_FOR_SALE --platform=MAC_OS
+dotnet run -- get-app-versions --appId=12345678 --state=READY_FOR_SALE --platform=MAC_OS --output=app.json
 ```
 
 Writes summary and all localized data about specific app versions matching the given criteria. The `--state` and `--platform` arguments are optional, and filter the set of returned versions.
+
+### Update localizations
+
+```
+dotnet run -- set-app-versions --input=app.json
+```
+
+Reads localized data from the given input (in the same format output by `get-app-versions`) and updates
+any non-null fields.
+
+For example, to use this to bulk-update translations for an app, use `get-app-versions` to create a file containing the current locale data, including the required IDs, update the translations in-place, then run `set-app-versions`.
   

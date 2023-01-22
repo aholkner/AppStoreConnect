@@ -420,7 +420,7 @@ namespace StudioDrydock.AppStoreConnect.ApiGenerator
             cs.WriteLine();
             cs.WriteLine($"var message = new HttpRequestMessage(HttpMethod.{operationType}, uriBuilder.uri);");
             if (requestSchema != null)
-                cs.WriteLine("message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: \"application/json\");");
+                cs.WriteLine("message.Content = Serialize(request);");
 
             if (responseSchema != null)
                 cs.WriteLine($"return SendAsync<{responseSchemaName}>(message);");

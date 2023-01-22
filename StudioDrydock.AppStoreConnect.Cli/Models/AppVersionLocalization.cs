@@ -13,6 +13,9 @@ namespace StudioDrydock.AppStoreConnect.Cli.Models
         public string supportUrl { get; set; }
         public string whatsNew { get; set; }
 
+        public AppVersionLocalization()
+        { }
+
         public AppVersionLocalization(AppStoreClient.AppStoreVersionLocalizationsResponse.Data data)
         {
             this.id = data.id;
@@ -23,7 +26,27 @@ namespace StudioDrydock.AppStoreConnect.Cli.Models
             this.marketingUrl = data.attributes.marketingUrl;
             this.supportUrl = data.attributes.supportUrl;
             this.whatsNew = data.attributes.whatsNew;
-        }         
+        }
+
+        internal AppStoreClient.AppStoreVersionLocalizationUpdateRequest CreateUpdateRequest()
+        {
+            return new AppStoreClient.AppStoreVersionLocalizationUpdateRequest()
+            {
+                data = new AppStoreClient.AppStoreVersionLocalizationUpdateRequest.Data()
+                {
+                    id = this.id,
+                    attributes = new AppStoreClient.AppStoreVersionLocalizationUpdateRequest.Data.Attributes()
+                    {
+                        description = this.description,
+                        keywords = this.keywords,
+                        marketingUrl = this.marketingUrl,
+                        promotionalText = this.promotionalText,
+                        supportUrl = this.supportUrl,
+                        whatsNew = this.supportUrl
+                    }
+                }
+            };
+        }
     }
 
 }

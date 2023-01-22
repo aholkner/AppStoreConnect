@@ -278,7 +278,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AgeRatingDeclarationResponse>(message);
         }
 
@@ -813,7 +813,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipAdvancedExperienceImageResponse>(message);
         }
 
@@ -868,7 +868,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipAdvancedExperienceImageResponse>(message);
         }
 
@@ -1440,7 +1440,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipAdvancedExperienceResponse>(message);
         }
 
@@ -1770,7 +1770,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipAdvancedExperienceResponse>(message);
         }
 
@@ -1986,7 +1986,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipAppStoreReviewDetailResponse>(message);
         }
 
@@ -2037,7 +2037,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipAppStoreReviewDetailResponse>(message);
         }
 
@@ -2156,7 +2156,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipDefaultExperienceLocalizationResponse>(message);
         }
 
@@ -2231,7 +2231,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipDefaultExperienceLocalizationResponse>(message);
         }
 
@@ -2447,7 +2447,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipDefaultExperienceResponse>(message);
         }
 
@@ -2583,7 +2583,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipDefaultExperienceResponse>(message);
         }
 
@@ -2809,7 +2809,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipHeaderImageResponse>(message);
         }
 
@@ -2867,7 +2867,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppClipHeaderImageResponse>(message);
         }
 
@@ -3191,7 +3191,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppCustomProductPageLocalizationResponse>(message);
         }
 
@@ -3281,7 +3281,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppCustomProductPageLocalizationResponse>(message);
         }
 
@@ -3440,7 +3440,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppCustomProductPageVersionResponse>(message);
         }
 
@@ -3683,7 +3683,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppCustomProductPageResponse>(message);
         }
 
@@ -3760,7 +3760,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppCustomProductPageResponse>(message);
         }
 
@@ -5616,7 +5616,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventLocalizationResponse>(message);
         }
 
@@ -5719,7 +5719,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventLocalizationResponse>(message);
         }
 
@@ -6004,7 +6004,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventScreenshotResponse>(message);
         }
 
@@ -6062,7 +6062,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventScreenshotResponse>(message);
         }
 
@@ -6349,7 +6349,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventVideoClipResponse>(message);
         }
 
@@ -6409,7 +6409,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventVideoClipResponse>(message);
         }
 
@@ -6759,7 +6759,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventResponse>(message);
         }
 
@@ -6885,7 +6885,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppEventResponse>(message);
         }
 
@@ -7261,7 +7261,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppInfoLocalizationResponse>(message);
         }
 
@@ -7321,7 +7321,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppInfoLocalizationResponse>(message);
         }
 
@@ -7798,7 +7798,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppInfoResponse>(message);
         }
 
@@ -8593,7 +8593,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppPreOrderResponse>(message);
         }
 
@@ -8645,7 +8645,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppPreOrderResponse>(message);
         }
 
@@ -8885,7 +8885,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppPreviewSetResponse>(message);
         }
 
@@ -9238,7 +9238,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppPreviewResponse>(message);
         }
 
@@ -9300,7 +9300,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppPreviewResponse>(message);
         }
 
@@ -10176,7 +10176,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppScreenshotSetResponse>(message);
         }
 
@@ -10541,7 +10541,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppScreenshotResponse>(message);
         }
 
@@ -10601,7 +10601,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppScreenshotResponse>(message);
         }
 
@@ -10837,7 +10837,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreReviewAttachmentResponse>(message);
         }
 
@@ -10894,7 +10894,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreReviewAttachmentResponse>(message);
         }
 
@@ -11048,7 +11048,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreReviewDetailResponse>(message);
         }
 
@@ -11137,7 +11137,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreReviewDetailResponse>(message);
         }
 
@@ -11297,7 +11297,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionExperimentTreatmentLocalizationResponse>(message);
         }
 
@@ -11508,7 +11508,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionExperimentTreatmentResponse>(message);
         }
 
@@ -11584,7 +11584,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionExperimentTreatmentResponse>(message);
         }
 
@@ -11743,7 +11743,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionExperimentResponse>(message);
         }
 
@@ -11825,7 +11825,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionExperimentResponse>(message);
         }
 
@@ -12008,7 +12008,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionLocalizationResponse>(message);
         }
 
@@ -12108,7 +12108,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionLocalizationResponse>(message);
         }
 
@@ -12211,7 +12211,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionPhasedReleaseResponse>(message);
         }
 
@@ -12248,7 +12248,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionPhasedReleaseResponse>(message);
         }
 
@@ -12332,7 +12332,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionPromotionResponse>(message);
         }
 
@@ -12393,7 +12393,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionReleaseRequestResponse>(message);
         }
 
@@ -12760,7 +12760,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionSubmissionResponse>(message);
         }
 
@@ -13150,7 +13150,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionResponse>(message);
         }
 
@@ -13411,7 +13411,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppStoreVersionResponse>(message);
         }
 
@@ -15588,7 +15588,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<AppResponse>(message);
         }
 
@@ -15663,7 +15663,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppClipInvocationLocalizationResponse>(message);
         }
 
@@ -15692,7 +15692,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppClipInvocationLocalizationResponse>(message);
         }
 
@@ -15875,7 +15875,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppClipInvocationResponse>(message);
         }
 
@@ -15929,7 +15929,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppClipInvocationResponse>(message);
         }
 
@@ -17590,7 +17590,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppLocalizationResponse>(message);
         }
 
@@ -17640,7 +17640,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppLocalizationResponse>(message);
         }
 
@@ -19309,7 +19309,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppReviewDetailResponse>(message);
         }
 
@@ -20201,7 +20201,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaAppReviewSubmissionResponse>(message);
         }
 
@@ -21092,7 +21092,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaBuildLocalizationResponse>(message);
         }
 
@@ -21138,7 +21138,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaBuildLocalizationResponse>(message);
         }
 
@@ -21661,7 +21661,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaGroupResponse>(message);
         }
 
@@ -21720,7 +21720,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaGroupResponse>(message);
         }
 
@@ -23361,7 +23361,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaLicenseAgreementResponse>(message);
         }
 
@@ -23434,7 +23434,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaTesterInvitationResponse>(message);
         }
 
@@ -23961,7 +23961,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BetaTesterResponse>(message);
         }
 
@@ -24931,7 +24931,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BuildBetaDetailResponse>(message);
         }
 
@@ -24992,7 +24992,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BuildBetaNotificationResponse>(message);
         }
 
@@ -26095,7 +26095,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BuildResponse>(message);
         }
 
@@ -26326,7 +26326,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BundleIdCapabilityResponse>(message);
         }
 
@@ -26434,7 +26434,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BundleIdCapabilityResponse>(message);
         }
 
@@ -26897,7 +26897,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BundleIdResponse>(message);
         }
 
@@ -26951,7 +26951,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<BundleIdResponse>(message);
         }
 
@@ -27201,7 +27201,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<CertificateResponse>(message);
         }
 
@@ -28053,7 +28053,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<CiBuildRunResponse>(message);
         }
 
@@ -29816,7 +29816,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<CiWorkflowResponse>(message);
         }
 
@@ -30221,7 +30221,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<CiWorkflowResponse>(message);
         }
 
@@ -30977,7 +30977,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<CustomerReviewResponseV1Response>(message);
         }
 
@@ -31630,7 +31630,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<DeviceResponse>(message);
         }
 
@@ -31679,7 +31679,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<DeviceResponse>(message);
         }
 
@@ -31820,7 +31820,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<EndUserLicenseAgreementResponse>(message);
         }
 
@@ -31900,7 +31900,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<EndUserLicenseAgreementResponse>(message);
         }
 
@@ -32282,7 +32282,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchaseAppStoreReviewScreenshotResponse>(message);
         }
 
@@ -32342,7 +32342,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchaseAppStoreReviewScreenshotResponse>(message);
         }
 
@@ -32928,7 +32928,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchaseLocalizationResponse>(message);
         }
 
@@ -32983,7 +32983,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchaseLocalizationResponse>(message);
         }
 
@@ -33165,7 +33165,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchasePriceScheduleResponse>(message);
         }
 
@@ -33484,7 +33484,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchaseSubmissionResponse>(message);
         }
 
@@ -34567,7 +34567,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchaseV2Response>(message);
         }
 
@@ -34705,7 +34705,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<InAppPurchaseV2Response>(message);
         }
 
@@ -35635,7 +35635,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<ProfileResponse>(message);
         }
 
@@ -35912,7 +35912,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<PromotedPurchaseImageResponse>(message);
         }
 
@@ -35972,7 +35972,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<PromotedPurchaseImageResponse>(message);
         }
 
@@ -36166,7 +36166,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<PromotedPurchaseResponse>(message);
         }
 
@@ -36250,7 +36250,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<PromotedPurchaseResponse>(message);
         }
 
@@ -36467,7 +36467,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<ReviewSubmissionItemResponse>(message);
         }
 
@@ -36497,7 +36497,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<ReviewSubmissionItemResponse>(message);
         }
 
@@ -36901,7 +36901,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<ReviewSubmissionResponse>(message);
         }
 
@@ -36950,7 +36950,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<ReviewSubmissionResponse>(message);
         }
 
@@ -37376,7 +37376,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<RoutingAppCoverageResponse>(message);
         }
 
@@ -37433,7 +37433,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<RoutingAppCoverageResponse>(message);
         }
 
@@ -38647,7 +38647,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionAppStoreReviewScreenshotResponse>(message);
         }
 
@@ -38707,7 +38707,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionAppStoreReviewScreenshotResponse>(message);
         }
 
@@ -38857,7 +38857,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionGracePeriodResponse>(message);
         }
 
@@ -39053,7 +39053,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionGroupLocalizationResponse>(message);
         }
 
@@ -39108,7 +39108,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionGroupLocalizationResponse>(message);
         }
 
@@ -39180,7 +39180,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionGroupSubmissionResponse>(message);
         }
 
@@ -39321,7 +39321,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionGroupResponse>(message);
         }
 
@@ -39421,7 +39421,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionGroupResponse>(message);
         }
 
@@ -39647,7 +39647,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionIntroductoryOfferResponse>(message);
         }
 
@@ -39676,7 +39676,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionIntroductoryOfferResponse>(message);
         }
 
@@ -40064,7 +40064,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionLocalizationResponse>(message);
         }
 
@@ -40119,7 +40119,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionLocalizationResponse>(message);
         }
 
@@ -40410,7 +40410,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionOfferCodeCustomCodeResponse>(message);
         }
 
@@ -40465,7 +40465,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionOfferCodeCustomCodeResponse>(message);
         }
 
@@ -40743,7 +40743,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionOfferCodeOneTimeUseCodeResponse>(message);
         }
 
@@ -40800,7 +40800,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionOfferCodeOneTimeUseCodeResponse>(message);
         }
 
@@ -41119,7 +41119,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionOfferCodeResponse>(message);
         }
 
@@ -41230,7 +41230,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionOfferCodeResponse>(message);
         }
 
@@ -41473,7 +41473,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionPriceResponse>(message);
         }
 
@@ -41709,7 +41709,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionPromotionalOfferResponse>(message);
         }
 
@@ -41830,7 +41830,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionPromotionalOfferResponse>(message);
         }
 
@@ -42193,7 +42193,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionSubmissionResponse>(message);
         }
 
@@ -42531,7 +42531,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionResponse>(message);
         }
 
@@ -42859,7 +42859,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<SubscriptionResponse>(message);
         }
 
@@ -44693,7 +44693,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<UserInvitationResponse>(message);
         }
 
@@ -46504,7 +46504,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync<UserResponse>(message);
         }
 
@@ -46835,7 +46835,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -48798,7 +48798,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -50197,7 +50197,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -50645,7 +50645,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -52183,7 +52183,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -52849,7 +52849,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -55462,7 +55462,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -57958,7 +57958,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -58890,7 +58890,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -58913,7 +58913,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59007,7 +59007,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59030,7 +59030,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59197,7 +59197,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59322,7 +59322,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59345,7 +59345,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59446,7 +59446,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59469,7 +59469,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -59966,7 +59966,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -60314,7 +60314,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -60337,7 +60337,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -60595,7 +60595,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -60618,7 +60618,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -64015,7 +64015,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -64038,7 +64038,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -64061,7 +64061,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -67931,7 +67931,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -68551,7 +68551,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -69510,7 +69510,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Post, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -69533,7 +69533,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Patch, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 
@@ -69556,7 +69556,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             var uriBuilder = new UriBuilder(baseUri, path);
 
             var message = new HttpRequestMessage(HttpMethod.Delete, uriBuilder.uri);
-            message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
+            message.Content = Serialize(request);
             return SendAsync(message);
         }
 

@@ -18,6 +18,9 @@ namespace StudioDrydock.AppStoreConnect.Cli.Models
 
         public AppVersionLocalization[] localizations { get; set; }
 
+        public AppVersion()
+        { }
+
         public AppVersion(AppStoreClient.AppStoreVersionsResponse.Data data)
         {
             this.id = data.id;

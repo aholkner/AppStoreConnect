@@ -36,6 +36,10 @@ rootCommand.AddOption(verboseOption);
 var outputOption = new Option<FileInfo>("--output", "Specify file to write output to, defaults to stdout");
 outputOption.AddAlias("-o");
 
+// --input/-i
+var inputOption = new Option<FileInfo>("--input", "Specify file to read input from, defaults to stdin");
+inputOption.AddAlias("-i");
+
 // get-apps
 var getAppsCommand = new Command("get-apps", "Get list of all apps");
 getAppsCommand.AddOption(outputOption);
@@ -54,6 +58,12 @@ getAppVersionsCommand.AddOption(outputOption);
 getAppVersionsCommand.SetHandler(GetAppVersions);
 rootCommand.AddCommand(getAppVersionsCommand);
 
+// set-app-versions --input=file.json
+var setAppVersionsCommand = new Command("set-app-versions", "Update localizations for specific app versions. The input format matches the output of get-app-versions.");
+setAppVersionsCommand.AddOption(inputOption);
+setAppVersionsCommand.SetHandler(SetAppVersions);
+rootCommand.AddCommand(setAppVersionsCommand);
+
 await rootCommand.InvokeAsync(args);
 
 AppStoreClient CreateClient(InvocationContext context)
@@ -70,6 +80,25 @@ AppStoreClient CreateClient(InvocationContext context)
 
     // Create client
     return new AppStoreClient(new StreamReader(Path.Combine(configDirectory, config.keyPath)), config.keyId, config.issuerId);
+}
+
+T Input<T>(InvocationContext context)
+{
+    FileInfo input = context.ParseResult.GetValueForOption(inputOption);
+    string text;
+    if (input != null)
+        text = File.ReadAllText(input.FullName);
+    else
+    {
+        using (var stream = Console.OpenStandardInput())
+        using (var reader = new StreamReader(stream))
+            text = reader.ReadToEnd();
+    }
+
+    var result = JsonSerializer.Deserialize<T>(text);
+    if (result == null)
+        throw new Exception("Failed to deserialize input");
+    return result;
 }
 
 void Output(InvocationContext context, object result)
@@ -121,4 +150,16 @@ async Task GetAppVersions(InvocationContext context)
     }
 
     Output(context, versions);
+}
+
+// set-app-versions
+async Task SetAppVersions(InvocationContext context)
+{
+    var api = CreateClient(context);
+    var versions = Input<AppVersion[]>(context);
+    foreach (var version in versions)
+    {
+        foreach (var localization in version.localizations)
+            await api.PatchAppStoreVersionLocalizations(localization.id, localization.CreateUpdateRequest());
+    }
 }
