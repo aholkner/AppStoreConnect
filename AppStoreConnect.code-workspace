@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "StudioDrydock.AppStoreConnect.Api"
+		},
+		{
+			"path": "StudioDrydock.AppStoreConnect.ApiGenerator"
+		},
+		{
+			"path": "StudioDrydock.AppStoreConnect.Cli"
+		}
+	],
+	"settings": {}
+}
