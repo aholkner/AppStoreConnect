@@ -23,8 +23,9 @@ namespace StudioDrydock.AppStoreConnect.Api
                 sb.Append('?');
             else
                 sb.Append('&');
-            sb.Append("name=");
+            sb.Append($"{name}=");
             sb.Append(Uri.EscapeDataString(value));
+            hasParameter = true;
         }
     }
 }
