@@ -15,7 +15,7 @@ There are three projects in the repo:
 * **StudioDrydock.AppStoreConnect.ApiGenerator** \
   Command-line app that regenerates the source of `StudioDrydock.AppStoreConnect.Api`. Only required when the OpenAPI specification published by Apple changes (or to fix bugs in the generation).
 * **StudioDrydock.AppStoreConnect.Cli** \
-  Command-line app demonstrating usage of the API. It simply lists the ID and Bundle ID of the apps you manage.
+  Command-line app demonstrating usage of the API, with some basic functionality.
 
 ## Authorization
 
@@ -52,9 +52,33 @@ foreach (var app in apps.data)
 }
 ```
 
-## Usage
+## API Usage
 
 In general, to find the API for a particular endpoint, search `AppStoreClient.g.cs` for 
 the endpoint you are looking for (e.g., `/v1/apps`), and this will reveal the corresponding
 API method. From there you can find the request and response object types and supported
 parameters.
+
+## CLI Usage
+
+The accompanying CLI project is intended mostly as a testbed or demonstration, or as a starting
+point for your own projects. The program outputs custom JSON to stderr, or to a file if `--output` is specified. Run with `--help` for additional information.
+
+Currently these commands are supported:
+
+### Get all applications
+
+```
+dotnet run -- get-apps
+```
+
+Writes summary information about all apps, including their IDs, which are required for other commands (note that an App ID is not its bundle ID).
+
+### Get application versions and localizations
+
+```
+dotnet run -- get-app-versions --appId=12345678 --state=READY_FOR_SALE --platform=MAC_OS
+```
+
+Writes summary and all localized data about specific app versions matching the given criteria. The `--state` and `--platform` arguments are optional, and filter the set of returned versions.
+  
