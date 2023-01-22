@@ -68,7 +68,7 @@ namespace StudioDrydock.AppStoreConnect.Api
 
         async Task SendAsync(HttpRequestMessage request)
         {
-            Trace.TraceInformation(request.RequestUri?.ToString());
+            Trace.TraceInformation($"{request.Method} {request.RequestUri}");
             var response = await client.SendAsync(request);
             if (!response.IsSuccessStatusCode)
                 throw new Exception($"Status code {response.StatusCode}");
@@ -76,7 +76,7 @@ namespace StudioDrydock.AppStoreConnect.Api
 
         async Task<T> SendAsync<T>(HttpRequestMessage request)
         {
-            Trace.TraceInformation(request.RequestUri?.ToString());
+            Trace.TraceInformation($"{request.Method} {request.RequestUri}");
             var response = await client.SendAsync(request);
             if (!response.IsSuccessStatusCode)
                 throw new Exception($"Status code {response.StatusCode}");
