@@ -10,11 +10,11 @@ This library has not been extensively tested and should not be used for producti
 
 There are three projects in the repo:
 
-* **StudioDrydock.AppStoreConnect.Api** 
+* **StudioDrydock.AppStoreConnect.Api** \
   The actual class library that contains the API for interacting with the App Store. This is the only library you need to link against for your own projects.
-* **StudioDrydock.AppStoreConnect.ApiGenerator** 
+* **StudioDrydock.AppStoreConnect.ApiGenerator** \
   Command-line app that regenerates the source of `StudioDrydock.AppStoreConnect.Api`. Only required when the OpenAPI specification published by Apple changes (or to fix bugs in the generation).
-* **StudioDrydock.AppStoreConnect.Cli**
+* **StudioDrydock.AppStoreConnect.Cli** \
   Command-line app demonstrating usage of the API. It simply lists the ID and Bundle ID of the apps you manage.
 
 ## Authorization
@@ -31,7 +31,7 @@ To use this authorization with the sample app, save this information in `~/.conf
 {
   "keyId": "xxxxxxxxxx",
   "keyPath": "AppStoreConnect_xxxxxxxxxx.p8",
-  issuerId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  "issuerId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 ```
 
