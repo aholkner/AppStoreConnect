@@ -478,8 +478,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCategoriesFieldsAppCategories
         {
@@ -488,16 +486,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subcategories,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCategoriesInclude
         {
             parent,
             subcategories,
         }
-
-
 
         // /v1/appCategories
         public Task<AppCategoriesResponse> GetAppCategories(GetAppCategoriesFilterPlatforms[]? filterPlatforms = default, bool? existsParent = default, GetAppCategoriesFieldsAppCategories[]? fieldsAppCategories = default, int? limit = default, GetAppCategoriesInclude[]? include = default, int? limitSubcategories = default)
@@ -695,9 +689,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
         // /v1/appCategories/{id}
         public Task<AppCategoryResponse> GetAppCategories(string id, GetAppCategoriesFieldsAppCategories[]? fieldsAppCategories = default, GetAppCategoriesInclude[]? include = default, int? limitSubcategories = default)
         {
@@ -837,7 +828,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
 
         // /v1/appClipAdvancedExperienceImages/{id}
         public Task<AppClipAdvancedExperienceImageResponse> GetAppClipAdvancedExperienceImages(string id, GetAppClipAdvancedExperienceImagesFieldsAppClipAdvancedExperienceImages[]? fieldsAppClipAdvancedExperienceImages = default)
@@ -1472,7 +1462,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipAdvancedExperiencesInclude
         {
@@ -1480,8 +1469,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             headerImage,
             localizations,
         }
-
-
 
         // /v1/appClipAdvancedExperiences/{id}
         public Task<AppClipAdvancedExperienceResponse> GetAppClipAdvancedExperiences(string id, GetAppClipAdvancedExperiencesFieldsAppClipAdvancedExperiences[]? fieldsAppClipAdvancedExperiences = default, GetAppClipAdvancedExperiencesInclude[]? include = default, int? limitLocalizations = default)
@@ -2010,8 +1997,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             invocationUrls,
         }
 
-
-
         // /v1/appClipAppStoreReviewDetails/{id}
         public Task<AppClipAppStoreReviewDetailResponse> GetAppClipAppStoreReviewDetails(string id, GetAppClipAppStoreReviewDetailsFieldsAppClipAppStoreReviewDetails[]? fieldsAppClipAppStoreReviewDetails = default, string[]? include = default)
         {
@@ -2184,14 +2169,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subtitle,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperienceLocalizationsInclude
         {
             appClipDefaultExperience,
             appClipHeaderImage,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperienceLocalizationsFieldsAppClipHeaderImages
@@ -2205,7 +2188,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
 
         // /v1/appClipDefaultExperienceLocalizations/{id}
         public Task<AppClipDefaultExperienceLocalizationResponse> GetAppClipDefaultExperienceLocalizations(string id, GetAppClipDefaultExperienceLocalizationsFieldsAppClipDefaultExperienceLocalizations[]? fieldsAppClipDefaultExperienceLocalizations = default, GetAppClipDefaultExperienceLocalizationsInclude[]? include = default, GetAppClipDefaultExperienceLocalizationsFieldsAppClipHeaderImages[]? fieldsAppClipHeaderImages = default)
@@ -2480,7 +2462,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesInclude
         {
@@ -2490,14 +2471,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesFieldsAppClipAppStoreReviewDetails
         {
             appClipDefaultExperience,
             invocationUrls,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesFieldsAppStoreVersions
@@ -2523,7 +2502,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesFieldsAppClipDefaultExperienceLocalizations
         {
@@ -2532,8 +2510,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             subtitle,
         }
-
-
 
         // /v1/appClipDefaultExperiences/{id}
         public Task<AppClipDefaultExperienceResponse> GetAppClipDefaultExperiences(string id, GetAppClipDefaultExperiencesFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetAppClipDefaultExperiencesInclude[]? include = default, GetAppClipDefaultExperiencesFieldsAppClipAppStoreReviewDetails[]? fieldsAppClipAppStoreReviewDetails = default, GetAppClipDefaultExperiencesFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppClipDefaultExperiencesFieldsAppClipDefaultExperienceLocalizations[]? fieldsAppClipDefaultExperienceLocalizations = default, int? limitAppClipDefaultExperienceLocalizations = default)
@@ -2850,8 +2826,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/appClipHeaderImages/{id}
         public Task<AppClipHeaderImageResponse> GetAppClipHeaderImages(string id, GetAppClipHeaderImagesFieldsAppClipHeaderImages[]? fieldsAppClipHeaderImages = default, string[]? include = default)
         {
@@ -3002,14 +2976,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             bundleId,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsInclude
         {
             app,
             appClipDefaultExperiences,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsFieldsAppClipAdvancedExperiences
@@ -3029,7 +3001,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsFieldsAppClipDefaultExperiences
         {
@@ -3040,8 +3011,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperienceTemplate,
             releaseWithAppStoreVersion,
         }
-
-
 
         // /v1/appClips/{id}
         public Task<AppClipResponse> GetAppClips(string id, GetAppClipsFieldsAppClips[]? fieldsAppClips = default, GetAppClipsInclude[]? include = default, GetAppClipsFieldsAppClipAdvancedExperiences[]? fieldsAppClipAdvancedExperiences = default, GetAppClipsFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, int? limitAppClipDefaultExperiences = default)
@@ -3236,7 +3205,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsInclude
         {
@@ -3244,7 +3212,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appPreviewSets,
             appScreenshotSets,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsFieldsAppScreenshotSets
@@ -3256,7 +3223,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             screenshotDisplayType,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsFieldsAppPreviewSets
         {
@@ -3266,9 +3232,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             previewType,
         }
-
-
-
 
         // /v1/appCustomProductPageLocalizations/{id}
         public Task<AppCustomProductPageLocalizationResponse> GetAppCustomProductPageLocalizations(string id, GetAppCustomProductPageLocalizationsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppCustomProductPageLocalizationsInclude[]? include = default, GetAppCustomProductPageLocalizationsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppCustomProductPageLocalizationsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, int? limitAppPreviewSets = default, int? limitAppScreenshotSets = default)
@@ -3490,14 +3453,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageVersionsInclude
         {
             appCustomProductPage,
             appCustomProductPageLocalizations,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageVersionsFieldsAppCustomProductPageLocalizations
@@ -3508,8 +3469,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             promotionalText,
         }
-
-
 
         // /v1/appCustomProductPageVersions/{id}
         public Task<AppCustomProductPageVersionResponse> GetAppCustomProductPageVersions(string id, GetAppCustomProductPageVersionsFieldsAppCustomProductPageVersions[]? fieldsAppCustomProductPageVersions = default, GetAppCustomProductPageVersionsInclude[]? include = default, GetAppCustomProductPageVersionsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, int? limitAppCustomProductPageLocalizations = default)
@@ -3740,14 +3699,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             visible,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPagesInclude
         {
             app,
             appCustomProductPageVersions,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPagesFieldsAppCustomProductPageVersions
@@ -3757,8 +3714,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             version,
         }
-
-
 
         // /v1/appCustomProductPages/{id}
         public Task<AppCustomProductPageResponse> GetAppCustomProductPages(string id, GetAppCustomProductPagesFieldsAppCustomProductPages[]? fieldsAppCustomProductPages = default, GetAppCustomProductPagesInclude[]? include = default, GetAppCustomProductPagesFieldsAppCustomProductPageVersions[]? fieldsAppCustomProductPageVersions = default, int? limitAppCustomProductPageVersions = default)
@@ -4619,9 +4574,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEncryptionDeclarationsFieldsAppEncryptionDeclarations
         {
@@ -4640,9 +4592,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadedDate,
             usesEncryption,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEncryptionDeclarationsFieldsApps
@@ -4686,7 +4635,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
 
         // /v1/appEncryptionDeclarations
         public Task<AppEncryptionDeclarationsResponse> GetAppEncryptionDeclarations(GetAppEncryptionDeclarationsFilterPlatform[]? filterPlatform = default, string[]? filterApp = default, string[]? filterBuilds = default, GetAppEncryptionDeclarationsFieldsAppEncryptionDeclarations[]? fieldsAppEncryptionDeclarations = default, int? limit = default, string[]? include = default, GetAppEncryptionDeclarationsFieldsApps[]? fieldsApps = default)
@@ -5489,9 +5437,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
         // /v1/appEncryptionDeclarations/{id}
         public Task<AppEncryptionDeclarationResponse> GetAppEncryptionDeclarations(string id, GetAppEncryptionDeclarationsFieldsAppEncryptionDeclarations[]? fieldsAppEncryptionDeclarations = default, string[]? include = default, GetAppEncryptionDeclarationsFieldsApps[]? fieldsApps = default)
         {
@@ -5687,7 +5632,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             shortDescription,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventLocalizationsInclude
         {
@@ -5695,7 +5639,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appEventScreenshots,
             appEventVideoClips,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventLocalizationsFieldsAppEventScreenshots
@@ -5711,7 +5654,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventLocalizationsFieldsAppEventVideoClips
         {
@@ -5726,9 +5668,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
             videoUrl,
         }
-
-
-
 
         // /v1/appEventLocalizations/{id}
         public Task<AppEventLocalizationResponse> GetAppEventLocalizations(string id, GetAppEventLocalizationsFieldsAppEventLocalizations[]? fieldsAppEventLocalizations = default, GetAppEventLocalizationsInclude[]? include = default, GetAppEventLocalizationsFieldsAppEventScreenshots[]? fieldsAppEventScreenshots = default, GetAppEventLocalizationsFieldsAppEventVideoClips[]? fieldsAppEventVideoClips = default, int? limitAppEventScreenshots = default, int? limitAppEventVideoClips = default)
@@ -6083,8 +6022,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/appEventScreenshots/{id}
         public Task<AppEventScreenshotResponse> GetAppEventScreenshots(string id, GetAppEventScreenshotsFieldsAppEventScreenshots[]? fieldsAppEventScreenshots = default, string[]? include = default)
         {
@@ -6430,8 +6367,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
             videoUrl,
         }
-
-
 
         // /v1/appEventVideoClips/{id}
         public Task<AppEventVideoClipResponse> GetAppEventVideoClips(string id, GetAppEventVideoClipsFieldsAppEventVideoClips[]? fieldsAppEventVideoClips = default, string[]? include = default)
@@ -6845,8 +6780,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territorySchedules,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventsFieldsAppEventLocalizations
         {
@@ -6858,8 +6791,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             shortDescription,
         }
-
-
 
         // /v1/appEvents/{id}
         public Task<AppEventResponse> GetAppEvents(string id, GetAppEventsFieldsAppEvents[]? fieldsAppEvents = default, string[]? include = default, GetAppEventsFieldsAppEventLocalizations[]? fieldsAppEventLocalizations = default, int? limitLocalizations = default)
@@ -7346,8 +7277,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subtitle,
         }
 
-
-
         // /v1/appInfoLocalizations/{id}
         public Task<AppInfoLocalizationResponse> GetAppInfoLocalizations(string id, GetAppInfoLocalizationsFieldsAppInfoLocalizations[]? fieldsAppInfoLocalizations = default, string[]? include = default)
         {
@@ -7694,7 +7623,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             secondarySubcategoryTwo,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppInfosInclude
         {
@@ -7708,7 +7636,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             secondarySubcategoryOne,
             secondarySubcategoryTwo,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppInfosFieldsAgeRatingDeclarations
@@ -7732,7 +7659,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             violenceRealisticProlongedGraphicOrSadistic,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppInfosFieldsAppInfoLocalizations
         {
@@ -7745,7 +7671,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subtitle,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppInfosFieldsAppCategories
         {
@@ -7753,8 +7678,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platforms,
             subcategories,
         }
-
-
 
         // /v1/appInfos/{id}
         public Task<AppInfoResponse> GetAppInfos(string id, GetAppInfosFieldsAppInfos[]? fieldsAppInfos = default, GetAppInfosInclude[]? include = default, GetAppInfosFieldsAgeRatingDeclarations[]? fieldsAgeRatingDeclarations = default, GetAppInfosFieldsAppInfoLocalizations[]? fieldsAppInfoLocalizations = default, GetAppInfosFieldsAppCategories[]? fieldsAppCategories = default, int? limitAppInfoLocalizations = default)
@@ -8682,8 +8605,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             preOrderAvailableDate,
         }
 
-
-
         // /v1/appPreOrders/{id}
         public Task<AppPreOrderResponse> GetAppPreOrders(string id, GetAppPreOrdersFieldsAppPreOrders[]? fieldsAppPreOrders = default, string[]? include = default)
         {
@@ -8978,7 +8899,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             previewType,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPreviewSetsInclude
         {
@@ -8987,7 +8907,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPreviewSetsFieldsAppPreviews
@@ -9004,8 +8923,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
             videoUrl,
         }
-
-
 
         // /v1/appPreviewSets/{id}
         public Task<AppPreviewSetResponse> GetAppPreviewSets(string id, GetAppPreviewSetsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, GetAppPreviewSetsInclude[]? include = default, GetAppPreviewSetsFieldsAppPreviews[]? fieldsAppPreviews = default, int? limitAppPreviews = default)
@@ -9341,8 +9258,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             videoUrl,
         }
 
-
-
         // /v1/appPreviews/{id}
         public Task<AppPreviewResponse> GetAppPreviews(string id, GetAppPreviewsFieldsAppPreviews[]? fieldsAppPreviews = default, string[]? include = default)
         {
@@ -9488,8 +9403,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPricePointsFieldsAppPricePoints
         {
@@ -9499,16 +9412,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPricePointsInclude
         {
             priceTier,
             territory,
         }
-
-
 
         // /v1/appPricePoints
         public Task<AppPricePointsResponse> GetAppPricePoints(string[]? filterPriceTier = default, string[]? filterTerritory = default, GetAppPricePointsFieldsAppPricePoints[]? fieldsAppPricePoints = default, int? limit = default, GetAppPricePointsInclude[]? include = default, string[]? fieldsTerritories = default)
@@ -9605,9 +9514,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public object[]? included { get; set; }
             public Links links { get; set; } = new Links();
         }
-
-
-
 
         // /v1/appPricePoints/{id}
         public Task<AppPricePointResponse> GetAppPricePoints(string id, GetAppPricePointsFieldsAppPricePoints[]? fieldsAppPricePoints = default, GetAppPricePointsInclude[]? include = default, string[]? fieldsTerritories = default)
@@ -9762,10 +9668,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
-
-
         // /v1/appPriceTiers
         public Task<AppPriceTiersResponse> GetAppPriceTiers(string[]? filterId = default, string[]? fieldsAppPriceTiers = default, int? limit = default, string[]? include = default)
         {
@@ -9906,8 +9808,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
         // /v1/appPriceTiers/{id}
         public Task<AppPriceTierResponse> GetAppPriceTiers(string id, string[]? fieldsAppPriceTiers = default, string[]? include = default)
         {
@@ -9997,14 +9897,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             priceTier,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPricesInclude
         {
             app,
             priceTier,
         }
-
 
         // /v1/appPrices/{id}
         public Task<AppPriceResponse> GetAppPrices(string id, GetAppPricesFieldsAppPrices[]? fieldsAppPrices = default, GetAppPricesInclude[]? include = default)
@@ -10292,7 +10190,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             screenshotDisplayType,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppScreenshotSetsInclude
         {
@@ -10301,7 +10198,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppScreenshotSetsFieldsAppScreenshots
@@ -10317,8 +10213,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
-
 
         // /v1/appScreenshotSets/{id}
         public Task<AppScreenshotSetResponse> GetAppScreenshotSets(string id, GetAppScreenshotSetsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppScreenshotSetsInclude[]? include = default, GetAppScreenshotSetsFieldsAppScreenshots[]? fieldsAppScreenshots = default, int? limitAppScreenshots = default)
@@ -10666,8 +10560,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/appScreenshots/{id}
         public Task<AppScreenshotResponse> GetAppScreenshots(string id, GetAppScreenshotsFieldsAppScreenshots[]? fieldsAppScreenshots = default, string[]? include = default)
         {
@@ -10961,8 +10853,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/appStoreReviewAttachments/{id}
         public Task<AppStoreReviewAttachmentResponse> GetAppStoreReviewAttachments(string id, GetAppStoreReviewAttachmentsFieldsAppStoreReviewAttachments[]? fieldsAppStoreReviewAttachments = default, string[]? include = default)
         {
@@ -11177,14 +11067,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             notes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreReviewDetailsInclude
         {
             appStoreReviewAttachments,
             appStoreVersion,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreReviewDetailsFieldsAppStoreReviewAttachments
@@ -11197,8 +11085,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
-
 
         // /v1/appStoreReviewDetails/{id}
         public Task<AppStoreReviewDetailResponse> GetAppStoreReviewDetails(string id, GetAppStoreReviewDetailsFieldsAppStoreReviewDetails[]? fieldsAppStoreReviewDetails = default, GetAppStoreReviewDetailsInclude[]? include = default, GetAppStoreReviewDetailsFieldsAppStoreReviewAttachments[]? fieldsAppStoreReviewAttachments = default, int? limitAppStoreReviewAttachments = default)
@@ -11424,7 +11310,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsInclude
         {
@@ -11432,7 +11317,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appScreenshotSets,
             appStoreVersionExperimentTreatment,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsFieldsAppScreenshotSets
@@ -11444,7 +11328,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             screenshotDisplayType,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsFieldsAppPreviewSets
         {
@@ -11454,9 +11337,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             previewType,
         }
-
-
-
 
         // /v1/appStoreVersionExperimentTreatmentLocalizations/{id}
         public Task<AppStoreVersionExperimentTreatmentLocalizationResponse> GetAppStoreVersionExperimentTreatmentLocalizations(string id, GetAppStoreVersionExperimentTreatmentLocalizationsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppStoreVersionExperimentTreatmentLocalizationsInclude[]? include = default, GetAppStoreVersionExperimentTreatmentLocalizationsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppStoreVersionExperimentTreatmentLocalizationsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, int? limitAppPreviewSets = default, int? limitAppScreenshotSets = default)
@@ -11643,14 +11523,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotedDate,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentsInclude
         {
             appStoreVersionExperiment,
             appStoreVersionExperimentTreatmentLocalizations,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperimentTreatmentLocalizations
@@ -11660,8 +11538,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
-
 
         // /v1/appStoreVersionExperimentTreatments/{id}
         public Task<AppStoreVersionExperimentTreatmentResponse> GetAppStoreVersionExperimentTreatments(string id, GetAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperimentTreatments[]? fieldsAppStoreVersionExperimentTreatments = default, GetAppStoreVersionExperimentTreatmentsInclude[]? include = default, GetAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, int? limitAppStoreVersionExperimentTreatmentLocalizations = default)
@@ -11885,14 +11761,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             trafficProportion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentsInclude
         {
             appStoreVersion,
             appStoreVersionExperimentTreatments,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentsFieldsAppStoreVersionExperimentTreatments
@@ -11904,8 +11778,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             promotedDate,
         }
-
-
 
         // /v1/appStoreVersionExperiments/{id}
         public Task<AppStoreVersionExperimentResponse> GetAppStoreVersionExperiments(string id, GetAppStoreVersionExperimentsFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetAppStoreVersionExperimentsInclude[]? include = default, GetAppStoreVersionExperimentsFieldsAppStoreVersionExperimentTreatments[]? fieldsAppStoreVersionExperimentTreatments = default, int? limitAppStoreVersionExperimentTreatments = default)
@@ -12155,7 +12027,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsInclude
         {
@@ -12163,7 +12034,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appScreenshotSets,
             appStoreVersion,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsFieldsAppScreenshotSets
@@ -12175,7 +12045,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             screenshotDisplayType,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsFieldsAppPreviewSets
         {
@@ -12185,9 +12054,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             previewType,
         }
-
-
-
 
         // /v1/appStoreVersionLocalizations/{id}
         public Task<AppStoreVersionLocalizationResponse> GetAppStoreVersionLocalizations(string id, GetAppStoreVersionLocalizationsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, GetAppStoreVersionLocalizationsInclude[]? include = default, GetAppStoreVersionLocalizationsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppStoreVersionLocalizationsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, int? limitAppPreviewSets = default, int? limitAppScreenshotSets = default)
@@ -13312,7 +13178,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsInclude
         {
@@ -13328,7 +13193,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             routingAppCoverage,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsAppStoreVersionExperiments
         {
@@ -13343,7 +13207,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             trafficProportion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsCustomerReviews
         {
@@ -13355,7 +13218,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
             title,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsAppStoreReviewDetails
@@ -13372,7 +13234,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             notes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsAppClipDefaultExperiences
         {
@@ -13383,7 +13244,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperienceTemplate,
             releaseWithAppStoreVersion,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsRoutingAppCoverages
@@ -13397,7 +13257,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsAppStoreVersionPhasedReleases
         {
@@ -13407,7 +13266,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             startDate,
             totalPauseDuration,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsBuilds
@@ -13438,7 +13296,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsFieldsAppStoreVersionLocalizations
         {
@@ -13453,9 +13310,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             supportUrl,
             whatsNew,
         }
-
-
-
 
         // /v1/appStoreVersions/{id}
         public Task<AppStoreVersionResponse> GetAppStoreVersions(string id, GetAppStoreVersionsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppStoreVersionsInclude[]? include = default, GetAppStoreVersionsFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetAppStoreVersionsFieldsCustomerReviews[]? fieldsCustomerReviews = default, GetAppStoreVersionsFieldsAppStoreReviewDetails[]? fieldsAppStoreReviewDetails = default, GetAppStoreVersionsFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetAppStoreVersionsFieldsRoutingAppCoverages[]? fieldsRoutingAppCoverages = default, GetAppStoreVersionsFieldsAppStoreVersionPhasedReleases[]? fieldsAppStoreVersionPhasedReleases = default, GetAppStoreVersionsFieldsBuilds[]? fieldsBuilds = default, GetAppStoreVersionsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limitAppStoreVersionExperiments = default, int? limitAppStoreVersionLocalizations = default)
@@ -14318,7 +14172,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             REPLACED_WITH_NEW_VERSION,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFilterAppStoreVersionsPlatform
         {
@@ -14326,13 +14179,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             MAC_OS,
             TV_OS,
         }
-
-
-
-
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsSort
@@ -14347,7 +14193,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-sku")]
             skuDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsApps
@@ -14392,8 +14237,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInclude
         {
@@ -14422,7 +14265,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionGroups,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsBetaAppReviewDetails
         {
@@ -14436,7 +14278,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             demoAccountRequired,
             notes,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsCiProducts
@@ -14452,7 +14293,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflows,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsReviewSubmissions
         {
@@ -14465,7 +14305,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             submitted,
             submittedDate,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsBetaGroups
@@ -14486,7 +14325,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             publicLinkLimitEnabled,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsPromotedPurchases
         {
@@ -14499,7 +14337,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsCustomerReviews
         {
@@ -14511,7 +14348,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
             title,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppEvents
@@ -14529,7 +14365,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             referenceName,
             territorySchedules,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsBuilds
@@ -14560,14 +14395,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsBetaLicenseAgreements
         {
             agreementText,
             app,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppClips
@@ -14577,7 +14410,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperiences,
             bundleId,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppInfos
@@ -14597,7 +14429,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             secondarySubcategoryTwo,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsBetaAppLocalizations
         {
@@ -14610,7 +14441,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             tvOsPrivacyPolicy,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppPricePoints
         {
@@ -14621,7 +14451,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsPreReleaseVersions
         {
@@ -14630,7 +14459,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             version,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsInAppPurchases
@@ -14652,7 +14480,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsSubscriptionGroups
         {
@@ -14662,14 +14489,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptions,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppPrices
         {
             app,
             priceTier,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppPreOrders
@@ -14678,7 +14503,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appReleaseDate,
             preOrderAvailableDate,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsGameCenterEnabledVersions
@@ -14690,14 +14514,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsSubscriptionGracePeriods
         {
             app,
             optIn,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsEndUserLicenseAgreements
@@ -14706,7 +14528,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             app,
             territories,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppStoreVersions
@@ -14732,7 +14553,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsAppCustomProductPages
         {
@@ -14745,8 +14565,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visible,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsFieldsPerfPowerMetrics
         {
@@ -14754,24 +14572,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             metricType,
             platform,
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         // /v1/apps
         public Task<AppsResponse> GetApps(GetAppsFilterAppStoreVersionsAppStoreState[]? filterAppStoreVersionsAppStoreState = default, GetAppsFilterAppStoreVersionsPlatform[]? filterAppStoreVersionsPlatform = default, string[]? filterBundleId = default, string[]? filterName = default, string[]? filterSku = default, string[]? filterAppStoreVersions = default, string[]? filterId = default, bool? existsGameCenterEnabledVersions = default, GetAppsSort[]? sort = default, GetAppsFieldsApps[]? fieldsApps = default, int? limit = default, GetAppsInclude[]? include = default, GetAppsFieldsBetaAppReviewDetails[]? fieldsBetaAppReviewDetails = default, GetAppsFieldsCiProducts[]? fieldsCiProducts = default, GetAppsFieldsReviewSubmissions[]? fieldsReviewSubmissions = default, GetAppsFieldsBetaGroups[]? fieldsBetaGroups = default, GetAppsFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetAppsFieldsCustomerReviews[]? fieldsCustomerReviews = default, GetAppsFieldsAppEvents[]? fieldsAppEvents = default, GetAppsFieldsBuilds[]? fieldsBuilds = default, GetAppsFieldsBetaLicenseAgreements[]? fieldsBetaLicenseAgreements = default, GetAppsFieldsAppClips[]? fieldsAppClips = default, GetAppsFieldsAppInfos[]? fieldsAppInfos = default, GetAppsFieldsBetaAppLocalizations[]? fieldsBetaAppLocalizations = default, GetAppsFieldsAppPricePoints[]? fieldsAppPricePoints = default, GetAppsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, GetAppsFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetAppsFieldsSubscriptionGroups[]? fieldsSubscriptionGroups = default, GetAppsFieldsAppPrices[]? fieldsAppPrices = default, GetAppsFieldsAppPreOrders[]? fieldsAppPreOrders = default, GetAppsFieldsGameCenterEnabledVersions[]? fieldsGameCenterEnabledVersions = default, GetAppsFieldsSubscriptionGracePeriods[]? fieldsSubscriptionGracePeriods = default, GetAppsFieldsEndUserLicenseAgreements[]? fieldsEndUserLicenseAgreements = default, GetAppsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppsFieldsAppCustomProductPages[]? fieldsAppCustomProductPages = default, string[]? fieldsTerritories = default, GetAppsFieldsPerfPowerMetrics[]? fieldsPerfPowerMetrics = default, int? limitAppClips = default, int? limitAppCustomProductPages = default, int? limitAppEvents = default, int? limitAppInfos = default, int? limitAppStoreVersions = default, int? limitAvailableTerritories = default, int? limitBetaAppLocalizations = default, int? limitBetaGroups = default, int? limitBuilds = default, int? limitGameCenterEnabledVersions = default, int? limitInAppPurchases = default, int? limitInAppPurchasesV2 = default, int? limitPreReleaseVersions = default, int? limitPrices = default, int? limitPromotedPurchases = default, int? limitReviewSubmissions = default, int? limitSubscriptionGroups = default)
@@ -15599,50 +15399,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // /v1/apps/{id}
         public Task<AppResponse> GetApps(string id, GetAppsFieldsApps[]? fieldsApps = default, GetAppsInclude[]? include = default, GetAppsFieldsBetaAppReviewDetails[]? fieldsBetaAppReviewDetails = default, GetAppsFieldsCiProducts[]? fieldsCiProducts = default, GetAppsFieldsReviewSubmissions[]? fieldsReviewSubmissions = default, GetAppsFieldsBetaGroups[]? fieldsBetaGroups = default, GetAppsFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetAppsFieldsCustomerReviews[]? fieldsCustomerReviews = default, GetAppsFieldsAppEvents[]? fieldsAppEvents = default, GetAppsFieldsBuilds[]? fieldsBuilds = default, GetAppsFieldsBetaLicenseAgreements[]? fieldsBetaLicenseAgreements = default, GetAppsFieldsAppClips[]? fieldsAppClips = default, GetAppsFieldsAppInfos[]? fieldsAppInfos = default, GetAppsFieldsBetaAppLocalizations[]? fieldsBetaAppLocalizations = default, GetAppsFieldsAppPricePoints[]? fieldsAppPricePoints = default, GetAppsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, GetAppsFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetAppsFieldsSubscriptionGroups[]? fieldsSubscriptionGroups = default, GetAppsFieldsAppPrices[]? fieldsAppPrices = default, GetAppsFieldsAppPreOrders[]? fieldsAppPreOrders = default, GetAppsFieldsGameCenterEnabledVersions[]? fieldsGameCenterEnabledVersions = default, GetAppsFieldsSubscriptionGracePeriods[]? fieldsSubscriptionGracePeriods = default, GetAppsFieldsEndUserLicenseAgreements[]? fieldsEndUserLicenseAgreements = default, GetAppsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppsFieldsAppCustomProductPages[]? fieldsAppCustomProductPages = default, string[]? fieldsTerritories = default, GetAppsFieldsPerfPowerMetrics[]? fieldsPerfPowerMetrics = default, int? limitAppClips = default, int? limitAppCustomProductPages = default, int? limitAppEvents = default, int? limitAppInfos = default, int? limitAppStoreVersions = default, int? limitAvailableTerritories = default, int? limitBetaAppLocalizations = default, int? limitBetaGroups = default, int? limitBuilds = default, int? limitGameCenterEnabledVersions = default, int? limitInAppPurchases = default, int? limitInAppPurchasesV2 = default, int? limitPreReleaseVersions = default, int? limitPrices = default, int? limitPromotedPurchases = default, int? limitReviewSubmissions = default, int? limitSubscriptionGroups = default)
         {
@@ -16130,9 +15886,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             buildBundle,
             url,
         }
-
-
-
 
         // /v1/betaAppClipInvocations/{id}
         public Task<BetaAppClipInvocationResponse> GetBetaAppClipInvocations(string id, GetBetaAppClipInvocationsFieldsBetaAppClipInvocations[]? fieldsBetaAppClipInvocations = default, string[]? include = default, int? limitBetaAppClipInvocationLocalizations = default)
@@ -16960,8 +16713,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaAppLocalizationsFieldsBetaAppLocalizations
         {
@@ -16973,9 +16724,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             privacyPolicyUrl,
             tvOsPrivacyPolicy,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaAppLocalizationsFieldsApps
@@ -17019,7 +16767,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
 
         // /v1/betaAppLocalizations
         public Task<BetaAppLocalizationsResponse> GetBetaAppLocalizations(string[]? filterLocale = default, string[]? filterApp = default, GetBetaAppLocalizationsFieldsBetaAppLocalizations[]? fieldsBetaAppLocalizations = default, int? limit = default, string[]? include = default, GetBetaAppLocalizationsFieldsApps[]? fieldsApps = default)
@@ -17846,9 +17593,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
             return SendAsync<BetaAppLocalizationResponse>(message);
         }
-
-
-
 
         // /v1/betaAppLocalizations/{id}
         public Task<BetaAppLocalizationResponse> GetBetaAppLocalizations(string id, GetBetaAppLocalizationsFieldsBetaAppLocalizations[]? fieldsBetaAppLocalizations = default, string[]? include = default, GetBetaAppLocalizationsFieldsApps[]? fieldsApps = default)
@@ -18682,7 +18426,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaAppReviewDetailsFieldsBetaAppReviewDetails
         {
@@ -18696,9 +18439,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             demoAccountRequired,
             notes,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaAppReviewDetailsFieldsApps
@@ -18742,7 +18482,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
 
         // /v1/betaAppReviewDetails
         public Task<BetaAppReviewDetailsResponse> GetBetaAppReviewDetails(string[] filterApp, GetBetaAppReviewDetailsFieldsBetaAppReviewDetails[]? fieldsBetaAppReviewDetails = default, int? limit = default, string[]? include = default, GetBetaAppReviewDetailsFieldsApps[]? fieldsApps = default)
@@ -19521,9 +19260,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
         // /v1/betaAppReviewDetails/{id}
         public Task<BetaAppReviewDetailResponse> GetBetaAppReviewDetails(string id, GetBetaAppReviewDetailsFieldsBetaAppReviewDetails[]? fieldsBetaAppReviewDetails = default, string[]? include = default, GetBetaAppReviewDetailsFieldsApps[]? fieldsApps = default)
         {
@@ -19977,7 +19713,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaAppReviewSubmissionsFilterBetaReviewState
         {
@@ -19987,7 +19722,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             APPROVED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaAppReviewSubmissionsFieldsBetaAppReviewSubmissions
         {
@@ -19995,9 +19729,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             build,
             submittedDate,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaAppReviewSubmissionsFieldsBuilds
@@ -20027,7 +19758,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
 
         // /v1/betaAppReviewSubmissions
         public Task<BetaAppReviewSubmissionsResponse> GetBetaAppReviewSubmissions(string[] filterBuild, GetBetaAppReviewSubmissionsFilterBetaReviewState[]? filterBetaReviewState = default, GetBetaAppReviewSubmissionsFieldsBetaAppReviewSubmissions[]? fieldsBetaAppReviewSubmissions = default, int? limit = default, string[]? include = default, GetBetaAppReviewSubmissionsFieldsBuilds[]? fieldsBuilds = default)
@@ -20475,9 +20205,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<BetaAppReviewSubmissionResponse>(message);
         }
 
-
-
-
         // /v1/betaAppReviewSubmissions/{id}
         public Task<BetaAppReviewSubmissionResponse> GetBetaAppReviewSubmissions(string id, GetBetaAppReviewSubmissionsFieldsBetaAppReviewSubmissions[]? fieldsBetaAppReviewSubmissions = default, string[]? include = default, GetBetaAppReviewSubmissionsFieldsBuilds[]? fieldsBuilds = default)
         {
@@ -20887,8 +20614,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaBuildLocalizationsFieldsBetaBuildLocalizations
         {
@@ -20896,9 +20621,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             whatsNew,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaBuildLocalizationsFieldsBuilds
@@ -20928,7 +20650,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
 
         // /v1/betaBuildLocalizations
         public Task<BetaBuildLocalizationsResponse> GetBetaBuildLocalizations(string[]? filterLocale = default, string[]? filterBuild = default, GetBetaBuildLocalizationsFieldsBetaBuildLocalizations[]? fieldsBetaBuildLocalizations = default, int? limit = default, string[]? include = default, GetBetaBuildLocalizationsFieldsBuilds[]? fieldsBuilds = default)
@@ -21375,9 +21096,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<BetaBuildLocalizationResponse>(message);
         }
 
-
-
-
         // /v1/betaBuildLocalizations/{id}
         public Task<BetaBuildLocalizationResponse> GetBetaBuildLocalizations(string id, GetBetaBuildLocalizationsFieldsBetaBuildLocalizations[]? fieldsBetaBuildLocalizations = default, string[]? include = default, GetBetaBuildLocalizationsFieldsBuilds[]? fieldsBuilds = default)
         {
@@ -21575,14 +21293,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
-
-
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaGroupsSort
         {
@@ -21599,7 +21309,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-publicLinkLimit")]
             publicLinkLimitDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaGroupsFieldsBetaGroups
@@ -21620,8 +21329,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             publicLinkLimitEnabled,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaGroupsInclude
         {
@@ -21629,7 +21336,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             betaTesters,
             builds,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaGroupsFieldsBetaTesters
@@ -21642,7 +21348,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             inviteType,
             lastName,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaGroupsFieldsApps
@@ -21687,7 +21392,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaGroupsFieldsBuilds
         {
@@ -21716,9 +21420,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
-
-
 
         // /v1/betaGroups
         public Task<BetaGroupsResponse> GetBetaGroups(string[]? filterIsInternalGroup = default, string[]? filterName = default, string[]? filterPublicLink = default, string[]? filterPublicLinkEnabled = default, string[]? filterPublicLinkLimitEnabled = default, string[]? filterApp = default, string[]? filterBuilds = default, string[]? filterId = default, GetBetaGroupsSort[]? sort = default, GetBetaGroupsFieldsBetaGroups[]? fieldsBetaGroups = default, int? limit = default, GetBetaGroupsInclude[]? include = default, GetBetaGroupsFieldsBetaTesters[]? fieldsBetaTesters = default, GetBetaGroupsFieldsApps[]? fieldsApps = default, GetBetaGroupsFieldsBuilds[]? fieldsBuilds = default, int? limitBetaTesters = default, int? limitBuilds = default)
@@ -21963,13 +21664,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
             return SendAsync<BetaGroupResponse>(message);
         }
-
-
-
-
-
-
-
 
         // /v1/betaGroups/{id}
         public Task<BetaGroupResponse> GetBetaGroups(string id, GetBetaGroupsFieldsBetaGroups[]? fieldsBetaGroups = default, GetBetaGroupsInclude[]? include = default, GetBetaGroupsFieldsBetaTesters[]? fieldsBetaTesters = default, GetBetaGroupsFieldsApps[]? fieldsApps = default, GetBetaGroupsFieldsBuilds[]? fieldsBuilds = default, int? limitBetaTesters = default, int? limitBuilds = default)
@@ -22805,16 +22499,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaLicenseAgreementsFieldsBetaLicenseAgreements
         {
             agreementText,
             app,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaLicenseAgreementsFieldsApps
@@ -22858,7 +22548,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
 
         // /v1/betaLicenseAgreements
         public Task<BetaLicenseAgreementsResponse> GetBetaLicenseAgreements(string[]? filterApp = default, GetBetaLicenseAgreementsFieldsBetaLicenseAgreements[]? fieldsBetaLicenseAgreements = default, int? limit = default, string[]? include = default, GetBetaLicenseAgreementsFieldsApps[]? fieldsApps = default)
@@ -23630,9 +23319,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
         // /v1/betaLicenseAgreements/{id}
         public Task<BetaLicenseAgreementResponse> GetBetaLicenseAgreements(string id, GetBetaLicenseAgreementsFieldsBetaLicenseAgreements[]? fieldsBetaLicenseAgreements = default, string[]? include = default, GetBetaLicenseAgreementsFieldsApps[]? fieldsApps = default)
         {
@@ -23903,20 +23589,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaTestersFilterInviteType
         {
             EMAIL,
             PUBLIC_LINK,
         }
-
-
-
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaTestersSort
@@ -23935,7 +23613,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastNameDescending,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaTestersFieldsBetaTesters
         {
@@ -23948,8 +23625,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastName,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaTestersInclude
         {
@@ -23957,7 +23632,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             betaGroups,
             builds,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaTestersFieldsApps
@@ -24002,7 +23676,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaTestersFieldsBuilds
         {
@@ -24032,7 +23705,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBetaTestersFieldsBetaGroups
         {
@@ -24051,10 +23723,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             publicLinkLimit,
             publicLinkLimitEnabled,
         }
-
-
-
-
 
         // /v1/betaTesters
         public Task<BetaTestersResponse> GetBetaTesters(string[]? filterEmail = default, string[]? filterFirstName = default, GetBetaTestersFilterInviteType[]? filterInviteType = default, string[]? filterLastName = default, string[]? filterApps = default, string[]? filterBetaGroups = default, string[]? filterBuilds = default, string[]? filterId = default, GetBetaTestersSort[]? sort = default, GetBetaTestersFieldsBetaTesters[]? fieldsBetaTesters = default, int? limit = default, GetBetaTestersInclude[]? include = default, GetBetaTestersFieldsApps[]? fieldsApps = default, GetBetaTestersFieldsBuilds[]? fieldsBuilds = default, GetBetaTestersFieldsBetaGroups[]? fieldsBetaGroups = default, int? limitApps = default, int? limitBetaGroups = default, int? limitBuilds = default)
@@ -24296,14 +23964,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
             return SendAsync<BetaTesterResponse>(message);
         }
-
-
-
-
-
-
-
-
 
         // /v1/betaTesters/{id}
         public Task<BetaTesterResponse> GetBetaTesters(string id, GetBetaTestersFieldsBetaTesters[]? fieldsBetaTesters = default, GetBetaTestersInclude[]? include = default, GetBetaTestersFieldsApps[]? fieldsApps = default, GetBetaTestersFieldsBuilds[]? fieldsBuilds = default, GetBetaTestersFieldsBetaGroups[]? fieldsBetaGroups = default, int? limitApps = default, int? limitBetaGroups = default, int? limitBuilds = default)
@@ -24763,8 +24423,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildBetaDetailsFieldsBuildBetaDetails
         {
@@ -24773,9 +24431,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             externalBuildState,
             internalBuildState,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildBetaDetailsFieldsBuilds
@@ -24805,7 +24460,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
 
         // /v1/buildBetaDetails
         public Task<BuildBetaDetailsResponse> GetBuildBetaDetails(string[]? filterBuild = default, string[]? filterId = default, GetBuildBetaDetailsFieldsBuildBetaDetails[]? fieldsBuildBetaDetails = default, int? limit = default, string[]? include = default, GetBuildBetaDetailsFieldsBuilds[]? fieldsBuilds = default)
@@ -25234,9 +24888,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Included[]? included { get; set; }
             public Links links { get; set; } = new Links();
         }
-
-
-
 
         // /v1/buildBetaDetails/{id}
         public Task<BuildBetaDetailResponse> GetBuildBetaDetails(string id, GetBuildBetaDetailsFieldsBuildBetaDetails[]? fieldsBuildBetaDetails = default, string[]? include = default, GetBuildBetaDetailsFieldsBuilds[]? fieldsBuilds = default)
@@ -25703,15 +25354,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             APPROVED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFilterBuildAudienceType
         {
             INTERNAL_ONLY,
             APP_STORE_ELIGIBLE,
         }
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFilterPreReleaseVersionPlatform
@@ -25721,8 +25369,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFilterProcessingState
         {
@@ -25731,14 +25377,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             INVALID,
             VALID,
         }
-
-
-
-
-
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsSort
@@ -25753,7 +25391,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-version")]
             versionDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsBuilds
@@ -25784,8 +25421,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsInclude
         {
@@ -25802,7 +25437,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             preReleaseVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsDiagnosticSignatures
         {
@@ -25812,7 +25446,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             weight,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsBuildIcons
         {
@@ -25820,7 +25453,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             iconType,
             name,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsBuildBetaDetails
@@ -25831,7 +25463,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             internalBuildState,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsBetaAppReviewSubmissions
         {
@@ -25839,7 +25470,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             build,
             submittedDate,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsBetaTesters
@@ -25852,7 +25482,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             inviteType,
             lastName,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsAppStoreVersions
@@ -25878,7 +25507,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsBetaBuildLocalizations
         {
@@ -25886,7 +25514,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             whatsNew,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsPreReleaseVersions
@@ -25896,7 +25523,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             version,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsAppEncryptionDeclarations
@@ -25916,7 +25542,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadedDate,
             usesEncryption,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsApps
@@ -25961,7 +25586,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsFieldsPerfPowerMetrics
         {
@@ -25969,12 +25593,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             metricType,
             platform,
         }
-
-
-
-
-
-
 
         // /v1/builds
         public Task<BuildsResponse> GetBuilds(GetBuildsFilterBetaAppReviewSubmissionBetaReviewState[]? filterBetaAppReviewSubmissionBetaReviewState = default, GetBuildsFilterBuildAudienceType[]? filterBuildAudienceType = default, string[]? filterExpired = default, GetBuildsFilterPreReleaseVersionPlatform[]? filterPreReleaseVersionPlatform = default, string[]? filterPreReleaseVersionVersion = default, GetBuildsFilterProcessingState[]? filterProcessingState = default, string[]? filterUsesNonExemptEncryption = default, string[]? filterVersion = default, string[]? filterApp = default, string[]? filterAppStoreVersion = default, string[]? filterBetaGroups = default, string[]? filterPreReleaseVersion = default, string[]? filterId = default, GetBuildsSort[]? sort = default, GetBuildsFieldsBuilds[]? fieldsBuilds = default, int? limit = default, GetBuildsInclude[]? include = default, GetBuildsFieldsDiagnosticSignatures[]? fieldsDiagnosticSignatures = default, GetBuildsFieldsBuildIcons[]? fieldsBuildIcons = default, GetBuildsFieldsBuildBetaDetails[]? fieldsBuildBetaDetails = default, GetBuildsFieldsBetaAppReviewSubmissions[]? fieldsBetaAppReviewSubmissions = default, GetBuildsFieldsBetaTesters[]? fieldsBetaTesters = default, GetBuildsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetBuildsFieldsBetaBuildLocalizations[]? fieldsBetaBuildLocalizations = default, GetBuildsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, GetBuildsFieldsAppEncryptionDeclarations[]? fieldsAppEncryptionDeclarations = default, GetBuildsFieldsApps[]? fieldsApps = default, GetBuildsFieldsPerfPowerMetrics[]? fieldsPerfPowerMetrics = default, int? limitBetaBuildLocalizations = default, int? limitBetaGroups = default, int? limitBuildBundles = default, int? limitIcons = default, int? limitIndividualTesters = default)
@@ -26386,24 +26004,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public object[]? included { get; set; }
             public Links links { get; set; } = new Links();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         // /v1/builds/{id}
         public Task<BuildResponse> GetBuilds(string id, GetBuildsFieldsBuilds[]? fieldsBuilds = default, GetBuildsInclude[]? include = default, GetBuildsFieldsDiagnosticSignatures[]? fieldsDiagnosticSignatures = default, GetBuildsFieldsBuildIcons[]? fieldsBuildIcons = default, GetBuildsFieldsBuildBetaDetails[]? fieldsBuildBetaDetails = default, GetBuildsFieldsBetaAppReviewSubmissions[]? fieldsBetaAppReviewSubmissions = default, GetBuildsFieldsBetaTesters[]? fieldsBetaTesters = default, GetBuildsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetBuildsFieldsBetaBuildLocalizations[]? fieldsBetaBuildLocalizations = default, GetBuildsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, GetBuildsFieldsAppEncryptionDeclarations[]? fieldsAppEncryptionDeclarations = default, GetBuildsFieldsApps[]? fieldsApps = default, GetBuildsFieldsPerfPowerMetrics[]? fieldsPerfPowerMetrics = default, int? limitBetaBuildLocalizations = default, int? limitBetaGroups = default, int? limitBuildBundles = default, int? limitIcons = default, int? limitIndividualTesters = default)
@@ -26988,17 +26588,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBundleIdsFilterPlatform
         {
             IOS,
             MAC_OS,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBundleIdsSort
@@ -27020,7 +26615,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             seedIdDescending,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBundleIdsFieldsBundleIds
         {
@@ -27033,8 +26627,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             seedId,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBundleIdsInclude
         {
@@ -27043,7 +26635,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             profiles,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBundleIdsFieldsBundleIdCapabilities
         {
@@ -27051,7 +26642,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             capabilityType,
             settings,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBundleIdsFieldsProfiles
@@ -27068,7 +26658,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             profileType,
             uuid,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBundleIdsFieldsApps
@@ -27112,9 +26701,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
-
-
 
         // /v1/bundleIds
         public Task<BundleIdsResponse> GetBundleIds(string[]? filterIdentifier = default, string[]? filterName = default, GetBundleIdsFilterPlatform[]? filterPlatform = default, string[]? filterSeedId = default, string[]? filterId = default, GetBundleIdsSort[]? sort = default, GetBundleIdsFieldsBundleIds[]? fieldsBundleIds = default, int? limit = default, GetBundleIdsInclude[]? include = default, GetBundleIdsFieldsBundleIdCapabilities[]? fieldsBundleIdCapabilities = default, GetBundleIdsFieldsProfiles[]? fieldsProfiles = default, GetBundleIdsFieldsApps[]? fieldsApps = default, int? limitBundleIdCapabilities = default, int? limitProfiles = default)
@@ -27315,13 +26901,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<BundleIdResponse>(message);
         }
 
-
-
-
-
-
-
-
         // /v1/bundleIds/{id}
         public Task<BundleIdResponse> GetBundleIds(string id, GetBundleIdsFieldsBundleIds[]? fieldsBundleIds = default, GetBundleIdsInclude[]? include = default, GetBundleIdsFieldsBundleIdCapabilities[]? fieldsBundleIdCapabilities = default, GetBundleIdsFieldsProfiles[]? fieldsProfiles = default, GetBundleIdsFieldsApps[]? fieldsApps = default, int? limitBundleIdCapabilities = default, int? limitProfiles = default)
         {
@@ -27473,10 +27052,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             PASS_TYPE_ID_WITH_NFC,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCertificatesSort
         {
@@ -27494,7 +27069,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             serialNumberDescending,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCertificatesFieldsCertificates
         {
@@ -27507,8 +27081,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             serialNumber,
         }
-
-
 
         // /v1/certificates
         public Task<CertificatesResponse> GetCertificates(GetCertificatesFilterCertificateType[]? filterCertificateType = default, string[]? filterDisplayName = default, string[]? filterSerialNumber = default, string[]? filterId = default, GetCertificatesSort[]? sort = default, GetCertificatesFieldsCertificates[]? fieldsCertificates = default, int? limit = default)
@@ -27633,7 +27205,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<CertificateResponse>(message);
         }
 
-
         // /v1/certificates/{id}
         public Task<CertificateResponse> GetCertificates(string id, GetCertificatesFieldsCertificates[]? fieldsCertificates = default)
         {
@@ -27708,7 +27279,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             fileSize,
             fileType,
         }
-
 
         // /v1/ciArtifacts/{id}
         public Task<CiArtifactResponse> GetCiArtifacts(string id, GetCiArtifactsFieldsCiArtifacts[]? fieldsCiArtifacts = default)
@@ -28075,8 +27645,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             testResults,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsFieldsCiIssues
         {
@@ -28085,7 +27653,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             issueType,
             message,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsFieldsCiBuildRuns
@@ -28113,7 +27680,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsFieldsCiTestResults
         {
@@ -28125,7 +27691,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             status,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsFieldsCiArtifacts
         {
@@ -28134,7 +27699,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             fileSize,
             fileType,
         }
-
 
         // /v1/ciBuildActions/{id}
         public Task<CiBuildActionResponse> GetCiBuildActions(string id, GetCiBuildActionsFieldsCiBuildActions[]? fieldsCiBuildActions = default, string[]? include = default, GetCiBuildActionsFieldsCiIssues[]? fieldsCiIssues = default, GetCiBuildActionsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiBuildActionsFieldsCiTestResults[]? fieldsCiTestResults = default, GetCiBuildActionsFieldsCiArtifacts[]? fieldsCiArtifacts = default)
@@ -28519,7 +28083,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsInclude
         {
@@ -28530,7 +28093,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             sourceBranchOrTag,
             workflow,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsFieldsCiBuildActions
@@ -28548,7 +28110,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             startedDate,
             testResults,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsFieldsBuilds
@@ -28578,8 +28139,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
-
 
         // /v1/ciBuildRuns/{id}
         public Task<CiBuildRunResponse> GetCiBuildRuns(string id, GetCiBuildRunsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiBuildRunsInclude[]? include = default, GetCiBuildRunsFieldsCiBuildActions[]? fieldsCiBuildActions = default, GetCiBuildRunsFieldsBuilds[]? fieldsBuilds = default, int? limitBuilds = default)
@@ -28656,7 +28215,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             issueType,
             message,
         }
-
 
         // /v1/ciIssues/{id}
         public Task<CiIssueResponse> GetCiIssues(string id, GetCiIssuesFieldsCiIssues[]? fieldsCiIssues = default)
@@ -28836,9 +28394,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             xcodeVersions,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiMacOsVersionsFieldsCiXcodeVersions
         {
@@ -28847,8 +28402,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             testDestinations,
             version,
         }
-
-
 
         // /v1/ciMacOsVersions
         public Task<CiMacOsVersionsResponse> GetCiMacOsVersions(GetCiMacOsVersionsFieldsCiMacOsVersions[]? fieldsCiMacOsVersions = default, int? limit = default, string[]? include = default, GetCiMacOsVersionsFieldsCiXcodeVersions[]? fieldsCiXcodeVersions = default, int? limitXcodeVersions = default)
@@ -29013,10 +28566,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
-
         // /v1/ciMacOsVersions/{id}
         public Task<CiMacOsVersionResponse> GetCiMacOsVersions(string id, GetCiMacOsVersionsFieldsCiMacOsVersions[]? fieldsCiMacOsVersions = default, string[]? include = default, GetCiMacOsVersionsFieldsCiXcodeVersions[]? fieldsCiXcodeVersions = default, int? limitXcodeVersions = default)
         {
@@ -29169,8 +28718,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             FRAMEWORK,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsFieldsCiProducts
         {
@@ -29185,8 +28732,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflows,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsInclude
         {
@@ -29194,7 +28739,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             bundleId,
             primaryRepositories,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsFieldsCiBuildRuns
@@ -29222,7 +28766,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsFieldsCiWorkflows
         {
@@ -29244,7 +28787,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             tagStartCondition,
             xcodeVersion,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsFieldsApps
@@ -29289,7 +28831,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsFieldsScmRepositories
         {
@@ -29303,8 +28844,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProvider,
             sshCloneUrl,
         }
-
-
 
         // /v1/ciProducts
         public Task<CiProductsResponse> GetCiProducts(GetCiProductsFilterProductType[]? filterProductType = default, string[]? filterApp = default, GetCiProductsFieldsCiProducts[]? fieldsCiProducts = default, int? limit = default, GetCiProductsInclude[]? include = default, GetCiProductsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiProductsFieldsCiWorkflows[]? fieldsCiWorkflows = default, GetCiProductsFieldsApps[]? fieldsApps = default, GetCiProductsFieldsScmRepositories[]? fieldsScmRepositories = default, int? limitPrimaryRepositories = default)
@@ -29448,13 +28987,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
-
-
-
-
         // /v1/ciProducts/{id}
         public Task<CiProductResponse> GetCiProducts(string id, GetCiProductsFieldsCiProducts[]? fieldsCiProducts = default, GetCiProductsInclude[]? include = default, GetCiProductsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiProductsFieldsCiWorkflows[]? fieldsCiWorkflows = default, GetCiProductsFieldsApps[]? fieldsApps = default, GetCiProductsFieldsScmRepositories[]? fieldsScmRepositories = default, int? limitPrimaryRepositories = default)
         {
@@ -29568,7 +29100,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             status,
         }
-
 
         // /v1/ciTestResults/{id}
         public Task<CiTestResultResponse> GetCiTestResults(string id, GetCiTestResultsFieldsCiTestResults[]? fieldsCiTestResults = default)
@@ -30311,7 +29842,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             xcodeVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsInclude
         {
@@ -30320,7 +29850,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
             xcodeVersion,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsFieldsCiBuildRuns
@@ -30348,7 +29877,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsFieldsScmRepositories
         {
@@ -30362,7 +29890,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProvider,
             sshCloneUrl,
         }
-
 
         // /v1/ciWorkflows/{id}
         public Task<CiWorkflowResponse> GetCiWorkflows(string id, GetCiWorkflowsFieldsCiWorkflows[]? fieldsCiWorkflows = default, GetCiWorkflowsInclude[]? include = default, GetCiWorkflowsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiWorkflowsFieldsScmRepositories[]? fieldsScmRepositories = default)
@@ -30875,9 +30402,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiXcodeVersionsFieldsCiMacOsVersions
         {
@@ -30885,8 +30409,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
             xcodeVersions,
         }
-
-
 
         // /v1/ciXcodeVersions
         public Task<CiXcodeVersionsResponse> GetCiXcodeVersions(GetCiXcodeVersionsFieldsCiXcodeVersions[]? fieldsCiXcodeVersions = default, int? limit = default, string[]? include = default, GetCiXcodeVersionsFieldsCiMacOsVersions[]? fieldsCiMacOsVersions = default, int? limitMacOsVersions = default)
@@ -31050,10 +30572,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Included[]? included { get; set; }
             public Links links { get; set; } = new Links();
         }
-
-
-
-
 
         // /v1/ciXcodeVersions/{id}
         public Task<CiXcodeVersionResponse> GetCiXcodeVersions(string id, GetCiXcodeVersionsFieldsCiXcodeVersions[]? fieldsCiXcodeVersions = default, string[]? include = default, GetCiXcodeVersionsFieldsCiMacOsVersions[]? fieldsCiMacOsVersions = default, int? limitMacOsVersions = default)
@@ -31472,8 +30990,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
-
         // /v1/customerReviewResponses/{id}
         public Task<CustomerReviewResponseV1Response> GetCustomerReviewResponses(string id, GetCustomerReviewResponsesFieldsCustomerReviewResponses[]? fieldsCustomerReviewResponses = default, string[]? include = default)
         {
@@ -31857,8 +31373,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             title,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCustomerReviewsFieldsCustomerReviewResponses
         {
@@ -31867,7 +31381,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             review,
             state,
         }
-
 
         // /v1/customerReviews/{id}
         public Task<CustomerReviewResponse> GetCustomerReviews(string id, GetCustomerReviewsFieldsCustomerReviews[]? fieldsCustomerReviews = default, string[]? include = default, GetCustomerReviewsFieldsCustomerReviewResponses[]? fieldsCustomerReviewResponses = default)
@@ -31957,7 +31470,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetDevicesFilterPlatform
         {
@@ -31965,16 +31477,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             MAC_OS,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetDevicesFilterStatus
         {
             ENABLED,
             DISABLED,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetDevicesSort
@@ -31996,7 +31504,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             udidDescending,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetDevicesFieldsDevices
         {
@@ -32008,8 +31515,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             status,
             udid,
         }
-
-
 
         // /v1/devices
         public Task<DevicesResponse> GetDevices(string[]? filterName = default, GetDevicesFilterPlatform[]? filterPlatform = default, GetDevicesFilterStatus[]? filterStatus = default, string[]? filterUdid = default, string[]? filterId = default, GetDevicesSort[]? sort = default, GetDevicesFieldsDevices[]? fieldsDevices = default, int? limit = default)
@@ -32128,7 +31633,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
             return SendAsync<DeviceResponse>(message);
         }
-
 
         // /v1/devices/{id}
         public Task<DeviceResponse> GetDevices(string id, GetDevicesFieldsDevices[]? fieldsDevices = default)
@@ -32328,16 +31832,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territories,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetEndUserLicenseAgreementsInclude
         {
             app,
             territories,
         }
-
-
-
 
         // /v1/endUserLicenseAgreements/{id}
         public Task<EndUserLicenseAgreementResponse> GetEndUserLicenseAgreements(string id, GetEndUserLicenseAgreementsFieldsEndUserLicenseAgreements[]? fieldsEndUserLicenseAgreements = default, GetEndUserLicenseAgreementsInclude[]? include = default, string[]? fieldsTerritories = default, int? limitTerritories = default)
@@ -32415,16 +31915,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync(message);
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetFinanceReportsFilterReportType
         {
             FINANCIAL,
             FINANCE_DETAIL,
         }
-
-
 
         // /v1/financeReports
         public Task GetFinanceReports(string[] filterRegionCode, string[] filterReportDate, GetFinanceReportsFilterReportType[] filterReportType, string[] filterVendorNumber)
@@ -32805,8 +32301,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/inAppPurchaseAppStoreReviewScreenshots/{id}
         public Task<InAppPurchaseAppStoreReviewScreenshotResponse> GetInAppPurchaseAppStoreReviewScreenshots(string id, GetInAppPurchaseAppStoreReviewScreenshotsFieldsInAppPurchaseAppStoreReviewScreenshots[]? fieldsInAppPurchaseAppStoreReviewScreenshots = default, string[]? include = default)
         {
@@ -33120,8 +32614,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastModifiedDate,
             url,
         }
-
-
 
         // /v1/inAppPurchaseContents/{id}
         public Task<InAppPurchaseContentResponse> GetInAppPurchaseContents(string id, GetInAppPurchaseContentsFieldsInAppPurchaseContents[]? fieldsInAppPurchaseContents = default, string[]? include = default)
@@ -33450,8 +32942,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
-
         // /v1/inAppPurchaseLocalizations/{id}
         public Task<InAppPurchaseLocalizationResponse> GetInAppPurchaseLocalizations(string id, GetInAppPurchaseLocalizationsFieldsInAppPurchaseLocalizations[]? fieldsInAppPurchaseLocalizations = default, string[]? include = default)
         {
@@ -33686,14 +33176,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             manualPrices,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasePriceSchedulesInclude
         {
             inAppPurchase,
             manualPrices,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasePriceSchedulesFieldsInAppPurchasePrices
@@ -33703,8 +33191,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             startDate,
             territory,
         }
-
-
 
         // /v1/inAppPurchasePriceSchedules/{id}
         public Task<InAppPurchasePriceScheduleResponse> GetInAppPurchasePriceSchedules(string id, GetInAppPurchasePriceSchedulesFieldsInAppPurchasePriceSchedules[]? fieldsInAppPurchasePriceSchedules = default, GetInAppPurchasePriceSchedulesInclude[]? include = default, GetInAppPurchasePriceSchedulesFieldsInAppPurchasePrices[]? fieldsInAppPurchasePrices = default, int? limitManualPrices = default)
@@ -34809,9 +34295,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
-
-
         // /v1/inAppPurchases/{id}
         public Task<InAppPurchaseResponse> GetInAppPurchases(string id, GetInAppPurchasesFieldsInAppPurchases[]? fieldsInAppPurchases = default, string[]? include = default, int? limitApps = default)
         {
@@ -35088,7 +34571,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<InAppPurchaseV2Response>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesInclude
         {
@@ -35099,7 +34581,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             pricePoints,
             promotedPurchase,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesFieldsInAppPurchaseAppStoreReviewScreenshots
@@ -35116,7 +34597,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesFieldsPromotedPurchases
         {
@@ -35129,7 +34609,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesFieldsInAppPurchasePricePoints
         {
@@ -35139,7 +34618,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             proceeds,
             territory,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesFieldsInAppPurchaseLocalizations
@@ -35151,14 +34629,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesFieldsInAppPurchasePriceSchedules
         {
             inAppPurchase,
             manualPrices,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesFieldsInAppPurchaseContents
@@ -35169,9 +34645,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastModifiedDate,
             url,
         }
-
-
-
 
         // /v2/inAppPurchases/{id}
         public Task<InAppPurchaseV2Response> GetInAppPurchases(string id, GetInAppPurchasesFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetInAppPurchasesInclude[]? include = default, GetInAppPurchasesFieldsInAppPurchaseAppStoreReviewScreenshots[]? fieldsInAppPurchaseAppStoreReviewScreenshots = default, GetInAppPurchasesFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetInAppPurchasesFieldsInAppPurchasePricePoints[]? fieldsInAppPurchasePricePoints = default, GetInAppPurchasesFieldsInAppPurchaseLocalizations[]? fieldsInAppPurchaseLocalizations = default, GetInAppPurchasesFieldsInAppPurchasePriceSchedules[]? fieldsInAppPurchasePriceSchedules = default, GetInAppPurchasesFieldsInAppPurchaseContents[]? fieldsInAppPurchaseContents = default, int? limitInAppPurchaseLocalizations = default, int? limitPricePoints = default)
@@ -35354,7 +34827,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPreReleaseVersionsFilterBuildsProcessingState
         {
@@ -35364,8 +34836,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             VALID,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPreReleaseVersionsFilterPlatform
         {
@@ -35374,10 +34844,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPreReleaseVersionsSort
         {
@@ -35385,7 +34851,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-version")]
             versionDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPreReleaseVersionsFieldsPreReleaseVersions
@@ -35396,15 +34861,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPreReleaseVersionsInclude
         {
             app,
             builds,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPreReleaseVersionsFieldsApps
@@ -35449,7 +34911,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPreReleaseVersionsFieldsBuilds
         {
@@ -35478,8 +34939,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
-
 
         // /v1/preReleaseVersions
         public Task<PreReleaseVersionsResponse> GetPreReleaseVersions(string[]? filterBuildsExpired = default, GetPreReleaseVersionsFilterBuildsProcessingState[]? filterBuildsProcessingState = default, string[]? filterBuildsVersion = default, GetPreReleaseVersionsFilterPlatform[]? filterPlatform = default, string[]? filterVersion = default, string[]? filterApp = default, string[]? filterBuilds = default, GetPreReleaseVersionsSort[]? sort = default, GetPreReleaseVersionsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, int? limit = default, GetPreReleaseVersionsInclude[]? include = default, GetPreReleaseVersionsFieldsApps[]? fieldsApps = default, GetPreReleaseVersionsFieldsBuilds[]? fieldsBuilds = default, int? limitBuilds = default)
@@ -35611,11 +35070,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public object[]? included { get; set; }
             public Links links { get; set; } = new Links();
         }
-
-
-
-
-
 
         // /v1/preReleaseVersions/{id}
         public Task<PrereleaseVersionResponse> GetPreReleaseVersions(string id, GetPreReleaseVersionsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, GetPreReleaseVersionsInclude[]? include = default, GetPreReleaseVersionsFieldsApps[]? fieldsApps = default, GetPreReleaseVersionsFieldsBuilds[]? fieldsBuilds = default, int? limitBuilds = default)
@@ -35805,14 +35259,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesFilterProfileState
         {
             ACTIVE,
             INVALID,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesFilterProfileType
@@ -35833,8 +35285,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             MAC_CATALYST_APP_DIRECT,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesSort
         {
@@ -35852,7 +35302,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             profileTypeDescending,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesFieldsProfiles
         {
@@ -35869,8 +35318,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uuid,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesInclude
         {
@@ -35878,7 +35325,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             certificates,
             devices,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesFieldsCertificates
@@ -35893,7 +35339,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             serialNumber,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesFieldsDevices
         {
@@ -35906,7 +35351,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             udid,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetProfilesFieldsBundleIds
         {
@@ -35918,9 +35362,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             profiles,
             seedId,
         }
-
-
-
 
         // /v1/profiles
         public Task<ProfilesResponse> GetProfiles(string[]? filterName = default, GetProfilesFilterProfileState[]? filterProfileState = default, GetProfilesFilterProfileType[]? filterProfileType = default, string[]? filterId = default, GetProfilesSort[]? sort = default, GetProfilesFieldsProfiles[]? fieldsProfiles = default, int? limit = default, GetProfilesInclude[]? include = default, GetProfilesFieldsCertificates[]? fieldsCertificates = default, GetProfilesFieldsDevices[]? fieldsDevices = default, GetProfilesFieldsBundleIds[]? fieldsBundleIds = default, int? limitCertificates = default, int? limitDevices = default)
@@ -36197,13 +35638,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
             return SendAsync<ProfileResponse>(message);
         }
-
-
-
-
-
-
-
 
         // /v1/profiles/{id}
         public Task<ProfileResponse> GetProfiles(string id, GetProfilesFieldsProfiles[]? fieldsProfiles = default, GetProfilesInclude[]? include = default, GetProfilesFieldsCertificates[]? fieldsCertificates = default, GetProfilesFieldsDevices[]? fieldsDevices = default, GetProfilesFieldsBundleIds[]? fieldsBundleIds = default, int? limitCertificates = default, int? limitDevices = default)
@@ -36497,8 +35931,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/promotedPurchaseImages/{id}
         public Task<PromotedPurchaseImageResponse> GetPromotedPurchaseImages(string id, GetPromotedPurchaseImagesFieldsPromotedPurchaseImages[]? fieldsPromotedPurchaseImages = default, string[]? include = default)
         {
@@ -36750,7 +36182,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPromotedPurchasesInclude
         {
@@ -36758,7 +36189,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionImages,
             subscription,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPromotedPurchasesFieldsPromotedPurchaseImages
@@ -36774,8 +36204,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
-
 
         // /v1/promotedPurchases/{id}
         public Task<PromotedPurchaseResponse> GetPromotedPurchases(string id, GetPromotedPurchasesFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetPromotedPurchasesInclude[]? include = default, GetPromotedPurchasesFieldsPromotedPurchaseImages[]? fieldsPromotedPurchaseImages = default, int? limitPromotionImages = default)
@@ -37222,7 +36650,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsFilterPlatform
         {
@@ -37230,7 +36657,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             MAC_OS,
             TV_OS,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsFilterState
@@ -37243,7 +36669,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             COMPLETING,
             COMPLETE,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsFieldsReviewSubmissions
@@ -37258,8 +36683,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             submittedDate,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsInclude
         {
@@ -37267,7 +36690,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionForReview,
             items,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsFieldsReviewSubmissionItems
@@ -37281,8 +36703,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             reviewSubmission,
             state,
         }
-
-
 
         // /v1/reviewSubmissions
         public Task<ReviewSubmissionsResponse> GetReviewSubmissions(string[] filterApp, GetReviewSubmissionsFilterPlatform[]? filterPlatform = default, GetReviewSubmissionsFilterState[]? filterState = default, GetReviewSubmissionsFieldsReviewSubmissions[]? fieldsReviewSubmissions = default, int? limit = default, GetReviewSubmissionsInclude[]? include = default, GetReviewSubmissionsFieldsReviewSubmissionItems[]? fieldsReviewSubmissionItems = default, int? limitItems = default)
@@ -37484,10 +36904,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             message.Content = new StringContent(JsonSerializer.Serialize(request), encoding: Encoding.UTF8, mediaType: "application/json");
             return SendAsync<ReviewSubmissionResponse>(message);
         }
-
-
-
-
 
         // /v1/reviewSubmissions/{id}
         public Task<ReviewSubmissionResponse> GetReviewSubmissions(string id, GetReviewSubmissionsFieldsReviewSubmissions[]? fieldsReviewSubmissions = default, GetReviewSubmissionsInclude[]? include = default, GetReviewSubmissionsFieldsReviewSubmissionItems[]? fieldsReviewSubmissionItems = default, int? limitItems = default)
@@ -37976,8 +37392,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/routingAppCoverages/{id}
         public Task<RoutingAppCoverageResponse> GetRoutingAppCoverages(string id, GetRoutingAppCoveragesFieldsRoutingAppCoverages[]? fieldsRoutingAppCoverages = default, string[]? include = default)
         {
@@ -38043,14 +37457,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             YEARLY,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSalesReportsFilterReportSubType
         {
             SUMMARY,
             DETAILED,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSalesReportsFilterReportType
@@ -38063,10 +37475,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             SUBSCRIBER,
             SUBSCRIPTION_OFFER_CODE_REDEMPTION,
         }
-
-
-
-
 
         // /v1/salesReports
         public Task GetSalesReports(GetSalesReportsFilterFrequency[] filterFrequency, GetSalesReportsFilterReportSubType[] filterReportSubType, GetSalesReportsFilterReportType[] filterReportType, string[] filterVendorNumber, string[]? filterReportDate = default, string[]? filterVersion = default)
@@ -38228,8 +37636,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
         }
 
-
-
         // /v1/scmGitReferences/{id}
         public Task<ScmGitReferenceResponse> GetScmGitReferences(string id, GetScmGitReferencesFieldsScmGitReferences[]? fieldsScmGitReferences = default, string[]? include = default)
         {
@@ -38314,8 +37720,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             url,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmProvidersFieldsScmRepositories
         {
@@ -38329,7 +37733,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProvider,
             sshCloneUrl,
         }
-
 
         // /v1/scmProviders
         public Task<ScmProvidersResponse> GetScmProviders(GetScmProvidersFieldsScmProviders[]? fieldsScmProviders = default, int? limit = default, GetScmProvidersFieldsScmRepositories[]? fieldsScmRepositories = default)
@@ -38393,8 +37796,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Data data { get; set; } = new Data();
             public Links links { get; set; } = new Links();
         }
-
-
 
         // /v1/scmProviders/{id}
         public Task<ScmProviderResponse> GetScmProviders(string id, GetScmProvidersFieldsScmProviders[]? fieldsScmProviders = default, GetScmProvidersFieldsScmRepositories[]? fieldsScmRepositories = default)
@@ -38557,8 +37958,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             webUrl,
         }
 
-
-
         // /v1/scmPullRequests/{id}
         public Task<ScmPullRequestResponse> GetScmPullRequests(string id, GetScmPullRequestsFieldsScmPullRequests[]? fieldsScmPullRequests = default, string[]? include = default)
         {
@@ -38665,7 +38064,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmRepositoriesFieldsScmRepositories
         {
@@ -38680,15 +38078,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             sshCloneUrl,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmRepositoriesInclude
         {
             defaultBranch,
             scmProvider,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmRepositoriesFieldsScmGitReferences
@@ -38699,7 +38094,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             repository,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmRepositoriesFieldsScmPullRequests
@@ -38717,7 +38111,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             title,
             webUrl,
         }
-
 
         // /v1/scmRepositories
         public Task<ScmRepositoriesResponse> GetScmRepositories(string[]? filterId = default, GetScmRepositoriesFieldsScmRepositories[]? fieldsScmRepositories = default, int? limit = default, GetScmRepositoriesInclude[]? include = default, GetScmRepositoriesFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetScmRepositoriesFieldsScmPullRequests[]? fieldsScmPullRequests = default)
@@ -38817,10 +38210,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public object[]? included { get; set; }
             public Links links { get; set; } = new Links();
         }
-
-
-
-
 
         // /v1/scmRepositories/{id}
         public Task<ScmRepositoryResponse> GetScmRepositories(string id, GetScmRepositoriesFieldsScmRepositories[]? fieldsScmRepositories = default, GetScmRepositoriesInclude[]? include = default, GetScmRepositoriesFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetScmRepositoriesFieldsScmPullRequests[]? fieldsScmPullRequests = default)
@@ -39277,8 +38666,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         // /v1/subscriptionAppStoreReviewScreenshots/{id}
         public Task<SubscriptionAppStoreReviewScreenshotResponse> GetSubscriptionAppStoreReviewScreenshots(string id, GetSubscriptionAppStoreReviewScreenshotsFieldsSubscriptionAppStoreReviewScreenshots[]? fieldsSubscriptionAppStoreReviewScreenshots = default, string[]? include = default)
         {
@@ -39370,7 +38757,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             app,
             optIn,
         }
-
 
         // /v1/subscriptionGracePeriods/{id}
         public Task<SubscriptionGracePeriodResponse> GetSubscriptionGracePeriods(string id, GetSubscriptionGracePeriodsFieldsSubscriptionGracePeriods[]? fieldsSubscriptionGracePeriods = default)
@@ -39681,8 +39067,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionGroup,
         }
 
-
-
         // /v1/subscriptionGroupLocalizations/{id}
         public Task<SubscriptionGroupLocalizationResponse> GetSubscriptionGroupLocalizations(string id, GetSubscriptionGroupLocalizationsFieldsSubscriptionGroupLocalizations[]? fieldsSubscriptionGroupLocalizations = default, string[]? include = default)
         {
@@ -39950,14 +39334,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptions,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsInclude
         {
             subscriptionGroupLocalizations,
             subscriptions,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsFieldsSubscriptions
@@ -39981,7 +39363,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsFieldsSubscriptionGroupLocalizations
         {
@@ -39991,9 +39372,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             subscriptionGroup,
         }
-
-
-
 
         // /v1/subscriptionGroups/{id}
         public Task<SubscriptionGroupResponse> GetSubscriptionGroups(string id, GetSubscriptionGroupsFieldsSubscriptionGroups[]? fieldsSubscriptionGroups = default, GetSubscriptionGroupsInclude[]? include = default, GetSubscriptionGroupsFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionGroupsFieldsSubscriptionGroupLocalizations[]? fieldsSubscriptionGroupLocalizations = default, int? limitSubscriptionGroupLocalizations = default, int? limitSubscriptions = default)
@@ -40700,8 +40078,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
         }
 
-
-
         // /v1/subscriptionLocalizations/{id}
         public Task<SubscriptionLocalizationResponse> GetSubscriptionLocalizations(string id, GetSubscriptionLocalizationsFieldsSubscriptionLocalizations[]? fieldsSubscriptionLocalizations = default, string[]? include = default)
         {
@@ -41049,8 +40425,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             offerCode,
         }
 
-
-
         // /v1/subscriptionOfferCodeCustomCodes/{id}
         public Task<SubscriptionOfferCodeCustomCodeResponse> GetSubscriptionOfferCodeCustomCodes(string id, GetSubscriptionOfferCodeCustomCodesFieldsSubscriptionOfferCodeCustomCodes[]? fieldsSubscriptionOfferCodeCustomCodes = default, string[]? include = default)
         {
@@ -41383,9 +40757,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             offerCode,
             values,
         }
-
-
-
 
         // /v1/subscriptionOfferCodeOneTimeUseCodes/{id}
         public Task<SubscriptionOfferCodeOneTimeUseCodeResponse> GetSubscriptionOfferCodeOneTimeUseCodes(string id, GetSubscriptionOfferCodeOneTimeUseCodesFieldsSubscriptionOfferCodeOneTimeUseCodes[]? fieldsSubscriptionOfferCodeOneTimeUseCodes = default, string[]? include = default, string[]? fieldsSubscriptionOfferCodeOneTimeUseCodeValues = default)
@@ -41769,7 +41140,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             totalNumberOfCodes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesInclude
         {
@@ -41778,7 +41148,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             prices,
             subscription,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesFieldsSubscriptionOfferCodeCustomCodes
@@ -41791,7 +41160,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             offerCode,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesFieldsSubscriptionOfferCodeOneTimeUseCodes
         {
@@ -41803,17 +41171,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             values,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesFieldsSubscriptionOfferCodePrices
         {
             subscriptionPricePoint,
             territory,
         }
-
-
-
-
 
         // /v1/subscriptionOfferCodes/{id}
         public Task<SubscriptionOfferCodeResponse> GetSubscriptionOfferCodes(string id, GetSubscriptionOfferCodesFieldsSubscriptionOfferCodes[]? fieldsSubscriptionOfferCodes = default, GetSubscriptionOfferCodesInclude[]? include = default, GetSubscriptionOfferCodesFieldsSubscriptionOfferCodeCustomCodes[]? fieldsSubscriptionOfferCodeCustomCodes = default, GetSubscriptionOfferCodesFieldsSubscriptionOfferCodeOneTimeUseCodes[]? fieldsSubscriptionOfferCodeOneTimeUseCodes = default, GetSubscriptionOfferCodesFieldsSubscriptionOfferCodePrices[]? fieldsSubscriptionOfferCodePrices = default, int? limitCustomCodes = default, int? limitOneTimeUseCodes = default, int? limitPrices = default)
@@ -41955,8 +41318,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
             territory,
         }
-
-
 
         // /v1/subscriptionPricePoints/{id}
         public Task<SubscriptionPricePointResponse> GetSubscriptionPricePoints(string id, GetSubscriptionPricePointsFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, string[]? include = default)
@@ -42364,7 +41725,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionPromotionalOffersInclude
         {
@@ -42372,15 +41732,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionPromotionalOffersFieldsSubscriptionPromotionalOfferPrices
         {
             subscriptionPricePoint,
             territory,
         }
-
-
 
         // /v1/subscriptionPromotionalOffers/{id}
         public Task<SubscriptionPromotionalOfferResponse> GetSubscriptionPromotionalOffers(string id, GetSubscriptionPromotionalOffersFieldsSubscriptionPromotionalOffers[]? fieldsSubscriptionPromotionalOffers = default, GetSubscriptionPromotionalOffersInclude[]? include = default, GetSubscriptionPromotionalOffersFieldsSubscriptionPromotionalOfferPrices[]? fieldsSubscriptionPromotionalOfferPrices = default, int? limitPrices = default)
@@ -43200,7 +42557,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsInclude
         {
@@ -43214,7 +42570,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionLocalizations,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsPromotedPurchases
         {
@@ -43227,7 +42582,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsSubscriptionPricePoints
         {
@@ -43238,7 +42592,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
             territory,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsSubscriptionPromotionalOffers
@@ -43251,7 +42604,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             prices,
             subscription,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsSubscriptionOfferCodes
@@ -43270,7 +42622,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             totalNumberOfCodes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsSubscriptionAppStoreReviewScreenshots
         {
@@ -43286,7 +42637,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsSubscriptionPrices
         {
@@ -43297,7 +42647,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPricePoint,
             territory,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsSubscriptionIntroductoryOffers
@@ -43312,7 +42661,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsFieldsSubscriptionLocalizations
         {
@@ -43322,12 +42670,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             subscription,
         }
-
-
-
-
-
-
 
         // /v1/subscriptions/{id}
         public Task<SubscriptionResponse> GetSubscriptions(string id, GetSubscriptionsFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionsInclude[]? include = default, GetSubscriptionsFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetSubscriptionsFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, GetSubscriptionsFieldsSubscriptionPromotionalOffers[]? fieldsSubscriptionPromotionalOffers = default, GetSubscriptionsFieldsSubscriptionOfferCodes[]? fieldsSubscriptionOfferCodes = default, GetSubscriptionsFieldsSubscriptionAppStoreReviewScreenshots[]? fieldsSubscriptionAppStoreReviewScreenshots = default, GetSubscriptionsFieldsSubscriptionPrices[]? fieldsSubscriptionPrices = default, GetSubscriptionsFieldsSubscriptionIntroductoryOffers[]? fieldsSubscriptionIntroductoryOffers = default, GetSubscriptionsFieldsSubscriptionLocalizations[]? fieldsSubscriptionLocalizations = default, int? limitIntroductoryOffers = default, int? limitOfferCodes = default, int? limitPrices = default, int? limitPromotionalOffers = default, int? limitSubscriptionLocalizations = default)
@@ -43574,8 +42916,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
-
 
         // /v1/territories
         public Task<TerritoriesResponse> GetTerritories(string[]? fieldsTerritories = default, int? limit = default)
@@ -44391,7 +43731,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetUserInvitationsFilterRoles
         {
@@ -44410,8 +43749,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             CLOUD_MANAGED_APP_DISTRIBUTION,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetUserInvitationsSort
         {
@@ -44422,7 +43759,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-lastName")]
             lastNameDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetUserInvitationsFieldsUserInvitations
@@ -44436,9 +43772,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             roles,
             visibleApps,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetUserInvitationsFieldsApps
@@ -44482,8 +43815,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
-
 
         // /v1/userInvitations
         public Task<UserInvitationsResponse> GetUserInvitations(string[]? filterEmail = default, GetUserInvitationsFilterRoles[]? filterRoles = default, string[]? filterVisibleApps = default, GetUserInvitationsSort[]? sort = default, GetUserInvitationsFieldsUserInvitations[]? fieldsUserInvitations = default, int? limit = default, string[]? include = default, GetUserInvitationsFieldsApps[]? fieldsApps = default, int? limitVisibleApps = default)
@@ -45366,10 +44697,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<UserInvitationResponse>(message);
         }
 
-
-
-
-
         // /v1/userInvitations/{id}
         public Task<UserInvitationResponse> GetUserInvitations(string id, GetUserInvitationsFieldsUserInvitations[]? fieldsUserInvitations = default, string[]? include = default, GetUserInvitationsFieldsApps[]? fieldsApps = default, int? limitVisibleApps = default)
         {
@@ -46217,9 +45544,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             CLOUD_MANAGED_APP_DISTRIBUTION,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetUsersSort
         {
@@ -46230,7 +45554,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-username")]
             usernameDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetUsersFieldsUsers
@@ -46243,9 +45566,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             username,
             visibleApps,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetUsersFieldsApps
@@ -46289,8 +45609,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
-
 
         // /v1/users
         public Task<UsersResponse> GetUsers(GetUsersFilterRoles[]? filterRoles = default, string[]? filterUsername = default, string[]? filterVisibleApps = default, GetUsersSort[]? sort = default, GetUsersFieldsUsers[]? fieldsUsers = default, int? limit = default, string[]? include = default, GetUsersFieldsApps[]? fieldsApps = default, int? limitVisibleApps = default)
@@ -47105,10 +46423,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
-
-
-
         // /v1/users/{id}
         public Task<UserResponse> GetUsers(string id, GetUsersFieldsUsers[]? fieldsUsers = default, string[]? include = default, GetUsersFieldsApps[]? fieldsApps = default, int? limitVisibleApps = default)
         {
@@ -47213,7 +46527,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subcategories,
         }
 
-
         // /v1/appCategories/{id}/parent
         public Task<AppCategoryResponse> GetAppCategoriesParent(string id, GetAppCategoriesParentFieldsAppCategories[]? fieldsAppCategories = default)
         {
@@ -47234,8 +46547,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platforms,
             subcategories,
         }
-
-
 
         // /v1/appCategories/{id}/subcategories
         public Task<AppCategoriesResponse> GetAppCategoriesSubcategories(string id, GetAppCategoriesSubcategoriesFieldsAppCategories[]? fieldsAppCategories = default, int? limit = default)
@@ -47265,7 +46576,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperienceLocalizationsAppClipHeaderImageFieldsAppClipDefaultExperienceLocalizations
         {
@@ -47274,8 +46584,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             subtitle,
         }
-
-
 
         // /v1/appClipDefaultExperienceLocalizations/{id}/appClipHeaderImage
         public Task<AppClipHeaderImageResponse> GetAppClipDefaultExperienceLocalizationsAppClipHeaderImage(string id, GetAppClipDefaultExperienceLocalizationsAppClipHeaderImageFieldsAppClipHeaderImages[]? fieldsAppClipHeaderImages = default, GetAppClipDefaultExperienceLocalizationsAppClipHeaderImageFieldsAppClipDefaultExperienceLocalizations[]? fieldsAppClipDefaultExperienceLocalizations = default, string[]? include = default)
@@ -47301,7 +46609,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             invocationUrls,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesAppClipAppStoreReviewDetailFieldsAppClipDefaultExperiences
         {
@@ -47312,8 +46619,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperienceTemplate,
             releaseWithAppStoreVersion,
         }
-
-
 
         // /v1/appClipDefaultExperiences/{id}/appClipAppStoreReviewDetail
         public Task<AppClipAppStoreReviewDetailResponse> GetAppClipDefaultExperiencesAppClipAppStoreReviewDetail(string id, GetAppClipDefaultExperiencesAppClipAppStoreReviewDetailFieldsAppClipAppStoreReviewDetails[]? fieldsAppClipAppStoreReviewDetails = default, GetAppClipDefaultExperiencesAppClipAppStoreReviewDetailFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, string[]? include = default)
@@ -47420,7 +46725,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsFieldsAppClipDefaultExperiences
         {
@@ -47432,7 +46736,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsFieldsAppClipDefaultExperienceLocalizations
         {
@@ -47441,7 +46744,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             subtitle,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsFieldsAppClipHeaderImages
@@ -47456,15 +46758,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsInclude
         {
             appClipDefaultExperience,
             appClipHeaderImage,
         }
-
 
         // /v1/appClipDefaultExperiences/{id}/appClipDefaultExperienceLocalizations
         public Task<AppClipDefaultExperienceLocalizationsResponse> GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizations(string id, string[]? filterLocale = default, GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsFieldsAppClipDefaultExperienceLocalizations[]? fieldsAppClipDefaultExperienceLocalizations = default, GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsFieldsAppClipHeaderImages[]? fieldsAppClipHeaderImages = default, int? limit = default, GetAppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsInclude[]? include = default)
@@ -47554,7 +46853,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             trafficProportion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAgeRatingDeclarations
         {
@@ -47577,8 +46875,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             violenceRealisticProlongedGraphicOrSadistic,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreReviewDetails
         {
@@ -47593,7 +46889,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             demoAccountRequired,
             notes,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreVersions
@@ -47618,7 +46913,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             routingAppCoverage,
             versionString,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsApps
@@ -47663,7 +46957,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsRoutingAppCoverages
         {
@@ -47676,7 +46969,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppClipDefaultExperiences
         {
@@ -47688,7 +46980,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreVersionPhasedReleases
         {
@@ -47698,7 +46989,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             startDate,
             totalPauseDuration,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsBuilds
@@ -47729,7 +47019,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreVersionLocalizations
         {
@@ -47745,9 +47034,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipDefaultExperiencesReleaseWithAppStoreVersionInclude
         {
@@ -47762,7 +47048,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             build,
             routingAppCoverage,
         }
-
 
         // /v1/appClipDefaultExperiences/{id}/releaseWithAppStoreVersion
         public Task<AppStoreVersionResponse> GetAppClipDefaultExperiencesReleaseWithAppStoreVersion(string id, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAgeRatingDeclarations[]? fieldsAgeRatingDeclarations = default, string[]? fieldsAppStoreVersionSubmissions = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreReviewDetails[]? fieldsAppStoreReviewDetails = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsApps[]? fieldsApps = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsRoutingAppCoverages[]? fieldsRoutingAppCoverages = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreVersionPhasedReleases[]? fieldsAppStoreVersionPhasedReleases = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsBuilds[]? fieldsBuilds = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limitAppStoreVersionLocalizations = default, int? limitAppStoreVersionExperiments = default, GetAppClipDefaultExperiencesReleaseWithAppStoreVersionInclude[]? include = default)
@@ -48112,7 +47397,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             PLAY,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipAdvancedExperiencesFilterPlaceStatus
         {
@@ -48121,7 +47405,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             NO_MATCH,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipAdvancedExperiencesFilterStatus
         {
@@ -48129,7 +47412,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             DEACTIVATED,
             APP_TRANSFER_IN_PROGRESS,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipAdvancedExperiencesFieldsAppClipAdvancedExperiences
@@ -48149,7 +47431,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipAdvancedExperiencesFieldsAppClips
         {
@@ -48158,7 +47439,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperiences,
             bundleId,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipAdvancedExperiencesFieldsAppClipAdvancedExperienceImages
@@ -48172,7 +47452,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipAdvancedExperiencesFieldsAppClipAdvancedExperienceLocalizations
         {
@@ -48181,9 +47460,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             title,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipAdvancedExperiencesInclude
         {
@@ -48191,7 +47467,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             headerImage,
             localizations,
         }
-
 
         // /v1/appClips/{id}/appClipAdvancedExperiences
         public Task<AppClipAdvancedExperiencesResponse> GetAppClipsAppClipAdvancedExperiences(string id, GetAppClipsAppClipAdvancedExperiencesFilterAction[]? filterAction = default, GetAppClipsAppClipAdvancedExperiencesFilterPlaceStatus[]? filterPlaceStatus = default, GetAppClipsAppClipAdvancedExperiencesFilterStatus[]? filterStatus = default, GetAppClipsAppClipAdvancedExperiencesFieldsAppClipAdvancedExperiences[]? fieldsAppClipAdvancedExperiences = default, GetAppClipsAppClipAdvancedExperiencesFieldsAppClips[]? fieldsAppClips = default, GetAppClipsAppClipAdvancedExperiencesFieldsAppClipAdvancedExperienceImages[]? fieldsAppClipAdvancedExperienceImages = default, GetAppClipsAppClipAdvancedExperiencesFieldsAppClipAdvancedExperienceLocalizations[]? fieldsAppClipAdvancedExperienceLocalizations = default, int? limit = default, int? limitLocalizations = default, GetAppClipsAppClipAdvancedExperiencesInclude[]? include = default)
@@ -48368,7 +47643,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipDefaultExperiencesFieldsAppClips
         {
@@ -48378,14 +47652,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             bundleId,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipDefaultExperiencesFieldsAppClipAppStoreReviewDetails
         {
             appClipDefaultExperience,
             invocationUrls,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipDefaultExperiencesFieldsAppStoreVersions
@@ -48411,7 +47683,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipDefaultExperiencesFieldsAppClipDefaultExperiences
         {
@@ -48423,7 +47694,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipDefaultExperiencesFieldsAppClipDefaultExperienceLocalizations
         {
@@ -48433,9 +47703,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subtitle,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppClipsAppClipDefaultExperiencesInclude
         {
@@ -48444,7 +47711,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperienceLocalizations,
             releaseWithAppStoreVersion,
         }
-
 
         // /v1/appClips/{id}/appClipDefaultExperiences
         public Task<AppClipDefaultExperiencesResponse> GetAppClipsAppClipDefaultExperiences(string id, bool? existsReleaseWithAppStoreVersion = default, GetAppClipsAppClipDefaultExperiencesFieldsAppClips[]? fieldsAppClips = default, GetAppClipsAppClipDefaultExperiencesFieldsAppClipAppStoreReviewDetails[]? fieldsAppClipAppStoreReviewDetails = default, GetAppClipsAppClipDefaultExperiencesFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppClipsAppClipDefaultExperiencesFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetAppClipsAppClipDefaultExperiencesFieldsAppClipDefaultExperienceLocalizations[]? fieldsAppClipDefaultExperienceLocalizations = default, int? limit = default, int? limitAppClipDefaultExperienceLocalizations = default, GetAppClipsAppClipDefaultExperiencesInclude[]? include = default)
@@ -48651,9 +47917,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             APPLE_TV,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppCustomProductPageLocalizations
         {
@@ -48664,7 +47927,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -48673,7 +47935,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppPreviews
@@ -48691,7 +47952,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             videoUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppPreviewSets
         {
@@ -48701,7 +47961,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             previewType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppStoreVersionLocalizations
@@ -48718,9 +47977,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppPreviewSetsInclude
         {
@@ -48729,7 +47985,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         // /v1/appCustomProductPageLocalizations/{id}/appPreviewSets
         public Task<AppPreviewSetsResponse> GetAppCustomProductPageLocalizationsAppPreviewSets(string id, GetAppCustomProductPageLocalizationsAppPreviewSetsFilterPreviewType[]? filterPreviewType = default, string[]? filterAppStoreVersionExperimentTreatmentLocalization = default, string[]? filterAppStoreVersionLocalization = default, GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppPreviews[]? fieldsAppPreviews = default, GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, GetAppCustomProductPageLocalizationsAppPreviewSetsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default, int? limitAppPreviews = default, GetAppCustomProductPageLocalizationsAppPreviewSetsInclude[]? include = default)
@@ -48972,9 +48227,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             IMESSAGE_APP_IPAD_97,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppScreenshotSets
         {
@@ -48984,7 +48236,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             screenshotDisplayType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppCustomProductPageLocalizations
@@ -48996,7 +48247,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -49005,7 +48255,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppScreenshots
@@ -49022,7 +48271,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppStoreVersionLocalizations
         {
@@ -49038,9 +48286,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageLocalizationsAppScreenshotSetsInclude
         {
@@ -49049,7 +48294,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         // /v1/appCustomProductPageLocalizations/{id}/appScreenshotSets
         public Task<AppScreenshotSetsResponse> GetAppCustomProductPageLocalizationsAppScreenshotSets(string id, GetAppCustomProductPageLocalizationsAppScreenshotSetsFilterScreenshotDisplayType[]? filterScreenshotDisplayType = default, string[]? filterAppStoreVersionExperimentTreatmentLocalization = default, string[]? filterAppStoreVersionLocalization = default, GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppScreenshots[]? fieldsAppScreenshots = default, GetAppCustomProductPageLocalizationsAppScreenshotSetsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default, int? limitAppScreenshots = default, GetAppCustomProductPageLocalizationsAppScreenshotSetsInclude[]? include = default)
@@ -49215,7 +48459,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppScreenshotSets
         {
@@ -49225,7 +48468,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             screenshotDisplayType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppCustomProductPageLocalizations
@@ -49237,7 +48479,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppCustomProductPageVersions
         {
@@ -49246,7 +48487,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             version,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppPreviewSets
@@ -49258,10 +48498,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             previewType,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsInclude
         {
@@ -49269,7 +48505,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appPreviewSets,
             appScreenshotSets,
         }
-
 
         // /v1/appCustomProductPageVersions/{id}/appCustomProductPageLocalizations
         public Task<AppCustomProductPageLocalizationsResponse> GetAppCustomProductPageVersionsAppCustomProductPageLocalizations(string id, string[]? filterLocale = default, GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppCustomProductPageVersions[]? fieldsAppCustomProductPageVersions = default, GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, int? limit = default, int? limitAppScreenshotSets = default, int? limitAppPreviewSets = default, GetAppCustomProductPageVersionsAppCustomProductPageLocalizationsInclude[]? include = default)
@@ -49425,7 +48660,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             REJECTED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPagesAppCustomProductPageVersionsFieldsAppCustomProductPageLocalizations
         {
@@ -49436,7 +48670,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPagesAppCustomProductPageVersionsFieldsAppCustomProductPageVersions
         {
@@ -49445,7 +48678,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             version,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPagesAppCustomProductPageVersionsFieldsAppCustomProductPages
@@ -49459,16 +48691,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             visible,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppCustomProductPagesAppCustomProductPageVersionsInclude
         {
             appCustomProductPage,
             appCustomProductPageLocalizations,
         }
-
 
         // /v1/appCustomProductPages/{id}/appCustomProductPageVersions
         public Task<AppCustomProductPageVersionsResponse> GetAppCustomProductPagesAppCustomProductPageVersions(string id, GetAppCustomProductPagesAppCustomProductPageVersionsFilterState[]? filterState = default, GetAppCustomProductPagesAppCustomProductPageVersionsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppCustomProductPagesAppCustomProductPageVersionsFieldsAppCustomProductPageVersions[]? fieldsAppCustomProductPageVersions = default, GetAppCustomProductPagesAppCustomProductPageVersionsFieldsAppCustomProductPages[]? fieldsAppCustomProductPages = default, int? limit = default, int? limitAppCustomProductPageLocalizations = default, GetAppCustomProductPagesAppCustomProductPageVersionsInclude[]? include = default)
@@ -49537,7 +48765,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
 
         // /v1/appEncryptionDeclarations/{id}/app
         public Task<AppResponse> GetAppEncryptionDeclarationsApp(string id, GetAppEncryptionDeclarationsAppFieldsApps[]? fieldsApps = default)
@@ -49825,7 +49052,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventLocalizationsAppEventScreenshotsFieldsAppEventLocalizations
         {
@@ -49837,9 +49063,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             shortDescription,
         }
-
-
-
 
         // /v1/appEventLocalizations/{id}/appEventScreenshots
         public Task<AppEventScreenshotsResponse> GetAppEventLocalizationsAppEventScreenshots(string id, GetAppEventLocalizationsAppEventScreenshotsFieldsAppEventScreenshots[]? fieldsAppEventScreenshots = default, GetAppEventLocalizationsAppEventScreenshotsFieldsAppEventLocalizations[]? fieldsAppEventLocalizations = default, int? limit = default, string[]? include = default)
@@ -50112,7 +49335,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             videoUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventLocalizationsAppEventVideoClipsFieldsAppEventLocalizations
         {
@@ -50124,9 +49346,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             shortDescription,
         }
-
-
-
 
         // /v1/appEventLocalizations/{id}/appEventVideoClips
         public Task<AppEventVideoClipsResponse> GetAppEventLocalizationsAppEventVideoClips(string id, GetAppEventLocalizationsAppEventVideoClipsFieldsAppEventVideoClips[]? fieldsAppEventVideoClips = default, GetAppEventLocalizationsAppEventVideoClipsFieldsAppEventLocalizations[]? fieldsAppEventLocalizations = default, int? limit = default, string[]? include = default)
@@ -50294,7 +49513,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventsLocalizationsFieldsAppEventVideoClips
         {
@@ -50310,7 +49528,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             videoUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventsLocalizationsFieldsAppEventLocalizations
         {
@@ -50322,7 +49539,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             shortDescription,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventsLocalizationsFieldsAppEvents
@@ -50341,10 +49557,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territorySchedules,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppEventsLocalizationsInclude
         {
@@ -50352,7 +49564,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appEventScreenshots,
             appEventVideoClips,
         }
-
 
         // /v1/appEvents/{id}/localizations
         public Task<AppEventLocalizationsResponse> GetAppEventsLocalizations(string id, GetAppEventsLocalizationsFieldsAppEventScreenshots[]? fieldsAppEventScreenshots = default, GetAppEventsLocalizationsFieldsAppEventVideoClips[]? fieldsAppEventVideoClips = default, GetAppEventsLocalizationsFieldsAppEventLocalizations[]? fieldsAppEventLocalizations = default, GetAppEventsLocalizationsFieldsAppEvents[]? fieldsAppEvents = default, int? limit = default, int? limitAppEventScreenshots = default, int? limitAppEventVideoClips = default, GetAppEventsLocalizationsInclude[]? include = default)
@@ -50402,7 +49613,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             violenceRealistic,
             violenceRealisticProlongedGraphicOrSadistic,
         }
-
 
         // /v1/appInfos/{id}/ageRatingDeclaration
         public Task<AgeRatingDeclarationResponse> GetAppInfosAgeRatingDeclaration(string id, GetAppInfosAgeRatingDeclarationFieldsAgeRatingDeclarations[]? fieldsAgeRatingDeclarations = default)
@@ -50747,7 +49957,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppInfosAppInfoLocalizationsFieldsAppInfos
         {
@@ -50766,7 +49975,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             secondarySubcategoryTwo,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppInfosAppInfoLocalizationsFieldsAppInfoLocalizations
         {
@@ -50778,9 +49986,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             privacyPolicyUrl,
             subtitle,
         }
-
-
-
 
         // /v1/appInfos/{id}/appInfoLocalizations
         public Task<AppInfoLocalizationsResponse> GetAppInfosAppInfoLocalizations(string id, string[]? filterLocale = default, GetAppInfosAppInfoLocalizationsFieldsAppInfos[]? fieldsAppInfos = default, GetAppInfosAppInfoLocalizationsFieldsAppInfoLocalizations[]? fieldsAppInfoLocalizations = default, int? limit = default, string[]? include = default)
@@ -50811,7 +50016,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subcategories,
         }
 
-
         // /v1/appInfos/{id}/primaryCategory
         public Task<AppCategoryResponse> GetAppInfosPrimaryCategory(string id, GetAppInfosPrimaryCategoryFieldsAppCategories[]? fieldsAppCategories = default)
         {
@@ -50832,7 +50036,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platforms,
             subcategories,
         }
-
 
         // /v1/appInfos/{id}/primarySubcategoryOne
         public Task<AppCategoryResponse> GetAppInfosPrimarySubcategoryOne(string id, GetAppInfosPrimarySubcategoryOneFieldsAppCategories[]? fieldsAppCategories = default)
@@ -50855,7 +50058,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subcategories,
         }
 
-
         // /v1/appInfos/{id}/primarySubcategoryTwo
         public Task<AppCategoryResponse> GetAppInfosPrimarySubcategoryTwo(string id, GetAppInfosPrimarySubcategoryTwoFieldsAppCategories[]? fieldsAppCategories = default)
         {
@@ -50876,7 +50078,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platforms,
             subcategories,
         }
-
 
         // /v1/appInfos/{id}/secondaryCategory
         public Task<AppCategoryResponse> GetAppInfosSecondaryCategory(string id, GetAppInfosSecondaryCategoryFieldsAppCategories[]? fieldsAppCategories = default)
@@ -50899,7 +50100,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subcategories,
         }
 
-
         // /v1/appInfos/{id}/secondarySubcategoryOne
         public Task<AppCategoryResponse> GetAppInfosSecondarySubcategoryOne(string id, GetAppInfosSecondarySubcategoryOneFieldsAppCategories[]? fieldsAppCategories = default)
         {
@@ -50920,7 +50120,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platforms,
             subcategories,
         }
-
 
         // /v1/appInfos/{id}/secondarySubcategoryTwo
         public Task<AppCategoryResponse> GetAppInfosSecondarySubcategoryTwo(string id, GetAppInfosSecondarySubcategoryTwoFieldsAppCategories[]? fieldsAppCategories = default)
@@ -50965,7 +50164,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/appPreviewSets/{id}/relationships/appPreviews
         public Task<GetAppPreviewSetsAppPreviewsResponse> GetAppPreviewSetsAppPreviews(string id, int? limit = default)
@@ -51274,7 +50472,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             videoUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPreviewSetsAppPreviewsFieldsAppPreviewSets
         {
@@ -51284,9 +50481,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             previewType,
         }
-
-
-
 
         // /v1/appPreviewSets/{id}/appPreviews
         public Task<AppPreviewsResponse> GetAppPreviewSetsAppPreviews(string id, GetAppPreviewSetsAppPreviewsFieldsAppPreviews[]? fieldsAppPreviews = default, GetAppPreviewSetsAppPreviewsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, int? limit = default, string[]? include = default)
@@ -51336,7 +50530,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
         }
 
-
         // /v1/appPricePoints/{id}/territory
         public Task<TerritoryResponse> GetAppPricePointsTerritory(string id, string[]? fieldsTerritories = default)
         {
@@ -51350,8 +50543,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<TerritoryResponse>(message);
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPriceTiersPricePointsFieldsAppPricePoints
         {
@@ -51361,16 +50552,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppPriceTiersPricePointsInclude
         {
             priceTier,
             territory,
         }
-
 
         // /v1/appPriceTiers/{id}/pricePoints
         public Task<AppPricePointsResponse> GetAppPriceTiersPricePoints(string id, string[]? filterTerritory = default, string[]? fieldsAppPriceTiers = default, GetAppPriceTiersPricePointsFieldsAppPricePoints[]? fieldsAppPricePoints = default, string[]? fieldsTerritories = default, int? limit = default, GetAppPriceTiersPricePointsInclude[]? include = default)
@@ -51425,7 +50612,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/appScreenshotSets/{id}/relationships/appScreenshots
         public Task<GetAppScreenshotSetsAppScreenshotsResponse> GetAppScreenshotSetsAppScreenshots(string id, int? limit = default)
@@ -51743,7 +50929,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             screenshotDisplayType,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppScreenshotSetsAppScreenshotsFieldsAppScreenshots
         {
@@ -51758,9 +50943,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
-
-
 
         // /v1/appScreenshotSets/{id}/appScreenshots
         public Task<AppScreenshotsResponse> GetAppScreenshotSetsAppScreenshots(string id, GetAppScreenshotSetsAppScreenshotsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppScreenshotSetsAppScreenshotsFieldsAppScreenshots[]? fieldsAppScreenshots = default, int? limit = default, string[]? include = default)
@@ -51990,7 +51172,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             notes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreReviewDetailsAppStoreReviewAttachmentsFieldsAppStoreReviewAttachments
         {
@@ -52002,9 +51183,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
-
-
 
         // /v1/appStoreReviewDetails/{id}/appStoreReviewAttachments
         public Task<AppStoreReviewAttachmentsResponse> GetAppStoreReviewDetailsAppStoreReviewAttachments(string id, GetAppStoreReviewDetailsAppStoreReviewAttachmentsFieldsAppStoreReviewDetails[]? fieldsAppStoreReviewDetails = default, GetAppStoreReviewDetailsAppStoreReviewAttachmentsFieldsAppStoreReviewAttachments[]? fieldsAppStoreReviewAttachments = default, int? limit = default, string[]? include = default)
@@ -52045,9 +51223,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             APPLE_TV,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppCustomProductPageLocalizations
         {
@@ -52058,7 +51233,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -52067,7 +51241,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppPreviews
@@ -52085,7 +51258,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             videoUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppPreviewSets
         {
@@ -52095,7 +51267,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             previewType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppStoreVersionLocalizations
@@ -52112,9 +51283,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsInclude
         {
@@ -52123,7 +51291,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         // /v1/appStoreVersionExperimentTreatmentLocalizations/{id}/appPreviewSets
         public Task<AppPreviewSetsResponse> GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSets(string id, GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFilterPreviewType[]? filterPreviewType = default, string[]? filterAppCustomProductPageLocalization = default, string[]? filterAppStoreVersionLocalization = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppPreviews[]? fieldsAppPreviews = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default, int? limitAppPreviews = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppPreviewSetsInclude[]? include = default)
@@ -52194,9 +51361,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             IMESSAGE_APP_IPAD_97,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppScreenshotSets
         {
@@ -52206,7 +51370,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             screenshotDisplayType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppCustomProductPageLocalizations
@@ -52218,7 +51381,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -52227,7 +51389,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppScreenshots
@@ -52244,7 +51405,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppStoreVersionLocalizations
         {
@@ -52260,9 +51420,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsInclude
         {
@@ -52271,7 +51428,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         // /v1/appStoreVersionExperimentTreatmentLocalizations/{id}/appScreenshotSets
         public Task<AppScreenshotSetsResponse> GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSets(string id, GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFilterScreenshotDisplayType[]? filterScreenshotDisplayType = default, string[]? filterAppCustomProductPageLocalization = default, string[]? filterAppStoreVersionLocalization = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppScreenshots[]? fieldsAppScreenshots = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default, int? limitAppScreenshots = default, GetAppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsInclude[]? include = default)
@@ -52436,7 +51592,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppScreenshotSets
         {
@@ -52446,7 +51601,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             screenshotDisplayType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppStoreVersionExperimentTreatments
@@ -52459,7 +51613,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotedDate,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -52468,7 +51621,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppPreviewSets
@@ -52480,10 +51632,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             previewType,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsInclude
         {
@@ -52491,7 +51639,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appScreenshotSets,
             appStoreVersionExperimentTreatment,
         }
-
 
         // /v1/appStoreVersionExperimentTreatments/{id}/appStoreVersionExperimentTreatmentLocalizations
         public Task<AppStoreVersionExperimentTreatmentLocalizationsResponse> GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizations(string id, string[]? filterLocale = default, GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppStoreVersionExperimentTreatments[]? fieldsAppStoreVersionExperimentTreatments = default, GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, int? limit = default, int? limitAppScreenshotSets = default, int? limitAppPreviewSets = default, GetAppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsInclude[]? include = default)
@@ -52645,7 +51792,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             trafficProportion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperimentTreatments
         {
@@ -52657,7 +51803,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotedDate,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -52667,16 +51812,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsInclude
         {
             appStoreVersionExperiment,
             appStoreVersionExperimentTreatmentLocalizations,
         }
-
 
         // /v1/appStoreVersionExperiments/{id}/appStoreVersionExperimentTreatments
         public Task<AppStoreVersionExperimentTreatmentsResponse> GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatments(string id, GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperimentTreatments[]? fieldsAppStoreVersionExperimentTreatments = default, GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, int? limit = default, int? limitAppStoreVersionExperimentTreatmentLocalizations = default, GetAppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsInclude[]? include = default)
@@ -52721,9 +51862,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             APPLE_TV,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppCustomProductPageLocalizations
         {
@@ -52734,7 +51872,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -52743,7 +51880,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppPreviews
@@ -52761,7 +51897,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             videoUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppPreviewSets
         {
@@ -52771,7 +51906,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             previewType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppStoreVersionLocalizations
@@ -52788,9 +51922,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppPreviewSetsInclude
         {
@@ -52799,7 +51930,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         // /v1/appStoreVersionLocalizations/{id}/appPreviewSets
         public Task<AppPreviewSetsResponse> GetAppStoreVersionLocalizationsAppPreviewSets(string id, GetAppStoreVersionLocalizationsAppPreviewSetsFilterPreviewType[]? filterPreviewType = default, string[]? filterAppCustomProductPageLocalization = default, string[]? filterAppStoreVersionExperimentTreatmentLocalization = default, GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppPreviews[]? fieldsAppPreviews = default, GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppPreviewSets[]? fieldsAppPreviewSets = default, GetAppStoreVersionLocalizationsAppPreviewSetsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default, int? limitAppPreviews = default, GetAppStoreVersionLocalizationsAppPreviewSetsInclude[]? include = default)
@@ -52870,9 +52000,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             IMESSAGE_APP_IPAD_97,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppScreenshotSets
         {
@@ -52882,7 +52009,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionLocalization,
             screenshotDisplayType,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppCustomProductPageLocalizations
@@ -52894,7 +52020,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalText,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppStoreVersionExperimentTreatmentLocalizations
         {
@@ -52903,7 +52028,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatment,
             locale,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppScreenshots
@@ -52920,7 +52044,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppStoreVersionLocalizations
         {
@@ -52936,9 +52059,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionLocalizationsAppScreenshotSetsInclude
         {
@@ -52947,7 +52067,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionExperimentTreatmentLocalization,
             appStoreVersionLocalization,
         }
-
 
         // /v1/appStoreVersionLocalizations/{id}/appScreenshotSets
         public Task<AppScreenshotSetsResponse> GetAppStoreVersionLocalizationsAppScreenshotSets(string id, GetAppStoreVersionLocalizationsAppScreenshotSetsFilterScreenshotDisplayType[]? filterScreenshotDisplayType = default, string[]? filterAppCustomProductPageLocalization = default, string[]? filterAppStoreVersionExperimentTreatmentLocalization = default, GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppScreenshotSets[]? fieldsAppScreenshotSets = default, GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppCustomProductPageLocalizations[]? fieldsAppCustomProductPageLocalizations = default, GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppStoreVersionExperimentTreatmentLocalizations[]? fieldsAppStoreVersionExperimentTreatmentLocalizations = default, GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppScreenshots[]? fieldsAppScreenshots = default, GetAppStoreVersionLocalizationsAppScreenshotSetsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default, int? limitAppScreenshots = default, GetAppStoreVersionLocalizationsAppScreenshotSetsInclude[]? include = default)
@@ -53003,7 +52122,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             violenceRealistic,
             violenceRealisticProlongedGraphicOrSadistic,
         }
-
 
         // /v1/appStoreVersions/{id}/ageRatingDeclaration
         public Task<AgeRatingDeclarationResponse> GetAppStoreVersionsAgeRatingDeclaration(string id, GetAppStoreVersionsAgeRatingDeclarationFieldsAgeRatingDeclarations[]? fieldsAgeRatingDeclarations = default)
@@ -53078,14 +52196,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             bundleId,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppClipDefaultExperienceFieldsAppClipAppStoreReviewDetails
         {
             appClipDefaultExperience,
             invocationUrls,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppClipDefaultExperienceFieldsAppStoreVersions
@@ -53111,7 +52227,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppClipDefaultExperienceFieldsAppClipDefaultExperiences
         {
@@ -53123,7 +52238,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppClipDefaultExperienceFieldsAppClipDefaultExperienceLocalizations
         {
@@ -53133,8 +52247,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subtitle,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppClipDefaultExperienceInclude
         {
@@ -53143,7 +52255,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperienceLocalizations,
             releaseWithAppStoreVersion,
         }
-
 
         // /v1/appStoreVersions/{id}/appClipDefaultExperience
         public Task<AppClipDefaultExperienceResponse> GetAppStoreVersionsAppClipDefaultExperience(string id, GetAppStoreVersionsAppClipDefaultExperienceFieldsAppClips[]? fieldsAppClips = default, GetAppStoreVersionsAppClipDefaultExperienceFieldsAppClipAppStoreReviewDetails[]? fieldsAppClipAppStoreReviewDetails = default, GetAppStoreVersionsAppClipDefaultExperienceFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppStoreVersionsAppClipDefaultExperienceFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetAppStoreVersionsAppClipDefaultExperienceFieldsAppClipDefaultExperienceLocalizations[]? fieldsAppClipDefaultExperienceLocalizations = default, int? limitAppClipDefaultExperienceLocalizations = default, GetAppStoreVersionsAppClipDefaultExperienceInclude[]? include = default)
@@ -53185,7 +52296,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             notes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreReviewDetailFieldsAppStoreVersions
         {
@@ -53210,7 +52320,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreReviewDetailFieldsAppStoreReviewAttachments
         {
@@ -53223,15 +52332,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreReviewDetailInclude
         {
             appStoreReviewAttachments,
             appStoreVersion,
         }
-
 
         // /v1/appStoreVersions/{id}/appStoreReviewDetail
         public Task<AppStoreReviewDetailResponse> GetAppStoreVersionsAppStoreReviewDetail(string id, GetAppStoreVersionsAppStoreReviewDetailFieldsAppStoreReviewDetails[]? fieldsAppStoreReviewDetails = default, GetAppStoreVersionsAppStoreReviewDetailFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppStoreVersionsAppStoreReviewDetailFieldsAppStoreReviewAttachments[]? fieldsAppStoreReviewAttachments = default, int? limitAppStoreReviewAttachments = default, GetAppStoreVersionsAppStoreReviewDetailInclude[]? include = default)
@@ -53385,7 +52491,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             STOPPED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreVersionExperimentsFieldsAppStoreVersionExperiments
         {
@@ -53400,7 +52505,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             trafficProportion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreVersionExperimentsFieldsAppStoreVersionExperimentTreatments
         {
@@ -53411,7 +52515,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             promotedDate,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreVersionExperimentsFieldsAppStoreVersions
@@ -53437,16 +52540,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreVersionExperimentsInclude
         {
             appStoreVersion,
             appStoreVersionExperimentTreatments,
         }
-
 
         // /v1/appStoreVersions/{id}/appStoreVersionExperiments
         public Task<AppStoreVersionExperimentsResponse> GetAppStoreVersionsAppStoreVersionExperiments(string id, GetAppStoreVersionsAppStoreVersionExperimentsFilterState[]? filterState = default, GetAppStoreVersionsAppStoreVersionExperimentsFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetAppStoreVersionsAppStoreVersionExperimentsFieldsAppStoreVersionExperimentTreatments[]? fieldsAppStoreVersionExperimentTreatments = default, GetAppStoreVersionsAppStoreVersionExperimentsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, int? limit = default, int? limitAppStoreVersionExperimentTreatments = default, GetAppStoreVersionsAppStoreVersionExperimentsInclude[]? include = default)
@@ -53624,8 +52723,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
         // /v1/appStoreVersions/{id}/appStoreVersionLocalizations
         public Task<AppStoreVersionLocalizationsResponse> GetAppStoreVersionsAppStoreVersionLocalizations(string id, GetAppStoreVersionsAppStoreVersionLocalizationsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default)
         {
@@ -53651,7 +52748,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             totalPauseDuration,
         }
 
-
         // /v1/appStoreVersions/{id}/appStoreVersionPhasedRelease
         public Task<AppStoreVersionPhasedReleaseResponse> GetAppStoreVersionsAppStoreVersionPhasedRelease(string id, GetAppStoreVersionsAppStoreVersionPhasedReleaseFieldsAppStoreVersionPhasedReleases[]? fieldsAppStoreVersionPhasedReleases = default)
         {
@@ -53664,7 +52760,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             var message = new HttpRequestMessage(HttpMethod.Get, uriBuilder.uri);
             return SendAsync<AppStoreVersionPhasedReleaseResponse>(message);
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsAppStoreVersionSubmissionFieldsAppStoreVersions
@@ -53689,8 +52784,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             routingAppCoverage,
             versionString,
         }
-
-
 
         // /v1/appStoreVersions/{id}/appStoreVersionSubmission
         public Task<AppStoreVersionSubmissionResponse> GetAppStoreVersionsAppStoreVersionSubmission(string id, string[]? fieldsAppStoreVersionSubmissions = default, GetAppStoreVersionsAppStoreVersionSubmissionFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, string[]? include = default)
@@ -53788,7 +52881,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
 
         // /v1/appStoreVersions/{id}/build
         public Task<BuildResponse> GetAppStoreVersionsBuild(string id, GetAppStoreVersionsBuildFieldsBuilds[]? fieldsBuilds = default)
@@ -54162,7 +53254,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsCustomerReviewsFilterTerritory
         {
@@ -54400,8 +53491,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             ZWE,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsCustomerReviewsSort
         {
@@ -54412,7 +53501,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-rating")]
             ratingDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsCustomerReviewsFieldsCustomerReviews
@@ -54426,7 +53514,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             title,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppStoreVersionsCustomerReviewsFieldsCustomerReviewResponses
         {
@@ -54435,9 +53522,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             review,
             state,
         }
-
-
-
 
         // /v1/appStoreVersions/{id}/customerReviews
         public Task<CustomerReviewsResponse> GetAppStoreVersionsCustomerReviews(string id, string[]? filterRating = default, GetAppStoreVersionsCustomerReviewsFilterTerritory[]? filterTerritory = default, bool? existsPublishedResponse = default, GetAppStoreVersionsCustomerReviewsSort[]? sort = default, GetAppStoreVersionsCustomerReviewsFieldsCustomerReviews[]? fieldsCustomerReviews = default, GetAppStoreVersionsCustomerReviewsFieldsCustomerReviewResponses[]? fieldsCustomerReviewResponses = default, int? limit = default, string[]? include = default)
@@ -54477,7 +53561,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
 
         // /v1/appStoreVersions/{id}/routingAppCoverage
         public Task<RoutingAppCoverageResponse> GetAppStoreVersionsRoutingAppCoverage(string id, GetAppStoreVersionsRoutingAppCoverageFieldsRoutingAppCoverages[]? fieldsRoutingAppCoverages = default)
@@ -54591,7 +53674,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppClipsFieldsAppClips
         {
@@ -54600,7 +53682,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperiences,
             bundleId,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppClipsFieldsApps
@@ -54645,7 +53726,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppClipsFieldsAppClipDefaultExperiences
         {
@@ -54657,16 +53737,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppClipsInclude
         {
             app,
             appClipDefaultExperiences,
         }
-
 
         // /v1/apps/{id}/appClips
         public Task<AppClipsResponse> GetAppsAppClips(string id, string[]? filterBundleId = default, GetAppsAppClipsFieldsAppClips[]? fieldsAppClips = default, GetAppsAppClipsFieldsApps[]? fieldsApps = default, GetAppsAppClipsFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, int? limit = default, int? limitAppClipDefaultExperiences = default, GetAppsAppClipsInclude[]? include = default)
@@ -54794,7 +53870,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppCustomProductPagesFieldsAppCustomProductPages
         {
@@ -54807,7 +53882,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visible,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppCustomProductPagesFieldsAppCustomProductPageVersions
         {
@@ -54816,7 +53890,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             version,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppCustomProductPagesFieldsApps
@@ -54861,16 +53934,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppCustomProductPagesInclude
         {
             app,
             appCustomProductPageVersions,
         }
-
 
         // /v1/apps/{id}/appCustomProductPages
         public Task<AppCustomProductPagesResponse> GetAppsAppCustomProductPages(string id, string[]? filterVisible = default, GetAppsAppCustomProductPagesFieldsAppCustomProductPages[]? fieldsAppCustomProductPages = default, GetAppsAppCustomProductPagesFieldsAppCustomProductPageVersions[]? fieldsAppCustomProductPageVersions = default, GetAppsAppCustomProductPagesFieldsApps[]? fieldsApps = default, int? limit = default, int? limitAppCustomProductPageVersions = default, GetAppsAppCustomProductPagesInclude[]? include = default)
@@ -55172,8 +54241,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             ARCHIVED,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppEventsFieldsAppEventLocalizations
         {
@@ -55185,7 +54252,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             shortDescription,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppEventsFieldsAppEvents
@@ -55203,10 +54269,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             referenceName,
             territorySchedules,
         }
-
-
-
-
 
         // /v1/apps/{id}/appEvents
         public Task<AppEventsResponse> GetAppsAppEvents(string id, GetAppsAppEventsFilterEventState[]? filterEventState = default, string[]? filterId = default, GetAppsAppEventsFieldsAppEventLocalizations[]? fieldsAppEventLocalizations = default, GetAppsAppEventsFieldsAppEvents[]? fieldsAppEvents = default, int? limit = default, int? limitLocalizations = default, string[]? include = default)
@@ -55538,7 +54600,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             violenceRealisticProlongedGraphicOrSadistic,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppInfosFieldsAppInfos
         {
@@ -55557,7 +54618,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             secondarySubcategoryTwo,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppInfosFieldsAppInfoLocalizations
         {
@@ -55570,7 +54630,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subtitle,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppInfosFieldsAppCategories
         {
@@ -55578,7 +54637,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platforms,
             subcategories,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppInfosFieldsApps
@@ -55623,9 +54681,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppInfosInclude
         {
@@ -55639,7 +54694,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             secondarySubcategoryOne,
             secondarySubcategoryTwo,
         }
-
 
         // /v1/apps/{id}/appInfos
         public Task<AppInfosResponse> GetAppsAppInfos(string id, GetAppsAppInfosFieldsAgeRatingDeclarations[]? fieldsAgeRatingDeclarations = default, GetAppsAppInfosFieldsAppInfos[]? fieldsAppInfos = default, GetAppsAppInfosFieldsAppInfoLocalizations[]? fieldsAppInfoLocalizations = default, GetAppsAppInfosFieldsAppCategories[]? fieldsAppCategories = default, GetAppsAppInfosFieldsApps[]? fieldsApps = default, int? limit = default, int? limitAppInfoLocalizations = default, GetAppsAppInfosInclude[]? include = default)
@@ -55999,7 +55053,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             REPLACED_WITH_NEW_VERSION,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFilterPlatform
         {
@@ -56007,9 +55060,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             MAC_OS,
             TV_OS,
         }
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsAppStoreVersionExperiments
@@ -56024,7 +55074,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             trafficProportion,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsAgeRatingDeclarations
@@ -56048,8 +55097,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             violenceRealisticProlongedGraphicOrSadistic,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsAppStoreReviewDetails
         {
@@ -56064,7 +55111,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             demoAccountRequired,
             notes,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsAppStoreVersions
@@ -56089,7 +55135,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             routingAppCoverage,
             versionString,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsApps
@@ -56134,7 +55179,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsRoutingAppCoverages
         {
@@ -56147,7 +55191,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsAppClipDefaultExperiences
         {
@@ -56159,7 +55202,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsAppStoreVersionPhasedReleases
         {
@@ -56169,7 +55211,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             startDate,
             totalPauseDuration,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsBuilds
@@ -56200,7 +55241,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsFieldsAppStoreVersionLocalizations
         {
@@ -56216,10 +55256,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsAppStoreVersionsInclude
         {
@@ -56234,7 +55270,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             build,
             routingAppCoverage,
         }
-
 
         // /v1/apps/{id}/appStoreVersions
         public Task<AppStoreVersionsResponse> GetAppsAppStoreVersions(string id, GetAppsAppStoreVersionsFilterAppStoreState[]? filterAppStoreState = default, GetAppsAppStoreVersionsFilterPlatform[]? filterPlatform = default, string[]? filterVersionString = default, string[]? filterId = default, GetAppsAppStoreVersionsFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetAppsAppStoreVersionsFieldsAgeRatingDeclarations[]? fieldsAgeRatingDeclarations = default, string[]? fieldsAppStoreVersionSubmissions = default, GetAppsAppStoreVersionsFieldsAppStoreReviewDetails[]? fieldsAppStoreReviewDetails = default, GetAppsAppStoreVersionsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppsAppStoreVersionsFieldsApps[]? fieldsApps = default, GetAppsAppStoreVersionsFieldsRoutingAppCoverages[]? fieldsRoutingAppCoverages = default, GetAppsAppStoreVersionsFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetAppsAppStoreVersionsFieldsAppStoreVersionPhasedReleases[]? fieldsAppStoreVersionPhasedReleases = default, GetAppsAppStoreVersionsFieldsBuilds[]? fieldsBuilds = default, GetAppsAppStoreVersionsFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limit = default, int? limitAppStoreVersionLocalizations = default, int? limitAppStoreVersionExperiments = default, GetAppsAppStoreVersionsInclude[]? include = default)
@@ -56285,8 +55320,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<AppStoreVersionsResponse>(message);
         }
 
-
-
         // /v1/apps/{id}/availableTerritories
         public Task<TerritoriesResponse> GetAppsAvailableTerritories(string id, string[]? fieldsTerritories = default, int? limit = default)
         {
@@ -56313,8 +55346,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             privacyPolicyUrl,
             tvOsPrivacyPolicy,
         }
-
-
 
         // /v1/apps/{id}/betaAppLocalizations
         public Task<BetaAppLocalizationsResponse> GetAppsBetaAppLocalizations(string id, GetAppsBetaAppLocalizationsFieldsBetaAppLocalizations[]? fieldsBetaAppLocalizations = default, int? limit = default)
@@ -56344,7 +55375,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             demoAccountRequired,
             notes,
         }
-
 
         // /v1/apps/{id}/betaAppReviewDetail
         public Task<BetaAppReviewDetailResponse> GetAppsBetaAppReviewDetail(string id, GetAppsBetaAppReviewDetailFieldsBetaAppReviewDetails[]? fieldsBetaAppReviewDetails = default)
@@ -56378,8 +55408,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             publicLinkLimitEnabled,
         }
 
-
-
         // /v1/apps/{id}/betaGroups
         public Task<BetaGroupsResponse> GetAppsBetaGroups(string id, GetAppsBetaGroupsFieldsBetaGroups[]? fieldsBetaGroups = default, int? limit = default)
         {
@@ -56401,7 +55429,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             agreementText,
             app,
         }
-
 
         // /v1/apps/{id}/betaLicenseAgreement
         public Task<BetaLicenseAgreementResponse> GetAppsBetaLicenseAgreement(string id, GetAppsBetaLicenseAgreementFieldsBetaLicenseAgreements[]? fieldsBetaLicenseAgreements = default)
@@ -56468,8 +55495,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
         // /v1/apps/{id}/builds
         public Task<BuildsResponse> GetAppsBuilds(string id, GetAppsBuildsFieldsBuilds[]? fieldsBuilds = default, int? limit = default)
         {
@@ -56498,7 +55523,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             productType,
             workflows,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCiProductFieldsApps
@@ -56543,7 +55567,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCiProductFieldsScmRepositories
         {
@@ -56558,7 +55581,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             sshCloneUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCiProductFieldsBundleIds
         {
@@ -56571,8 +55593,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             seedId,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCiProductInclude
         {
@@ -56580,7 +55600,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             bundleId,
             primaryRepositories,
         }
-
 
         // /v1/apps/{id}/ciProduct
         public Task<CiProductResponse> GetAppsCiProduct(string id, GetAppsCiProductFieldsCiProducts[]? fieldsCiProducts = default, GetAppsCiProductFieldsApps[]? fieldsApps = default, GetAppsCiProductFieldsScmRepositories[]? fieldsScmRepositories = default, GetAppsCiProductFieldsBundleIds[]? fieldsBundleIds = default, int? limitPrimaryRepositories = default, GetAppsCiProductInclude[]? include = default)
@@ -56604,7 +55623,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             var message = new HttpRequestMessage(HttpMethod.Get, uriBuilder.uri);
             return SendAsync<CiProductResponse>(message);
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCustomerReviewsFilterTerritory
@@ -56843,8 +55861,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             ZWE,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCustomerReviewsSort
         {
@@ -56855,7 +55871,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-rating")]
             ratingDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCustomerReviewsFieldsCustomerReviews
@@ -56869,7 +55884,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             title,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsCustomerReviewsFieldsCustomerReviewResponses
         {
@@ -56878,9 +55892,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             review,
             state,
         }
-
-
-
 
         // /v1/apps/{id}/customerReviews
         public Task<CustomerReviewsResponse> GetAppsCustomerReviews(string id, string[]? filterRating = default, GetAppsCustomerReviewsFilterTerritory[]? filterTerritory = default, bool? existsPublishedResponse = default, GetAppsCustomerReviewsSort[]? sort = default, GetAppsCustomerReviewsFieldsCustomerReviews[]? fieldsCustomerReviews = default, GetAppsCustomerReviewsFieldsCustomerReviewResponses[]? fieldsCustomerReviewResponses = default, int? limit = default, string[]? include = default)
@@ -56916,7 +55927,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             app,
             territories,
         }
-
 
         // /v1/apps/{id}/endUserLicenseAgreement
         public Task<EndUserLicenseAgreementResponse> GetAppsEndUserLicenseAgreement(string id, GetAppsEndUserLicenseAgreementFieldsEndUserLicenseAgreements[]? fieldsEndUserLicenseAgreements = default)
@@ -57054,9 +56064,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsGameCenterEnabledVersionsSort
         {
@@ -57064,7 +56071,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-versionString")]
             versionStringDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsGameCenterEnabledVersionsFieldsGameCenterEnabledVersions
@@ -57075,7 +56081,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             versionString,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsGameCenterEnabledVersionsFieldsApps
@@ -57120,16 +56125,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsGameCenterEnabledVersionsInclude
         {
             app,
             compatibleVersions,
         }
-
 
         // /v1/apps/{id}/gameCenterEnabledVersions
         public Task<GameCenterEnabledVersionsResponse> GetAppsGameCenterEnabledVersions(string id, GetAppsGameCenterEnabledVersionsFilterPlatform[]? filterPlatform = default, string[]? filterVersionString = default, string[]? filterId = default, GetAppsGameCenterEnabledVersionsSort[]? sort = default, GetAppsGameCenterEnabledVersionsFieldsGameCenterEnabledVersions[]? fieldsGameCenterEnabledVersions = default, GetAppsGameCenterEnabledVersionsFieldsApps[]? fieldsApps = default, int? limit = default, int? limitCompatibleVersions = default, GetAppsGameCenterEnabledVersionsInclude[]? include = default)
@@ -57981,8 +56982,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             FREE_SUBSCRIPTION,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesSort
         {
@@ -57997,7 +56996,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             referenceNameDescending,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesFieldsInAppPurchases
         {
@@ -58007,7 +57005,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             referenceName,
             state,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesFieldsApps
@@ -58051,10 +57048,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
-
-
-
 
         // /v1/apps/{id}/inAppPurchases
         public Task<InAppPurchasesResponse> GetAppsInAppPurchases(string id, GetAppsInAppPurchasesFilterInAppPurchaseType[]? filterInAppPurchaseType = default, string[]? filterCanBeSubmitted = default, GetAppsInAppPurchasesSort[]? sort = default, GetAppsInAppPurchasesFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetAppsInAppPurchasesFieldsApps[]? fieldsApps = default, int? limit = default, int? limitApps = default, string[]? include = default)
@@ -58308,9 +57301,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             NON_RENEWING_SUBSCRIPTION,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FilterState
         {
@@ -58328,7 +57318,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             REJECTED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2Sort
         {
@@ -58339,7 +57328,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-name")]
             nameDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FieldsInAppPurchaseAppStoreReviewScreenshots
@@ -58356,7 +57344,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FieldsInAppPurchasePricePoints
         {
@@ -58366,7 +57353,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             proceeds,
             territory,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FieldsPromotedPurchases
@@ -58380,7 +57366,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FieldsInAppPurchaseLocalizations
         {
@@ -58390,7 +57375,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             state,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FieldsInAppPurchases
@@ -58412,14 +57396,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FieldsInAppPurchasePriceSchedules
         {
             inAppPurchase,
             manualPrices,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2FieldsInAppPurchaseContents
@@ -58431,10 +57413,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             url,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsInAppPurchasesV2Include
         {
@@ -58445,7 +57423,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             pricePoints,
             promotedPurchase,
         }
-
 
         // /v1/apps/{id}/inAppPurchasesV2
         public Task<InAppPurchasesV2Response> GetAppsInAppPurchasesV2(string id, GetAppsInAppPurchasesV2FilterInAppPurchaseType[]? filterInAppPurchaseType = default, string[]? filterName = default, string[]? filterProductId = default, GetAppsInAppPurchasesV2FilterState[]? filterState = default, GetAppsInAppPurchasesV2Sort[]? sort = default, GetAppsInAppPurchasesV2FieldsInAppPurchaseAppStoreReviewScreenshots[]? fieldsInAppPurchaseAppStoreReviewScreenshots = default, GetAppsInAppPurchasesV2FieldsInAppPurchasePricePoints[]? fieldsInAppPurchasePricePoints = default, GetAppsInAppPurchasesV2FieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetAppsInAppPurchasesV2FieldsInAppPurchaseLocalizations[]? fieldsInAppPurchaseLocalizations = default, GetAppsInAppPurchasesV2FieldsInAppPurchases[]? fieldsInAppPurchases = default, GetAppsInAppPurchasesV2FieldsInAppPurchasePriceSchedules[]? fieldsInAppPurchasePriceSchedules = default, GetAppsInAppPurchasesV2FieldsInAppPurchaseContents[]? fieldsInAppPurchaseContents = default, int? limit = default, int? limitInAppPurchaseLocalizations = default, int? limitPricePoints = default, GetAppsInAppPurchasesV2Include[]? include = default)
@@ -58490,7 +57467,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<InAppPurchasesV2Response>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPerfPowerMetricsFilterMetricType
         {
@@ -58502,8 +57478,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             ANIMATION,
             TERMINATION,
         }
-
-
 
         // /v1/apps/{id}/perfPowerMetrics
         public Task GetAppsPerfPowerMetrics(string id, string[]? filterDeviceType = default, GetAppsPerfPowerMetricsFilterMetricType[]? filterMetricType = default, string[]? filterPlatform = default)
@@ -58530,7 +57504,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             preOrderAvailableDate,
         }
 
-
         // /v1/apps/{id}/preOrder
         public Task<AppPreOrderResponse> GetAppsPreOrder(string id, GetAppsPreOrderFieldsAppPreOrders[]? fieldsAppPreOrders = default)
         {
@@ -58552,8 +57525,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             version,
         }
-
-
 
         // /v1/apps/{id}/preReleaseVersions
         public Task<PreReleaseVersionsResponse> GetAppsPreReleaseVersions(string id, GetAppsPreReleaseVersionsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, int? limit = default)
@@ -58677,9 +57648,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPricePointsFieldsAppPricePoints
         {
@@ -58689,7 +57657,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             proceeds,
             territory,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPricePointsFieldsApps
@@ -58734,9 +57701,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPricePointsInclude
         {
@@ -58744,7 +57708,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             priceTier,
             territory,
         }
-
 
         // /v1/apps/{id}/pricePoints
         public Task<AppPricePointsV2Response> GetAppsPricePoints(string id, string[]? filterPriceTier = default, string[]? filterTerritory = default, string[]? fieldsAppPriceTiers = default, GetAppsPricePointsFieldsAppPricePoints[]? fieldsAppPricePoints = default, GetAppsPricePointsFieldsApps[]? fieldsApps = default, string[]? fieldsTerritories = default, int? limit = default, GetAppsPricePointsInclude[]? include = default)
@@ -58854,7 +57817,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPricesFieldsApps
         {
@@ -58898,7 +57860,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPricesFieldsAppPrices
         {
@@ -58906,15 +57867,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             priceTier,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPricesInclude
         {
             app,
             priceTier,
         }
-
 
         // /v1/apps/{id}/prices
         public Task<AppPricesResponse> GetAppsPrices(string id, string[]? fieldsAppPriceTiers = default, GetAppsPricesFieldsApps[]? fieldsApps = default, GetAppsPricesFieldsAppPrices[]? fieldsAppPrices = default, int? limit = default, GetAppsPricesInclude[]? include = default)
@@ -58967,7 +57925,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/apps/{id}/relationships/promotedPurchases
         public Task<GetAppsPromotedPurchasesResponse> GetAppsPromotedPurchases(string id, int? limit = default)
@@ -59145,7 +58102,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPromotedPurchasesFieldsSubscriptions
         {
@@ -59168,7 +58124,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPromotedPurchasesFieldsInAppPurchases
         {
@@ -59189,7 +58144,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPromotedPurchasesFieldsPromotedPurchaseImages
         {
@@ -59205,9 +58159,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsPromotedPurchasesInclude
         {
@@ -59215,7 +58166,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionImages,
             subscription,
         }
-
 
         // /v1/apps/{id}/promotedPurchases
         public Task<PromotedPurchasesResponse> GetAppsPromotedPurchases(string id, GetAppsPromotedPurchasesFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetAppsPromotedPurchasesFieldsSubscriptions[]? fieldsSubscriptions = default, GetAppsPromotedPurchasesFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetAppsPromotedPurchasesFieldsPromotedPurchaseImages[]? fieldsPromotedPurchaseImages = default, int? limit = default, int? limitPromotionImages = default, GetAppsPromotedPurchasesInclude[]? include = default)
@@ -59250,7 +58200,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsReviewSubmissionsFilterState
         {
@@ -59262,7 +58211,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             COMPLETING,
             COMPLETE,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsReviewSubmissionsFieldsReviewSubmissionItems
@@ -59276,7 +58224,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             reviewSubmission,
             state,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsReviewSubmissionsFieldsAppStoreVersions
@@ -59301,7 +58248,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             routingAppCoverage,
             versionString,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsReviewSubmissionsFieldsApps
@@ -59346,7 +58292,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsReviewSubmissionsFieldsReviewSubmissions
         {
@@ -59360,9 +58305,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             submittedDate,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsReviewSubmissionsInclude
         {
@@ -59370,7 +58312,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersionForReview,
             items,
         }
-
 
         // /v1/apps/{id}/reviewSubmissions
         public Task<ReviewSubmissionsResponse> GetAppsReviewSubmissions(string id, GetAppsReviewSubmissionsFilterPlatform[]? filterPlatform = default, GetAppsReviewSubmissionsFilterState[]? filterState = default, GetAppsReviewSubmissionsFieldsReviewSubmissionItems[]? fieldsReviewSubmissionItems = default, GetAppsReviewSubmissionsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetAppsReviewSubmissionsFieldsApps[]? fieldsApps = default, GetAppsReviewSubmissionsFieldsReviewSubmissions[]? fieldsReviewSubmissions = default, int? limit = default, int? limitItems = default, GetAppsReviewSubmissionsInclude[]? include = default)
@@ -59407,7 +58348,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             app,
             optIn,
         }
-
 
         // /v1/apps/{id}/subscriptionGracePeriod
         public Task<SubscriptionGracePeriodResponse> GetAppsSubscriptionGracePeriod(string id, GetAppsSubscriptionGracePeriodFieldsSubscriptionGracePeriods[]? fieldsSubscriptionGracePeriods = default)
@@ -59533,7 +58473,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsSubscriptionGroupsFilterSubscriptionsState
         {
@@ -59549,7 +58488,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             REJECTED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsSubscriptionGroupsSort
         {
@@ -59557,7 +58495,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-referenceName")]
             referenceNameDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsSubscriptionGroupsFieldsSubscriptions
@@ -59581,7 +58518,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsSubscriptionGroupsFieldsSubscriptionGroups
         {
@@ -59590,7 +58526,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionGroupLocalizations,
             subscriptions,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsSubscriptionGroupsFieldsSubscriptionGroupLocalizations
@@ -59602,17 +58537,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionGroup,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetAppsSubscriptionGroupsInclude
         {
             subscriptionGroupLocalizations,
             subscriptions,
         }
-
 
         // /v1/apps/{id}/subscriptionGroups
         public Task<SubscriptionGroupsResponse> GetAppsSubscriptionGroups(string id, string[]? filterReferenceName = default, GetAppsSubscriptionGroupsFilterSubscriptionsState[]? filterSubscriptionsState = default, GetAppsSubscriptionGroupsSort[]? sort = default, GetAppsSubscriptionGroupsFieldsSubscriptions[]? fieldsSubscriptions = default, GetAppsSubscriptionGroupsFieldsSubscriptionGroups[]? fieldsSubscriptionGroups = default, GetAppsSubscriptionGroupsFieldsSubscriptionGroupLocalizations[]? fieldsSubscriptionGroupLocalizations = default, int? limit = default, int? limitSubscriptions = default, int? limitSubscriptionGroupLocalizations = default, GetAppsSubscriptionGroupsInclude[]? include = default)
@@ -59688,7 +58618,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         // /v1/betaAppLocalizations/{id}/app
         public Task<AppResponse> GetBetaAppLocalizationsApp(string id, GetBetaAppLocalizationsAppFieldsApps[]? fieldsApps = default)
         {
@@ -59745,7 +58674,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         // /v1/betaAppReviewDetails/{id}/app
         public Task<AppResponse> GetBetaAppReviewDetailsApp(string id, GetBetaAppReviewDetailsAppFieldsApps[]? fieldsApps = default)
         {
@@ -59788,7 +58716,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         // /v1/betaAppReviewSubmissions/{id}/build
         public Task<BuildResponse> GetBetaAppReviewSubmissionsBuild(string id, GetBetaAppReviewSubmissionsBuildFieldsBuilds[]? fieldsBuilds = default)
         {
@@ -59830,7 +58757,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
 
         // /v1/betaBuildLocalizations/{id}/build
         public Task<BuildResponse> GetBetaBuildLocalizationsBuild(string id, GetBetaBuildLocalizationsBuildFieldsBuilds[]? fieldsBuilds = default)
@@ -59888,7 +58814,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         // /v1/betaGroups/{id}/app
         public Task<AppResponse> GetBetaGroupsApp(string id, GetBetaGroupsAppFieldsApps[]? fieldsApps = default)
         {
@@ -59932,7 +58857,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/betaGroups/{id}/relationships/betaTesters
         public Task<GetBetaGroupsBetaTestersResponse> GetBetaGroupsBetaTesters(string id, int? limit = default)
@@ -60005,8 +58929,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastName,
         }
 
-
-
         // /v1/betaGroups/{id}/betaTesters
         public Task<BetaTestersResponse> GetBetaGroupsBetaTesters(string id, GetBetaGroupsBetaTestersFieldsBetaTesters[]? fieldsBetaTesters = default, int? limit = default)
         {
@@ -60052,7 +58974,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/betaGroups/{id}/relationships/builds
         public Task<GetBetaGroupsBuildsResponse> GetBetaGroupsBuilds(string id, int? limit = default)
@@ -60142,8 +59063,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
         // /v1/betaGroups/{id}/builds
         public Task<BuildsResponse> GetBetaGroupsBuilds(string id, GetBetaGroupsBuildsFieldsBuilds[]? fieldsBuilds = default, int? limit = default)
         {
@@ -60202,7 +59121,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         // /v1/betaLicenseAgreements/{id}/app
         public Task<AppResponse> GetBetaLicenseAgreementsApp(string id, GetBetaLicenseAgreementsAppFieldsApps[]? fieldsApps = default)
         {
@@ -60246,7 +59164,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/betaTesters/{id}/relationships/apps
         public Task<GetBetaTestersAppsResponse> GetBetaTestersApps(string id, int? limit = default)
@@ -60327,8 +59244,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
         // /v1/betaTesters/{id}/apps
         public Task<AppsResponse> GetBetaTestersApps(string id, GetBetaTestersAppsFieldsApps[]? fieldsApps = default, int? limit = default)
         {
@@ -60374,7 +59289,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/betaTesters/{id}/relationships/betaGroups
         public Task<GetBetaTestersBetaGroupsResponse> GetBetaTestersBetaGroups(string id, int? limit = default)
@@ -60454,8 +59368,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             publicLinkLimitEnabled,
         }
 
-
-
         // /v1/betaTesters/{id}/betaGroups
         public Task<BetaGroupsResponse> GetBetaTestersBetaGroups(string id, GetBetaTestersBetaGroupsFieldsBetaGroups[]? fieldsBetaGroups = default, int? limit = default)
         {
@@ -60501,7 +59413,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/betaTesters/{id}/relationships/builds
         public Task<GetBetaTestersBuildsResponse> GetBetaTestersBuilds(string id, int? limit = default)
@@ -60591,8 +59502,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
         // /v1/betaTesters/{id}/builds
         public Task<BuildsResponse> GetBetaTestersBuilds(string id, GetBetaTestersBuildsFieldsBuilds[]? fieldsBuilds = default, int? limit = default)
         {
@@ -60636,7 +59545,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesNonExemptEncryption,
             version,
         }
-
 
         // /v1/buildBetaDetails/{id}/build
         public Task<BuildResponse> GetBuildBetaDetailsBuild(string id, GetBuildBetaDetailsBuildFieldsBuilds[]? fieldsBuilds = default)
@@ -60716,7 +59624,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastUpdatedDate,
         }
 
-
         // /v1/buildBundles/{id}/appClipDomainCacheStatus
         public Task<AppClipDomainStatusResponse> GetBuildBundlesAppClipDomainCacheStatus(string id, GetBuildBundlesAppClipDomainCacheStatusFieldsAppClipDomainStatuses[]? fieldsAppClipDomainStatuses = default)
         {
@@ -60736,7 +59643,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             domains,
             lastUpdatedDate,
         }
-
 
         // /v1/buildBundles/{id}/appClipDomainDebugStatus
         public Task<AppClipDomainStatusResponse> GetBuildBundlesAppClipDomainDebugStatus(string id, GetBuildBundlesAppClipDomainDebugStatusFieldsAppClipDomainStatuses[]? fieldsAppClipDomainStatuses = default)
@@ -60858,7 +59764,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             url,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildBundlesBetaAppClipInvocationsFieldsBetaAppClipInvocationLocalizations
         {
@@ -60866,10 +59771,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             title,
         }
-
-
-
-
 
         // /v1/buildBundles/{id}/betaAppClipInvocations
         public Task<BetaAppClipInvocationsResponse> GetBuildBundlesBetaAppClipInvocations(string id, GetBuildBundlesBetaAppClipInvocationsFieldsBetaAppClipInvocations[]? fieldsBetaAppClipInvocations = default, GetBuildBundlesBetaAppClipInvocationsFieldsBetaAppClipInvocationLocalizations[]? fieldsBetaAppClipInvocationLocalizations = default, int? limit = default, int? limitBetaAppClipInvocationLocalizations = default, string[]? include = default)
@@ -60947,8 +59848,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             osVersion,
         }
 
-
-
         // /v1/buildBundles/{id}/buildBundleFileSizes
         public Task<BuildBundleFileSizesResponse> GetBuildBundlesBuildBundleFileSizes(string id, GetBuildBundlesBuildBundleFileSizesFieldsBuildBundleFileSizes[]? fieldsBuildBundleFileSizes = default, int? limit = default)
         {
@@ -61006,7 +59905,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
 
         // /v1/builds/{id}/app
         public Task<AppResponse> GetBuildsApp(string id, GetBuildsAppFieldsApps[]? fieldsApps = default)
@@ -61091,7 +59989,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesEncryption,
         }
 
-
         // /v1/builds/{id}/appEncryptionDeclaration
         public Task<AppEncryptionDeclarationResponse> GetBuildsAppEncryptionDeclaration(string id, GetBuildsAppEncryptionDeclarationFieldsAppEncryptionDeclarations[]? fieldsAppEncryptionDeclarations = default)
         {
@@ -61119,7 +60016,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             trafficProportion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsAgeRatingDeclarations
         {
@@ -61142,8 +60038,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             violenceRealisticProlongedGraphicOrSadistic,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsAppStoreReviewDetails
         {
@@ -61158,7 +60052,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             demoAccountRequired,
             notes,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsAppStoreVersions
@@ -61183,7 +60076,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             routingAppCoverage,
             versionString,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsApps
@@ -61228,7 +60120,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsRoutingAppCoverages
         {
@@ -61241,7 +60132,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsAppClipDefaultExperiences
         {
@@ -61253,7 +60143,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             releaseWithAppStoreVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsAppStoreVersionPhasedReleases
         {
@@ -61263,7 +60152,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             startDate,
             totalPauseDuration,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsBuilds
@@ -61294,7 +60182,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionFieldsAppStoreVersionLocalizations
         {
@@ -61310,9 +60197,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             whatsNew,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsAppStoreVersionInclude
         {
@@ -61327,7 +60211,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             build,
             routingAppCoverage,
         }
-
 
         // /v1/builds/{id}/appStoreVersion
         public Task<AppStoreVersionResponse> GetBuildsAppStoreVersion(string id, GetBuildsAppStoreVersionFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetBuildsAppStoreVersionFieldsAgeRatingDeclarations[]? fieldsAgeRatingDeclarations = default, string[]? fieldsAppStoreVersionSubmissions = default, GetBuildsAppStoreVersionFieldsAppStoreReviewDetails[]? fieldsAppStoreReviewDetails = default, GetBuildsAppStoreVersionFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetBuildsAppStoreVersionFieldsApps[]? fieldsApps = default, GetBuildsAppStoreVersionFieldsRoutingAppCoverages[]? fieldsRoutingAppCoverages = default, GetBuildsAppStoreVersionFieldsAppClipDefaultExperiences[]? fieldsAppClipDefaultExperiences = default, GetBuildsAppStoreVersionFieldsAppStoreVersionPhasedReleases[]? fieldsAppStoreVersionPhasedReleases = default, GetBuildsAppStoreVersionFieldsBuilds[]? fieldsBuilds = default, GetBuildsAppStoreVersionFieldsAppStoreVersionLocalizations[]? fieldsAppStoreVersionLocalizations = default, int? limitAppStoreVersionLocalizations = default, int? limitAppStoreVersionExperiments = default, GetBuildsAppStoreVersionInclude[]? include = default)
@@ -61376,7 +60259,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             submittedDate,
         }
 
-
         // /v1/builds/{id}/betaAppReviewSubmission
         public Task<BetaAppReviewSubmissionResponse> GetBuildsBetaAppReviewSubmission(string id, GetBuildsBetaAppReviewSubmissionFieldsBetaAppReviewSubmissions[]? fieldsBetaAppReviewSubmissions = default)
         {
@@ -61397,8 +60279,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             whatsNew,
         }
-
-
 
         // /v1/builds/{id}/betaBuildLocalizations
         public Task<BetaBuildLocalizationsResponse> GetBuildsBetaBuildLocalizations(string id, GetBuildsBetaBuildLocalizationsFieldsBetaBuildLocalizations[]? fieldsBetaBuildLocalizations = default, int? limit = default)
@@ -61469,7 +60349,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             externalBuildState,
             internalBuildState,
         }
-
 
         // /v1/builds/{id}/buildBetaDetail
         public Task<BuildBetaDetailResponse> GetBuildsBuildBetaDetail(string id, GetBuildsBuildBetaDetailFieldsBuildBetaDetails[]? fieldsBuildBetaDetails = default)
@@ -61542,7 +60421,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             HANGS,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsDiagnosticSignaturesFieldsDiagnosticSignatures
         {
@@ -61551,8 +60429,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             signature,
             weight,
         }
-
-
 
         // /v1/builds/{id}/diagnosticSignatures
         public Task<DiagnosticSignaturesResponse> GetBuildsDiagnosticSignatures(string id, GetBuildsDiagnosticSignaturesFilterDiagnosticType[]? filterDiagnosticType = default, GetBuildsDiagnosticSignaturesFieldsDiagnosticSignatures[]? fieldsDiagnosticSignatures = default, int? limit = default)
@@ -61641,8 +60517,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
         }
 
-
-
         // /v1/builds/{id}/icons
         public Task<BuildIconsResponse> GetBuildsIcons(string id, GetBuildsIconsFieldsBuildIcons[]? fieldsBuildIcons = default, int? limit = default)
         {
@@ -61688,7 +60562,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/builds/{id}/relationships/individualTesters
         public Task<GetBuildsIndividualTestersResponse> GetBuildsIndividualTesters(string id, int? limit = default)
@@ -61761,8 +60634,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastName,
         }
 
-
-
         // /v1/builds/{id}/individualTesters
         public Task<BetaTestersResponse> GetBuildsIndividualTesters(string id, GetBuildsIndividualTestersFieldsBetaTesters[]? fieldsBetaTesters = default, int? limit = default)
         {
@@ -61778,7 +60649,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<BetaTestersResponse>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetBuildsPerfPowerMetricsFilterMetricType
         {
@@ -61790,8 +60660,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             ANIMATION,
             TERMINATION,
         }
-
-
 
         // /v1/builds/{id}/perfPowerMetrics
         public Task GetBuildsPerfPowerMetrics(string id, string[]? filterDeviceType = default, GetBuildsPerfPowerMetricsFilterMetricType[]? filterMetricType = default, string[]? filterPlatform = default)
@@ -61818,7 +60686,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             version,
         }
-
 
         // /v1/builds/{id}/preReleaseVersion
         public Task<PrereleaseVersionResponse> GetBuildsPreReleaseVersion(string id, GetBuildsPreReleaseVersionFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default)
@@ -61875,7 +60742,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
 
         // /v1/bundleIds/{id}/app
         public Task<AppResponse> GetBundleIdsApp(string id, GetBundleIdsAppFieldsApps[]? fieldsApps = default)
@@ -62020,8 +60886,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             settings,
         }
 
-
-
         // /v1/bundleIds/{id}/bundleIdCapabilities
         public Task<BundleIdCapabilitiesResponse> GetBundleIdsBundleIdCapabilities(string id, GetBundleIdsBundleIdCapabilitiesFieldsBundleIdCapabilities[]? fieldsBundleIdCapabilities = default, int? limit = default)
         {
@@ -62052,8 +60916,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             profileType,
             uuid,
         }
-
-
 
         // /v1/bundleIds/{id}/profiles
         public Task<ProfilesResponse> GetBundleIdsProfiles(string id, GetBundleIdsProfilesFieldsProfiles[]? fieldsProfiles = default, int? limit = default)
@@ -62135,8 +60997,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             fileType,
         }
 
-
-
         // /v1/ciBuildActions/{id}/artifacts
         public Task<CiArtifactsResponse> GetCiBuildActionsArtifacts(string id, GetCiBuildActionsArtifactsFieldsCiArtifacts[]? fieldsCiArtifacts = default, int? limit = default)
         {
@@ -62161,7 +61021,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             repository,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsBuildRunFieldsCiBuildRuns
@@ -62189,7 +61048,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsBuildRunFieldsCiWorkflows
         {
@@ -62212,7 +61070,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             xcodeVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsBuildRunFieldsScmPullRequests
         {
@@ -62230,7 +61087,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             webUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsBuildRunFieldsCiProducts
         {
@@ -62244,7 +61100,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             productType,
             workflows,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsBuildRunFieldsBuilds
@@ -62275,8 +61130,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildActionsBuildRunInclude
         {
@@ -62287,7 +61140,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             sourceBranchOrTag,
             workflow,
         }
-
 
         // /v1/ciBuildActions/{id}/buildRun
         public Task<CiBuildRunResponse> GetCiBuildActionsBuildRun(string id, GetCiBuildActionsBuildRunFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetCiBuildActionsBuildRunFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiBuildActionsBuildRunFieldsCiWorkflows[]? fieldsCiWorkflows = default, GetCiBuildActionsBuildRunFieldsScmPullRequests[]? fieldsScmPullRequests = default, GetCiBuildActionsBuildRunFieldsCiProducts[]? fieldsCiProducts = default, GetCiBuildActionsBuildRunFieldsBuilds[]? fieldsBuilds = default, int? limitBuilds = default, GetCiBuildActionsBuildRunInclude[]? include = default)
@@ -62384,8 +61236,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             issueType,
             message,
         }
-
-
 
         // /v1/ciBuildActions/{id}/issues
         public Task<CiIssuesResponse> GetCiBuildActionsIssues(string id, GetCiBuildActionsIssuesFieldsCiIssues[]? fieldsCiIssues = default, int? limit = default)
@@ -62493,8 +61343,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             status,
         }
-
-
 
         // /v1/ciBuildActions/{id}/testResults
         public Task<CiTestResultsResponse> GetCiBuildActionsTestResults(string id, GetCiBuildActionsTestResultsFieldsCiTestResults[]? fieldsCiTestResults = default, int? limit = default)
@@ -62886,7 +61734,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsActionsFieldsCiBuildActions
         {
@@ -62903,9 +61750,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             startedDate,
             testResults,
         }
-
-
-
 
         // /v1/ciBuildRuns/{id}/actions
         public Task<CiBuildActionsResponse> GetCiBuildRunsActions(string id, GetCiBuildRunsActionsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiBuildRunsActionsFieldsCiBuildActions[]? fieldsCiBuildActions = default, int? limit = default, string[]? include = default)
@@ -62935,15 +61779,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             APPROVED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFilterBuildAudienceType
         {
             INTERNAL_ONLY,
             APP_STORE_ELIGIBLE,
         }
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFilterPreReleaseVersionPlatform
@@ -62953,8 +61794,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFilterProcessingState
         {
@@ -62963,14 +61802,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             INVALID,
             VALID,
         }
-
-
-
-
-
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsSort
@@ -62985,7 +61816,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-version")]
             versionDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBuildBundles
@@ -63013,7 +61843,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             usesLocationServices,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBuildIcons
         {
@@ -63021,7 +61850,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             iconType,
             name,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBetaAppReviewSubmissions
@@ -63031,7 +61859,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             submittedDate,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBuildBetaDetails
         {
@@ -63040,7 +61867,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             externalBuildState,
             internalBuildState,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBetaTesters
@@ -63054,7 +61880,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastName,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsPreReleaseVersions
         {
@@ -63064,7 +61889,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBetaBuildLocalizations
         {
@@ -63072,7 +61896,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             locale,
             whatsNew,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsAppStoreVersions
@@ -63098,7 +61921,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsAppEncryptionDeclarations
         {
@@ -63117,7 +61939,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadedDate,
             usesEncryption,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsApps
@@ -63162,7 +61983,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBuilds
         {
@@ -63192,7 +62012,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsFieldsBetaGroups
         {
@@ -63212,13 +62031,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             publicLinkLimitEnabled,
         }
 
-
-
-
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiBuildRunsBuildsInclude
         {
@@ -63234,7 +62046,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             individualTesters,
             preReleaseVersion,
         }
-
 
         // /v1/ciBuildRuns/{id}/builds
         public Task<BuildsResponse> GetCiBuildRunsBuilds(string id, GetCiBuildRunsBuildsFilterBetaAppReviewSubmissionBetaReviewState[]? filterBetaAppReviewSubmissionBetaReviewState = default, GetCiBuildRunsBuildsFilterBuildAudienceType[]? filterBuildAudienceType = default, string[]? filterExpired = default, GetCiBuildRunsBuildsFilterPreReleaseVersionPlatform[]? filterPreReleaseVersionPlatform = default, string[]? filterPreReleaseVersionVersion = default, GetCiBuildRunsBuildsFilterProcessingState[]? filterProcessingState = default, string[]? filterUsesNonExemptEncryption = default, string[]? filterVersion = default, string[]? filterApp = default, string[]? filterAppStoreVersion = default, string[]? filterBetaGroups = default, string[]? filterPreReleaseVersion = default, string[]? filterId = default, GetCiBuildRunsBuildsSort[]? sort = default, GetCiBuildRunsBuildsFieldsBuildBundles[]? fieldsBuildBundles = default, GetCiBuildRunsBuildsFieldsBuildIcons[]? fieldsBuildIcons = default, GetCiBuildRunsBuildsFieldsBetaAppReviewSubmissions[]? fieldsBetaAppReviewSubmissions = default, GetCiBuildRunsBuildsFieldsBuildBetaDetails[]? fieldsBuildBetaDetails = default, GetCiBuildRunsBuildsFieldsBetaTesters[]? fieldsBetaTesters = default, GetCiBuildRunsBuildsFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, GetCiBuildRunsBuildsFieldsBetaBuildLocalizations[]? fieldsBetaBuildLocalizations = default, GetCiBuildRunsBuildsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetCiBuildRunsBuildsFieldsAppEncryptionDeclarations[]? fieldsAppEncryptionDeclarations = default, GetCiBuildRunsBuildsFieldsApps[]? fieldsApps = default, GetCiBuildRunsBuildsFieldsBuilds[]? fieldsBuilds = default, GetCiBuildRunsBuildsFieldsBetaGroups[]? fieldsBetaGroups = default, int? limit = default, int? limitIndividualTesters = default, int? limitBetaGroups = default, int? limitBetaBuildLocalizations = default, int? limitIcons = default, int? limitBuildBundles = default, GetCiBuildRunsBuildsInclude[]? include = default)
@@ -63322,7 +62133,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiMacOsVersionsXcodeVersionsFieldsCiMacOsVersions
         {
@@ -63330,10 +62140,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
             xcodeVersions,
         }
-
-
-
-
 
         // /v1/ciMacOsVersions/{id}/xcodeVersions
         public Task<CiXcodeVersionsResponse> GetCiMacOsVersionsXcodeVersions(string id, GetCiMacOsVersionsXcodeVersionsFieldsCiXcodeVersions[]? fieldsCiXcodeVersions = default, GetCiMacOsVersionsXcodeVersionsFieldsCiMacOsVersions[]? fieldsCiMacOsVersions = default, int? limit = default, int? limitMacOsVersions = default, string[]? include = default)
@@ -63356,7 +62162,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<CiXcodeVersionsResponse>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAdditionalRepositoriesFieldsScmGitReferences
         {
@@ -63367,7 +62172,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAdditionalRepositoriesFieldsScmProviders
         {
@@ -63375,7 +62179,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProviderType,
             url,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAdditionalRepositoriesFieldsScmRepositories
@@ -63391,15 +62194,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             sshCloneUrl,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAdditionalRepositoriesInclude
         {
             defaultBranch,
             scmProvider,
         }
-
 
         // /v1/ciProducts/{id}/additionalRepositories
         public Task<ScmRepositoriesResponse> GetCiProductsAdditionalRepositories(string id, string[]? filterId = default, GetCiProductsAdditionalRepositoriesFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetCiProductsAdditionalRepositoriesFieldsScmProviders[]? fieldsScmProviders = default, GetCiProductsAdditionalRepositoriesFieldsScmRepositories[]? fieldsScmRepositories = default, int? limit = default, GetCiProductsAdditionalRepositoriesInclude[]? include = default)
@@ -63431,7 +62231,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             app,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsBetaAppReviewDetails
         {
@@ -63446,7 +62245,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             notes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsAppClips
         {
@@ -63455,7 +62253,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appClipDefaultExperiences,
             bundleId,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsBetaAppLocalizations
@@ -63468,7 +62265,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             privacyPolicyUrl,
             tvOsPrivacyPolicy,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsAppInfos
@@ -63488,7 +62284,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             secondarySubcategoryTwo,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsPreReleaseVersions
         {
@@ -63497,7 +62292,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             version,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsInAppPurchases
@@ -63508,7 +62302,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             referenceName,
             state,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsCiProducts
@@ -63524,7 +62317,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflows,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsSubscriptionGroups
         {
@@ -63533,7 +62325,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionGroupLocalizations,
             subscriptions,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsReviewSubmissions
@@ -63547,7 +62338,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             submitted,
             submittedDate,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsBetaGroups
@@ -63568,7 +62358,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             publicLinkLimitEnabled,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsAppPreOrders
         {
@@ -63577,14 +62366,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             preOrderAvailableDate,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsAppPrices
         {
             app,
             priceTier,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsGameCenterEnabledVersions
@@ -63596,14 +62383,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsSubscriptionGracePeriods
         {
             app,
             optIn,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsPromotedPurchases
@@ -63617,7 +62402,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsEndUserLicenseAgreements
         {
@@ -63625,7 +62409,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             app,
             territories,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsAppStoreVersions
@@ -63651,7 +62434,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsAppCustomProductPages
         {
@@ -63663,7 +62445,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             url,
             visible,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsApps
@@ -63708,7 +62489,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsAppEvents
         {
@@ -63725,8 +62505,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             referenceName,
             territorySchedules,
         }
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppFieldsBuilds
@@ -63757,24 +62535,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsAppInclude
         {
@@ -63802,7 +62562,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionGracePeriod,
             subscriptionGroups,
         }
-
 
         // /v1/ciProducts/{id}/app
         public Task<AppResponse> GetCiProductsApp(string id, GetCiProductsAppFieldsBetaLicenseAgreements[]? fieldsBetaLicenseAgreements = default, GetCiProductsAppFieldsBetaAppReviewDetails[]? fieldsBetaAppReviewDetails = default, GetCiProductsAppFieldsAppClips[]? fieldsAppClips = default, GetCiProductsAppFieldsBetaAppLocalizations[]? fieldsBetaAppLocalizations = default, GetCiProductsAppFieldsAppInfos[]? fieldsAppInfos = default, GetCiProductsAppFieldsPreReleaseVersions[]? fieldsPreReleaseVersions = default, GetCiProductsAppFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetCiProductsAppFieldsCiProducts[]? fieldsCiProducts = default, GetCiProductsAppFieldsSubscriptionGroups[]? fieldsSubscriptionGroups = default, GetCiProductsAppFieldsReviewSubmissions[]? fieldsReviewSubmissions = default, GetCiProductsAppFieldsBetaGroups[]? fieldsBetaGroups = default, GetCiProductsAppFieldsAppPreOrders[]? fieldsAppPreOrders = default, GetCiProductsAppFieldsAppPrices[]? fieldsAppPrices = default, GetCiProductsAppFieldsGameCenterEnabledVersions[]? fieldsGameCenterEnabledVersions = default, GetCiProductsAppFieldsSubscriptionGracePeriods[]? fieldsSubscriptionGracePeriods = default, GetCiProductsAppFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetCiProductsAppFieldsEndUserLicenseAgreements[]? fieldsEndUserLicenseAgreements = default, GetCiProductsAppFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetCiProductsAppFieldsAppCustomProductPages[]? fieldsAppCustomProductPages = default, GetCiProductsAppFieldsApps[]? fieldsApps = default, GetCiProductsAppFieldsAppEvents[]? fieldsAppEvents = default, string[]? fieldsTerritories = default, GetCiProductsAppFieldsBuilds[]? fieldsBuilds = default, int? limitBetaGroups = default, int? limitAppStoreVersions = default, int? limitPreReleaseVersions = default, int? limitBetaAppLocalizations = default, int? limitBuilds = default, int? limitAppInfos = default, int? limitAppClips = default, int? limitPrices = default, int? limitAvailableTerritories = default, int? limitInAppPurchases = default, int? limitSubscriptionGroups = default, int? limitGameCenterEnabledVersions = default, int? limitAppCustomProductPages = default, int? limitInAppPurchasesV2 = default, int? limitPromotedPurchases = default, int? limitAppEvents = default, int? limitReviewSubmissions = default, GetCiProductsAppInclude[]? include = default)
@@ -64165,7 +62924,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsBuildRunsFieldsScmGitReferences
         {
@@ -64175,7 +62933,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             repository,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsBuildRunsFieldsCiBuildRuns
@@ -64203,7 +62960,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsBuildRunsFieldsCiWorkflows
         {
@@ -64226,7 +62982,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             xcodeVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsBuildRunsFieldsScmPullRequests
         {
@@ -64244,7 +62999,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             webUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsBuildRunsFieldsCiProducts
         {
@@ -64258,7 +63012,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             productType,
             workflows,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsBuildRunsFieldsBuilds
@@ -64289,9 +63042,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsBuildRunsInclude
         {
@@ -64302,7 +63052,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             sourceBranchOrTag,
             workflow,
         }
-
 
         // /v1/ciProducts/{id}/buildRuns
         public Task<CiBuildRunsResponse> GetCiProductsBuildRuns(string id, string[]? filterBuilds = default, GetCiProductsBuildRunsFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetCiProductsBuildRunsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiProductsBuildRunsFieldsCiWorkflows[]? fieldsCiWorkflows = default, GetCiProductsBuildRunsFieldsScmPullRequests[]? fieldsScmPullRequests = default, GetCiProductsBuildRunsFieldsCiProducts[]? fieldsCiProducts = default, GetCiProductsBuildRunsFieldsBuilds[]? fieldsBuilds = default, int? limit = default, int? limitBuilds = default, GetCiProductsBuildRunsInclude[]? include = default)
@@ -64335,7 +63084,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<CiBuildRunsResponse>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsPrimaryRepositoriesFieldsScmGitReferences
         {
@@ -64346,7 +63094,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsPrimaryRepositoriesFieldsScmProviders
         {
@@ -64354,7 +63101,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProviderType,
             url,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsPrimaryRepositoriesFieldsScmRepositories
@@ -64370,15 +63116,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             sshCloneUrl,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsPrimaryRepositoriesInclude
         {
             defaultBranch,
             scmProvider,
         }
-
 
         // /v1/ciProducts/{id}/primaryRepositories
         public Task<ScmRepositoriesResponse> GetCiProductsPrimaryRepositories(string id, string[]? filterId = default, GetCiProductsPrimaryRepositoriesFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetCiProductsPrimaryRepositoriesFieldsScmProviders[]? fieldsScmProviders = default, GetCiProductsPrimaryRepositoriesFieldsScmRepositories[]? fieldsScmRepositories = default, int? limit = default, GetCiProductsPrimaryRepositoriesInclude[]? include = default)
@@ -64795,7 +63538,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsWorkflowsFieldsCiWorkflows
         {
@@ -64818,7 +63560,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             xcodeVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsWorkflowsFieldsCiMacOsVersions
         {
@@ -64826,7 +63567,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
             xcodeVersions,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsWorkflowsFieldsCiProducts
@@ -64842,7 +63582,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflows,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsWorkflowsFieldsScmRepositories
         {
@@ -64857,8 +63596,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             sshCloneUrl,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiProductsWorkflowsInclude
         {
@@ -64867,7 +63604,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
             xcodeVersion,
         }
-
 
         // /v1/ciProducts/{id}/workflows
         public Task<CiWorkflowsResponse> GetCiProductsWorkflows(string id, GetCiProductsWorkflowsFieldsCiXcodeVersions[]? fieldsCiXcodeVersions = default, GetCiProductsWorkflowsFieldsCiWorkflows[]? fieldsCiWorkflows = default, GetCiProductsWorkflowsFieldsCiMacOsVersions[]? fieldsCiMacOsVersions = default, GetCiProductsWorkflowsFieldsCiProducts[]? fieldsCiProducts = default, GetCiProductsWorkflowsFieldsScmRepositories[]? fieldsScmRepositories = default, int? limit = default, GetCiProductsWorkflowsInclude[]? include = default)
@@ -64894,7 +63630,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<CiWorkflowsResponse>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsBuildRunsFieldsScmGitReferences
         {
@@ -64904,7 +63639,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             name,
             repository,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsBuildRunsFieldsCiBuildRuns
@@ -64932,7 +63666,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             workflow,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsBuildRunsFieldsCiWorkflows
         {
@@ -64955,7 +63688,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             xcodeVersion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsBuildRunsFieldsScmPullRequests
         {
@@ -64973,7 +63705,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             webUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsBuildRunsFieldsCiProducts
         {
@@ -64987,7 +63718,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             productType,
             workflows,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsBuildRunsFieldsBuilds
@@ -65018,9 +63748,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsBuildRunsInclude
         {
@@ -65031,7 +63758,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             sourceBranchOrTag,
             workflow,
         }
-
 
         // /v1/ciWorkflows/{id}/buildRuns
         public Task<CiBuildRunsResponse> GetCiWorkflowsBuildRuns(string id, string[]? filterBuilds = default, GetCiWorkflowsBuildRunsFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetCiWorkflowsBuildRunsFieldsCiBuildRuns[]? fieldsCiBuildRuns = default, GetCiWorkflowsBuildRunsFieldsCiWorkflows[]? fieldsCiWorkflows = default, GetCiWorkflowsBuildRunsFieldsScmPullRequests[]? fieldsScmPullRequests = default, GetCiWorkflowsBuildRunsFieldsCiProducts[]? fieldsCiProducts = default, GetCiWorkflowsBuildRunsFieldsBuilds[]? fieldsBuilds = default, int? limit = default, int? limitBuilds = default, GetCiWorkflowsBuildRunsInclude[]? include = default)
@@ -65074,7 +63800,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsRepositoryFieldsScmProviders
         {
@@ -65082,7 +63807,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProviderType,
             url,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsRepositoryFieldsScmRepositories
@@ -65098,14 +63822,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             sshCloneUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiWorkflowsRepositoryInclude
         {
             defaultBranch,
             scmProvider,
         }
-
 
         // /v1/ciWorkflows/{id}/repository
         public Task<ScmRepositoryResponse> GetCiWorkflowsRepository(string id, GetCiWorkflowsRepositoryFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetCiWorkflowsRepositoryFieldsScmProviders[]? fieldsScmProviders = default, GetCiWorkflowsRepositoryFieldsScmRepositories[]? fieldsScmRepositories = default, GetCiWorkflowsRepositoryInclude[]? include = default)
@@ -65135,7 +63857,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCiXcodeVersionsMacOsVersionsFieldsCiMacOsVersions
         {
@@ -65143,10 +63864,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
             xcodeVersions,
         }
-
-
-
-
 
         // /v1/ciXcodeVersions/{id}/macOsVersions
         public Task<CiMacOsVersionsResponse> GetCiXcodeVersionsMacOsVersions(string id, GetCiXcodeVersionsMacOsVersionsFieldsCiXcodeVersions[]? fieldsCiXcodeVersions = default, GetCiXcodeVersionsMacOsVersionsFieldsCiMacOsVersions[]? fieldsCiMacOsVersions = default, int? limit = default, int? limitXcodeVersions = default, string[]? include = default)
@@ -65181,7 +63898,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             title,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetCustomerReviewsResponseFieldsCustomerReviewResponses
         {
@@ -65190,8 +63906,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             review,
             state,
         }
-
-
 
         // /v1/customerReviews/{id}/response
         public Task<CustomerReviewResponseV1Response> GetCustomerReviewsResponse(string id, GetCustomerReviewsResponseFieldsCustomerReviews[]? fieldsCustomerReviews = default, GetCustomerReviewsResponseFieldsCustomerReviewResponses[]? fieldsCustomerReviewResponses = default, string[]? include = default)
@@ -65210,7 +63924,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<CustomerReviewResponseV1Response>(message);
         }
 
-
         // /v1/diagnosticSignatures/{id}/logs
         public Task GetDiagnosticSignaturesLogs(string id, int? limit = default)
         {
@@ -65223,8 +63936,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             var message = new HttpRequestMessage(HttpMethod.Get, uriBuilder.uri);
             return SendAsync(message);
         }
-
-
 
         // /v1/endUserLicenseAgreements/{id}/territories
         public Task<TerritoriesResponse> GetEndUserLicenseAgreementsTerritories(string id, string[]? fieldsTerritories = default, int? limit = default)
@@ -65271,7 +63982,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/gameCenterEnabledVersions/{id}/relationships/compatibleVersions
         public Task<GetGameCenterEnabledVersionsCompatibleVersionsResponse> GetGameCenterEnabledVersionsCompatibleVersions(string id, int? limit = default)
@@ -65363,10 +64073,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             TV_OS,
         }
 
-
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetGameCenterEnabledVersionsCompatibleVersionsSort
         {
@@ -65374,7 +64080,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-versionString")]
             versionStringDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetGameCenterEnabledVersionsCompatibleVersionsFieldsGameCenterEnabledVersions
@@ -65385,7 +64090,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             versionString,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetGameCenterEnabledVersionsCompatibleVersionsFieldsApps
@@ -65430,16 +64134,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetGameCenterEnabledVersionsCompatibleVersionsInclude
         {
             app,
             compatibleVersions,
         }
-
 
         // /v1/gameCenterEnabledVersions/{id}/compatibleVersions
         public Task<GameCenterEnabledVersionsResponse> GetGameCenterEnabledVersionsCompatibleVersions(string id, GetGameCenterEnabledVersionsCompatibleVersionsFilterPlatform[]? filterPlatform = default, string[]? filterVersionString = default, string[]? filterApp = default, string[]? filterId = default, GetGameCenterEnabledVersionsCompatibleVersionsSort[]? sort = default, GetGameCenterEnabledVersionsCompatibleVersionsFieldsGameCenterEnabledVersions[]? fieldsGameCenterEnabledVersions = default, GetGameCenterEnabledVersionsCompatibleVersionsFieldsApps[]? fieldsApps = default, int? limit = default, int? limitCompatibleVersions = default, GetGameCenterEnabledVersionsCompatibleVersionsInclude[]? include = default)
@@ -65559,7 +64259,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasePriceSchedulesManualPricesFieldsInAppPurchasePricePoints
         {
@@ -65570,7 +64269,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasePriceSchedulesManualPricesFieldsInAppPurchasePrices
         {
@@ -65580,16 +64278,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasePriceSchedulesManualPricesInclude
         {
             inAppPurchasePricePoint,
             territory,
         }
-
 
         // /v1/inAppPurchasePriceSchedules/{id}/manualPrices
         public Task<InAppPurchasePricesResponse> GetInAppPurchasePriceSchedulesManualPrices(string id, string[]? filterTerritory = default, GetInAppPurchasePriceSchedulesManualPricesFieldsInAppPurchasePricePoints[]? fieldsInAppPurchasePricePoints = default, GetInAppPurchasePriceSchedulesManualPricesFieldsInAppPurchasePrices[]? fieldsInAppPurchasePrices = default, string[]? fieldsTerritories = default, int? limit = default, GetInAppPurchasePriceSchedulesManualPricesInclude[]? include = default)
@@ -65629,7 +64323,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesAppStoreReviewScreenshotFieldsInAppPurchases
         {
@@ -65649,8 +64342,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             reviewNote,
             state,
         }
-
-
 
         // /v2/inAppPurchases/{id}/appStoreReviewScreenshot
         public Task<InAppPurchaseAppStoreReviewScreenshotResponse> GetInAppPurchasesAppStoreReviewScreenshot(string id, GetInAppPurchasesAppStoreReviewScreenshotFieldsInAppPurchaseAppStoreReviewScreenshots[]? fieldsInAppPurchaseAppStoreReviewScreenshots = default, GetInAppPurchasesAppStoreReviewScreenshotFieldsInAppPurchases[]? fieldsInAppPurchases = default, string[]? include = default)
@@ -65689,7 +64380,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesContentFieldsInAppPurchaseContents
         {
@@ -65699,8 +64389,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             lastModifiedDate,
             url,
         }
-
-
 
         // /v2/inAppPurchases/{id}/content
         public Task<InAppPurchaseContentResponse> GetInAppPurchasesContent(string id, GetInAppPurchasesContentFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetInAppPurchasesContentFieldsInAppPurchaseContents[]? fieldsInAppPurchaseContents = default, string[]? include = default)
@@ -65728,7 +64416,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesIapPriceScheduleFieldsInAppPurchases
         {
@@ -65749,7 +64436,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesIapPriceScheduleFieldsInAppPurchasePriceSchedules
         {
@@ -65757,15 +64443,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             manualPrices,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesIapPriceScheduleInclude
         {
             inAppPurchase,
             manualPrices,
         }
-
 
         // /v2/inAppPurchases/{id}/iapPriceSchedule
         public Task<InAppPurchasePriceScheduleResponse> GetInAppPurchasesIapPriceSchedule(string id, GetInAppPurchasesIapPriceScheduleFieldsInAppPurchasePrices[]? fieldsInAppPurchasePrices = default, GetInAppPurchasesIapPriceScheduleFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetInAppPurchasesIapPriceScheduleFieldsInAppPurchasePriceSchedules[]? fieldsInAppPurchasePriceSchedules = default, int? limitManualPrices = default, GetInAppPurchasesIapPriceScheduleInclude[]? include = default)
@@ -66068,7 +64751,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesInAppPurchaseLocalizationsFieldsInAppPurchases
         {
@@ -66088,9 +64770,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             reviewNote,
             state,
         }
-
-
-
 
         // /v2/inAppPurchases/{id}/inAppPurchaseLocalizations
         public Task<InAppPurchaseLocalizationsResponse> GetInAppPurchasesInAppPurchaseLocalizations(string id, GetInAppPurchasesInAppPurchaseLocalizationsFieldsInAppPurchaseLocalizations[]? fieldsInAppPurchaseLocalizations = default, GetInAppPurchasesInAppPurchaseLocalizationsFieldsInAppPurchases[]? fieldsInAppPurchases = default, int? limit = default, string[]? include = default)
@@ -66199,8 +64878,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesPricePointsFieldsInAppPurchasePricePoints
         {
@@ -66210,10 +64887,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             proceeds,
             territory,
         }
-
-
-
-
 
         // /v2/inAppPurchases/{id}/pricePoints
         public Task<InAppPurchasePricePointsResponse> GetInAppPurchasesPricePoints(string id, string[]? filterPriceTier = default, string[]? filterTerritory = default, GetInAppPurchasesPricePointsFieldsInAppPurchasePricePoints[]? fieldsInAppPurchasePricePoints = default, string[]? fieldsTerritories = default, int? limit = default, string[]? include = default)
@@ -66250,7 +64923,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesPromotedPurchaseFieldsSubscriptions
         {
@@ -66273,7 +64945,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesPromotedPurchaseFieldsInAppPurchases
         {
@@ -66294,7 +64965,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesPromotedPurchaseFieldsPromotedPurchaseImages
         {
@@ -66310,8 +64980,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetInAppPurchasesPromotedPurchaseInclude
         {
@@ -66319,7 +64987,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionImages,
             subscription,
         }
-
 
         // /v2/inAppPurchases/{id}/promotedPurchase
         public Task<PromotedPurchaseResponse> GetInAppPurchasesPromotedPurchase(string id, GetInAppPurchasesPromotedPurchaseFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetInAppPurchasesPromotedPurchaseFieldsSubscriptions[]? fieldsSubscriptions = default, GetInAppPurchasesPromotedPurchaseFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetInAppPurchasesPromotedPurchaseFieldsPromotedPurchaseImages[]? fieldsPromotedPurchaseImages = default, int? limitPromotionImages = default, GetInAppPurchasesPromotedPurchaseInclude[]? include = default)
@@ -66387,7 +65054,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
         // /v1/preReleaseVersions/{id}/app
         public Task<AppResponse> GetPreReleaseVersionsApp(string id, GetPreReleaseVersionsAppFieldsApps[]? fieldsApps = default)
         {
@@ -66430,8 +65096,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             version,
         }
 
-
-
         // /v1/preReleaseVersions/{id}/builds
         public Task<BuildsResponse> GetPreReleaseVersionsBuilds(string id, GetPreReleaseVersionsBuildsFieldsBuilds[]? fieldsBuilds = default, int? limit = default)
         {
@@ -66459,7 +65123,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             seedId,
         }
 
-
         // /v1/profiles/{id}/bundleId
         public Task<BundleIdResponse> GetProfilesBundleId(string id, GetProfilesBundleIdFieldsBundleIds[]? fieldsBundleIds = default)
         {
@@ -66485,8 +65148,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             platform,
             serialNumber,
         }
-
-
 
         // /v1/profiles/{id}/certificates
         public Task<CertificatesResponse> GetProfilesCertificates(string id, GetProfilesCertificatesFieldsCertificates[]? fieldsCertificates = default, int? limit = default)
@@ -66514,8 +65175,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             status,
             udid,
         }
-
-
 
         // /v1/profiles/{id}/devices
         public Task<DevicesResponse> GetProfilesDevices(string id, GetProfilesDevicesFieldsDevices[]? fieldsDevices = default, int? limit = default)
@@ -66754,7 +65413,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetPromotedPurchasesPromotionImagesFieldsPromotedPurchaseImages
         {
@@ -66769,9 +65427,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
-
-
 
         // /v1/promotedPurchases/{id}/promotionImages
         public Task<PromotedPurchaseImagesResponse> GetPromotedPurchasesPromotionImages(string id, GetPromotedPurchasesPromotionImagesFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetPromotedPurchasesPromotionImagesFieldsPromotedPurchaseImages[]? fieldsPromotedPurchaseImages = default, int? limit = default, string[]? include = default)
@@ -66940,7 +65595,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             trafficProportion,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsItemsFieldsReviewSubmissionItems
         {
@@ -66953,7 +65607,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             reviewSubmission,
             state,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsItemsFieldsAppStoreVersions
@@ -66979,7 +65632,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             versionString,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsItemsFieldsAppCustomProductPageVersions
         {
@@ -66988,7 +65640,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             version,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsItemsFieldsAppEvents
@@ -67007,8 +65658,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territorySchedules,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetReviewSubmissionsItemsInclude
         {
@@ -67017,7 +65666,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             appStoreVersion,
             appStoreVersionExperiment,
         }
-
 
         // /v1/reviewSubmissions/{id}/items
         public Task<ReviewSubmissionItemsResponse> GetReviewSubmissionsItems(string id, GetReviewSubmissionsItemsFieldsAppStoreVersionExperiments[]? fieldsAppStoreVersionExperiments = default, GetReviewSubmissionsItemsFieldsReviewSubmissionItems[]? fieldsReviewSubmissionItems = default, GetReviewSubmissionsItemsFieldsAppStoreVersions[]? fieldsAppStoreVersions = default, GetReviewSubmissionsItemsFieldsAppCustomProductPageVersions[]? fieldsAppCustomProductPageVersions = default, GetReviewSubmissionsItemsFieldsAppEvents[]? fieldsAppEvents = default, int? limit = default, GetReviewSubmissionsItemsInclude[]? include = default)
@@ -67044,7 +65692,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<ReviewSubmissionItemsResponse>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmProvidersRepositoriesFieldsScmGitReferences
         {
@@ -67055,7 +65702,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmProvidersRepositoriesFieldsScmProviders
         {
@@ -67063,7 +65709,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProviderType,
             url,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmProvidersRepositoriesFieldsScmRepositories
@@ -67079,15 +65724,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             sshCloneUrl,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmProvidersRepositoriesInclude
         {
             defaultBranch,
             scmProvider,
         }
-
 
         // /v1/scmProviders/{id}/repositories
         public Task<ScmRepositoriesResponse> GetScmProvidersRepositories(string id, string[]? filterId = default, GetScmProvidersRepositoriesFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetScmProvidersRepositoriesFieldsScmProviders[]? fieldsScmProviders = default, GetScmProvidersRepositoriesFieldsScmRepositories[]? fieldsScmRepositories = default, int? limit = default, GetScmProvidersRepositoriesInclude[]? include = default)
@@ -67264,7 +65906,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             repository,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmRepositoriesGitReferencesFieldsScmRepositories
         {
@@ -67278,9 +65919,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProvider,
             sshCloneUrl,
         }
-
-
-
 
         // /v1/scmRepositories/{id}/gitReferences
         public Task<ScmGitReferencesResponse> GetScmRepositoriesGitReferences(string id, GetScmRepositoriesGitReferencesFieldsScmGitReferences[]? fieldsScmGitReferences = default, GetScmRepositoriesGitReferencesFieldsScmRepositories[]? fieldsScmRepositories = default, int? limit = default, string[]? include = default)
@@ -67461,7 +66099,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             webUrl,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetScmRepositoriesPullRequestsFieldsScmRepositories
         {
@@ -67475,9 +66112,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             scmProvider,
             sshCloneUrl,
         }
-
-
-
 
         // /v1/scmRepositories/{id}/pullRequests
         public Task<ScmPullRequestsResponse> GetScmRepositoriesPullRequests(string id, GetScmRepositoriesPullRequestsFieldsScmPullRequests[]? fieldsScmPullRequests = default, GetScmRepositoriesPullRequestsFieldsScmRepositories[]? fieldsScmRepositories = default, int? limit = default, string[]? include = default)
@@ -67671,7 +66305,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptions,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionGroupLocalizationsFieldsSubscriptionGroupLocalizations
         {
@@ -67681,9 +66314,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             subscriptionGroup,
         }
-
-
-
 
         // /v1/subscriptionGroups/{id}/subscriptionGroupLocalizations
         public Task<SubscriptionGroupLocalizationsResponse> GetSubscriptionGroupsSubscriptionGroupLocalizations(string id, GetSubscriptionGroupsSubscriptionGroupLocalizationsFieldsSubscriptionGroups[]? fieldsSubscriptionGroups = default, GetSubscriptionGroupsSubscriptionGroupLocalizationsFieldsSubscriptionGroupLocalizations[]? fieldsSubscriptionGroupLocalizations = default, int? limit = default, string[]? include = default)
@@ -67996,8 +66626,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFilterState
         {
@@ -68013,7 +66641,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             REJECTED,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsSort
         {
@@ -68021,7 +66648,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             [EnumMember(Value = "-name")]
             nameDescending,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsPromotedPurchases
@@ -68035,7 +66661,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptionPromotionalOffers
         {
@@ -68047,7 +66672,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             prices,
             subscription,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptionOfferCodes
@@ -68066,7 +66690,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             totalNumberOfCodes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptionAppStoreReviewScreenshots
         {
@@ -68081,7 +66704,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploadOperations,
             uploaded,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptions
@@ -68105,7 +66727,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptionGroups
         {
@@ -68114,7 +66735,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionGroupLocalizations,
             subscriptions,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptionIntroductoryOffers
@@ -68129,7 +66749,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptionPrices
         {
@@ -68141,7 +66760,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsFieldsSubscriptionLocalizations
         {
@@ -68151,13 +66769,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             subscription,
         }
-
-
-
-
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionGroupsSubscriptionsInclude
@@ -68171,7 +66782,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionalOffers,
             subscriptionLocalizations,
         }
-
 
         // /v1/subscriptionGroups/{id}/subscriptions
         public Task<SubscriptionsResponse> GetSubscriptionGroupsSubscriptions(string id, string[]? filterName = default, string[]? filterProductId = default, GetSubscriptionGroupsSubscriptionsFilterState[]? filterState = default, GetSubscriptionGroupsSubscriptionsSort[]? sort = default, GetSubscriptionGroupsSubscriptionsFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptionPromotionalOffers[]? fieldsSubscriptionPromotionalOffers = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptionOfferCodes[]? fieldsSubscriptionOfferCodes = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptionAppStoreReviewScreenshots[]? fieldsSubscriptionAppStoreReviewScreenshots = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptionGroups[]? fieldsSubscriptionGroups = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptionIntroductoryOffers[]? fieldsSubscriptionIntroductoryOffers = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptionPrices[]? fieldsSubscriptionPrices = default, GetSubscriptionGroupsSubscriptionsFieldsSubscriptionLocalizations[]? fieldsSubscriptionLocalizations = default, int? limit = default, int? limitSubscriptionLocalizations = default, int? limitIntroductoryOffers = default, int? limitPromotionalOffers = default, int? limitOfferCodes = default, int? limitPrices = default, GetSubscriptionGroupsSubscriptionsInclude[]? include = default)
@@ -68494,7 +67104,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             offerCode,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesCustomCodesFieldsSubscriptionOfferCodes
         {
@@ -68511,9 +67120,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
             totalNumberOfCodes,
         }
-
-
-
 
         // /v1/subscriptionOfferCodes/{id}/customCodes
         public Task<SubscriptionOfferCodeCustomCodesResponse> GetSubscriptionOfferCodesCustomCodes(string id, GetSubscriptionOfferCodesCustomCodesFieldsSubscriptionOfferCodeCustomCodes[]? fieldsSubscriptionOfferCodeCustomCodes = default, GetSubscriptionOfferCodesCustomCodesFieldsSubscriptionOfferCodes[]? fieldsSubscriptionOfferCodes = default, int? limit = default, string[]? include = default)
@@ -68798,7 +67404,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             totalNumberOfCodes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesOneTimeUseCodesFieldsSubscriptionOfferCodeOneTimeUseCodes
         {
@@ -68809,9 +67414,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             offerCode,
             values,
         }
-
-
-
 
         // /v1/subscriptionOfferCodes/{id}/oneTimeUseCodes
         public Task<SubscriptionOfferCodeOneTimeUseCodesResponse> GetSubscriptionOfferCodesOneTimeUseCodes(string id, GetSubscriptionOfferCodesOneTimeUseCodesFieldsSubscriptionOfferCodes[]? fieldsSubscriptionOfferCodes = default, GetSubscriptionOfferCodesOneTimeUseCodesFieldsSubscriptionOfferCodeOneTimeUseCodes[]? fieldsSubscriptionOfferCodeOneTimeUseCodes = default, int? limit = default, string[]? include = default)
@@ -68913,7 +67515,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesPricesFieldsSubscriptionPricePoints
         {
@@ -68925,8 +67526,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesPricesFieldsSubscriptionOfferCodePrices
         {
@@ -68934,15 +67533,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionOfferCodesPricesInclude
         {
             subscriptionPricePoint,
             territory,
         }
-
 
         // /v1/subscriptionOfferCodes/{id}/prices
         public Task<SubscriptionOfferCodePricesResponse> GetSubscriptionOfferCodesPrices(string id, string[]? filterTerritory = default, GetSubscriptionOfferCodesPricesFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, string[]? fieldsTerritories = default, GetSubscriptionOfferCodesPricesFieldsSubscriptionOfferCodePrices[]? fieldsSubscriptionOfferCodePrices = default, int? limit = default, GetSubscriptionOfferCodesPricesInclude[]? include = default)
@@ -69055,8 +67651,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionPricePointsEqualizationsFieldsSubscriptionPricePoints
         {
@@ -69067,10 +67661,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
             territory,
         }
-
-
-
-
 
         // /v1/subscriptionPricePoints/{id}/equalizations
         public Task<SubscriptionPricePointsResponse> GetSubscriptionPricePointsEqualizations(string id, string[]? filterSubscription = default, string[]? filterTerritory = default, GetSubscriptionPricePointsEqualizationsFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, string[]? fieldsTerritories = default, int? limit = default, string[]? include = default)
@@ -69176,7 +67766,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionPromotionalOffersPricesFieldsSubscriptionPricePoints
         {
@@ -69188,8 +67777,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionPromotionalOffersPricesFieldsSubscriptionPromotionalOfferPrices
         {
@@ -69197,15 +67784,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionPromotionalOffersPricesInclude
         {
             subscriptionPricePoint,
             territory,
         }
-
 
         // /v1/subscriptionPromotionalOffers/{id}/prices
         public Task<SubscriptionPromotionalOfferPricesResponse> GetSubscriptionPromotionalOffersPrices(string id, string[]? filterTerritory = default, GetSubscriptionPromotionalOffersPricesFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, string[]? fieldsTerritories = default, GetSubscriptionPromotionalOffersPricesFieldsSubscriptionPromotionalOfferPrices[]? fieldsSubscriptionPromotionalOfferPrices = default, int? limit = default, GetSubscriptionPromotionalOffersPricesInclude[]? include = default)
@@ -69245,7 +67829,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsAppStoreReviewScreenshotFieldsSubscriptions
         {
@@ -69267,8 +67850,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionLocalizations,
             subscriptionPeriod,
         }
-
-
 
         // /v1/subscriptions/{id}/appStoreReviewScreenshot
         public Task<SubscriptionAppStoreReviewScreenshotResponse> GetSubscriptionsAppStoreReviewScreenshot(string id, GetSubscriptionsAppStoreReviewScreenshotFieldsSubscriptionAppStoreReviewScreenshots[]? fieldsSubscriptionAppStoreReviewScreenshots = default, GetSubscriptionsAppStoreReviewScreenshotFieldsSubscriptions[]? fieldsSubscriptions = default, string[]? include = default)
@@ -69317,7 +67898,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/subscriptions/{id}/relationships/introductoryOffers
         public Task<GetSubscriptionsIntroductoryOffersResponse> GetSubscriptionsIntroductoryOffers(string id, int? limit = default)
@@ -69485,7 +68065,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsIntroductoryOffersFieldsSubscriptionPricePoints
         {
@@ -69496,7 +68075,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
             territory,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsIntroductoryOffersFieldsSubscriptions
@@ -69520,7 +68098,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsIntroductoryOffersFieldsSubscriptionIntroductoryOffers
         {
@@ -69534,9 +68111,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsIntroductoryOffersInclude
         {
@@ -69544,7 +68118,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPricePoint,
             territory,
         }
-
 
         // /v1/subscriptions/{id}/introductoryOffers
         public Task<SubscriptionIntroductoryOffersResponse> GetSubscriptionsIntroductoryOffers(string id, string[]? filterTerritory = default, GetSubscriptionsIntroductoryOffersFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, GetSubscriptionsIntroductoryOffersFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionsIntroductoryOffersFieldsSubscriptionIntroductoryOffers[]? fieldsSubscriptionIntroductoryOffers = default, string[]? fieldsTerritories = default, int? limit = default, GetSubscriptionsIntroductoryOffersInclude[]? include = default)
@@ -69773,7 +68346,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodeCustomCodes
         {
@@ -69784,7 +68356,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             numberOfCodes,
             offerCode,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodes
@@ -69803,7 +68374,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             totalNumberOfCodes,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodeOneTimeUseCodes
         {
@@ -69814,7 +68384,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             offerCode,
             values,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsOfferCodesFieldsSubscriptions
@@ -69838,18 +68407,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodePrices
         {
             subscriptionPricePoint,
             territory,
         }
-
-
-
-
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsOfferCodesInclude
@@ -69859,7 +68422,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             prices,
             subscription,
         }
-
 
         // /v1/subscriptions/{id}/offerCodes
         public Task<SubscriptionOfferCodesResponse> GetSubscriptionsOfferCodes(string id, string[]? filterTerritory = default, GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodeCustomCodes[]? fieldsSubscriptionOfferCodeCustomCodes = default, GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodes[]? fieldsSubscriptionOfferCodes = default, GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodeOneTimeUseCodes[]? fieldsSubscriptionOfferCodeOneTimeUseCodes = default, GetSubscriptionsOfferCodesFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionsOfferCodesFieldsSubscriptionOfferCodePrices[]? fieldsSubscriptionOfferCodePrices = default, int? limit = default, int? limitOneTimeUseCodes = default, int? limitCustomCodes = default, int? limitPrices = default, GetSubscriptionsOfferCodesInclude[]? include = default)
@@ -69894,7 +68456,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             return SendAsync<SubscriptionOfferCodesResponse>(message);
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPricePointsFieldsSubscriptionPricePoints
         {
@@ -69905,10 +68466,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
             territory,
         }
-
-
-
-
 
         // /v1/subscriptions/{id}/pricePoints
         public Task<SubscriptionPricePointsResponse> GetSubscriptionsPricePoints(string id, string[]? filterTerritory = default, GetSubscriptionsPricePointsFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, string[]? fieldsTerritories = default, int? limit = default, string[]? include = default)
@@ -69961,7 +68518,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/subscriptions/{id}/relationships/prices
         public Task<GetSubscriptionsPricesResponse> GetSubscriptionsPrices(string id, int? limit = default)
@@ -70087,8 +68643,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPricesFieldsSubscriptionPricePoints
         {
@@ -70099,7 +68653,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscription,
             territory,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPricesFieldsSubscriptionPrices
@@ -70112,16 +68665,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPricesInclude
         {
             subscriptionPricePoint,
             territory,
         }
-
 
         // /v1/subscriptions/{id}/prices
         public Task<SubscriptionPricesResponse> GetSubscriptionsPrices(string id, string[]? filterSubscriptionPricePoint = default, string[]? filterTerritory = default, GetSubscriptionsPricesFieldsSubscriptionPricePoints[]? fieldsSubscriptionPricePoints = default, GetSubscriptionsPricesFieldsSubscriptionPrices[]? fieldsSubscriptionPrices = default, string[]? fieldsTerritories = default, int? limit = default, GetSubscriptionsPricesInclude[]? include = default)
@@ -70160,7 +68709,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             visibleForAllUsers,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotedPurchaseFieldsSubscriptions
         {
@@ -70183,7 +68731,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotedPurchaseFieldsInAppPurchases
         {
@@ -70204,7 +68751,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotedPurchaseFieldsPromotedPurchaseImages
         {
@@ -70220,8 +68766,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             uploaded,
         }
 
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotedPurchaseInclude
         {
@@ -70229,7 +68773,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             promotionImages,
             subscription,
         }
-
 
         // /v1/subscriptions/{id}/promotedPurchase
         public Task<PromotedPurchaseResponse> GetSubscriptionsPromotedPurchase(string id, GetSubscriptionsPromotedPurchaseFieldsPromotedPurchases[]? fieldsPromotedPurchases = default, GetSubscriptionsPromotedPurchaseFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionsPromotedPurchaseFieldsInAppPurchases[]? fieldsInAppPurchases = default, GetSubscriptionsPromotedPurchaseFieldsPromotedPurchaseImages[]? fieldsPromotedPurchaseImages = default, int? limitPromotionImages = default, GetSubscriptionsPromotedPurchaseInclude[]? include = default)
@@ -70377,7 +68920,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Meta? meta { get; set; }
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotionalOffersFieldsSubscriptionPromotionalOffers
         {
@@ -70389,7 +68931,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             prices,
             subscription,
         }
-
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotionalOffersFieldsSubscriptions
@@ -70413,7 +68954,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotionalOffersFieldsSubscriptionPromotionalOfferPrices
         {
@@ -70421,16 +68961,12 @@ namespace StudioDrydock.AppStoreConnect.Api
             territory,
         }
 
-
-
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsPromotionalOffersInclude
         {
             prices,
             subscription,
         }
-
 
         // /v1/subscriptions/{id}/promotionalOffers
         public Task<SubscriptionPromotionalOffersResponse> GetSubscriptionsPromotionalOffers(string id, string[]? filterTerritory = default, GetSubscriptionsPromotionalOffersFieldsSubscriptionPromotionalOffers[]? fieldsSubscriptionPromotionalOffers = default, GetSubscriptionsPromotionalOffersFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionsPromotionalOffersFieldsSubscriptionPromotionalOfferPrices[]? fieldsSubscriptionPromotionalOfferPrices = default, int? limit = default, int? limitPrices = default, GetSubscriptionsPromotionalOffersInclude[]? include = default)
@@ -70824,7 +69360,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionPeriod,
         }
 
-
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
         public enum GetSubscriptionsSubscriptionLocalizationsFieldsSubscriptionLocalizations
         {
@@ -70834,9 +69369,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             state,
             subscription,
         }
-
-
-
 
         // /v1/subscriptions/{id}/subscriptionLocalizations
         public Task<SubscriptionLocalizationsResponse> GetSubscriptionsSubscriptionLocalizations(string id, GetSubscriptionsSubscriptionLocalizationsFieldsSubscriptions[]? fieldsSubscriptions = default, GetSubscriptionsSubscriptionLocalizationsFieldsSubscriptionLocalizations[]? fieldsSubscriptionLocalizations = default, int? limit = default, string[]? include = default)
@@ -70900,8 +69432,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersionForSandbox,
         }
 
-
-
         // /v1/userInvitations/{id}/visibleApps
         public Task<AppsResponse> GetUserInvitationsVisibleApps(string id, GetUserInvitationsVisibleAppsFieldsApps[]? fieldsApps = default, int? limit = default)
         {
@@ -70947,7 +69477,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             public Links links { get; set; } = new Links();
             public Meta? meta { get; set; }
         }
-
 
         // /v1/users/{id}/relationships/visibleApps
         public Task<GetUsersVisibleAppsResponse> GetUsersVisibleApps(string id, int? limit = default)
@@ -71073,8 +69602,6 @@ namespace StudioDrydock.AppStoreConnect.Api
             subscriptionStatusUrlVersion,
             subscriptionStatusUrlVersionForSandbox,
         }
-
-
 
         // /v1/users/{id}/visibleApps
         public Task<AppsResponse> GetUsersVisibleApps(string id, GetUsersVisibleAppsFieldsApps[]? fieldsApps = default, int? limit = default)

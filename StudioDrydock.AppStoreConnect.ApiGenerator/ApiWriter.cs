@@ -89,6 +89,29 @@ namespace StudioDrydock.AppStoreConnect.ApiGenerator
             return false;
         }
 
+        bool IsEnumCompatible(OpenApiSchema a, OpenApiSchema b)
+        {
+            if (a.Enum.Count != b.Enum.Count)
+                return false;
+
+            var valuesA = a.Enum
+                .Cast<OpenApiString>()
+                .Select(x => x.Value)
+                .OrderBy(x => x)
+                .ToArray();
+            var valuesB = b.Enum
+                .Cast<OpenApiString>()
+                .Select(x => x.Value)
+                .OrderBy(x => x)
+                .ToArray();
+            for (int i = 0; i < valuesA.Length; ++i)
+            {
+                if (valuesA[i] != valuesB[i])
+                    return false;
+            }
+            return true;
+        }
+
         public void WriteType(string nameHint, OpenApiSchema schema)
         {
             if (schema.Type == null && schema.OneOf.Count >= 1)
@@ -261,7 +284,7 @@ namespace StudioDrydock.AppStoreConnect.ApiGenerator
         {
             if (enums.TryGetValue(name, out var existing))
             {
-                if (existing.Enum.Count != schema.Enum.Count)
+                if (!IsEnumCompatible(existing, schema))
                     throw new NotSupportedException($"Multiple top-level enums with same name {name}");
                 return;
             }
@@ -321,10 +344,7 @@ namespace StudioDrydock.AppStoreConnect.ApiGenerator
 
             // Enums required for query parameters
             foreach (var param in queryParameters)
-            {
                 GenerateTopLevelEnum($"{methodName}{param.Name.MakeValidIdentifier().TitleCase()}", param.Schema);
-                cs.WriteLine();
-            }
 
             cs.Comment(path);
             cs.BeginLine();
