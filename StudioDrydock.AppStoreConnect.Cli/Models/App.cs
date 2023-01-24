@@ -2,6 +2,11 @@ using StudioDrydock.AppStoreConnect.Api;
 
 namespace StudioDrydock.AppStoreConnect.Cli.Models
 {
+    public class Apps
+    {
+        public App[] apps { get; set; }
+    }
+
     public class App
     {
         public string id { get; set; }

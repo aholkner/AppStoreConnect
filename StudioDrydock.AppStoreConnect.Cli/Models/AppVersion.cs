@@ -2,6 +2,11 @@ using StudioDrydock.AppStoreConnect.Api;
 
 namespace StudioDrydock.AppStoreConnect.Cli.Models
 {
+    public class AppVersions
+    {
+        public AppVersion[] appVersions { get; set; }
+    }
+
     public class AppVersion
     {
         public string id { get; set; }

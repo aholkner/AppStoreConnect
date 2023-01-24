@@ -127,7 +127,7 @@ async Task GetApps(InvocationContext context)
     var api = CreateClient(context);
     var response = await api.GetApps();
     var apps = response.data.Select(x => new App(x)).ToArray();
-    Output(context, apps);
+    Output(context, new Apps { apps = apps });
 }
 
 // get-app-versions
@@ -149,15 +149,15 @@ async Task GetAppVersions(InvocationContext context)
         version.localizations = localizationResponse.data.Select(x => new AppVersionLocalization(x)).ToArray();
     }
 
-    Output(context, versions);
+    Output(context, new AppVersions() { appVersions = versions });
 }
 
 // set-app-versions
 async Task SetAppVersions(InvocationContext context)
 {
     var api = CreateClient(context);
-    var versions = Input<AppVersion[]>(context);
-    foreach (var version in versions)
+    var versions = Input<AppVersions>(context);
+    foreach (var version in versions.appVersions)
     {
         foreach (var localization in version.localizations)
             await api.PatchAppStoreVersionLocalizations(localization.id, localization.CreateUpdateRequest());
