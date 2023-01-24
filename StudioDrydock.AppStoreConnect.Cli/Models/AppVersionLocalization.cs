@@ -42,7 +42,7 @@ namespace StudioDrydock.AppStoreConnect.Cli.Models
                         marketingUrl = this.marketingUrl,
                         promotionalText = this.promotionalText,
                         supportUrl = this.supportUrl,
-                        whatsNew = this.supportUrl
+                        whatsNew = this.whatsNew
                     }
                 }
             };
