@@ -49,9 +49,9 @@ namespace StudioDrydock.AppStoreConnect.Api
         {
             if (timeout == default)
             {
-                timeout = TimeSpan.FromMinutes(20);
+                timeout = TimeSpan.FromMinutes(10);
             }
-            else if (timeout.TotalMinutes > 20)
+            else if (timeout.TotalMinutes > 10)
             {
                 throw new ArgumentOutOfRangeException(nameof(timeout));
             }
