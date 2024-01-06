@@ -20,6 +20,7 @@ namespace StudioDrydock.AppStoreConnect.Cli.Models
         IOS,
         MAC_OS,
         TV_OS,
+        VISION_OS,
     }
 
     [JsonConverter(typeof(JsonStringEnumMemberConverter))]

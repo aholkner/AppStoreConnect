@@ -81,7 +81,13 @@ namespace StudioDrydock.AppStoreConnect.ApiGenerator
                     if (stringValue != identifierValue)
                         cs.WriteLine($"[EnumMember(Value = \"{stringValue}\")]");
                     cs.WriteLine($"{identifierValue},");
+
+                    // Assume any enum that contains "TV_OS" is a list of platforms, and so should also include "VISION_OS", which
+                    // is being served by the production portal but has not been exported to the API spec yet.
+                    if (stringValue == "TV_OS")
+                        cs.WriteLine("VISION_OS,");
                 }
+                
                 cs.EndBlock(trailingNewLine: trailingNewLine);
                 return true;
             }

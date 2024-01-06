@@ -855,6 +855,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
 
                     public Platforms[]? platforms { get; set; }
@@ -936,6 +937,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
 
                     public Platforms[]? platforms { get; set; }
@@ -1037,6 +1039,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -1088,6 +1091,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
 
                     public Platforms[]? platforms { get; set; }
@@ -1169,6 +1173,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
 
                     public Platforms[]? platforms { get; set; }
@@ -4535,6 +4540,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? uploadedDate { get; set; }
@@ -4670,6 +4676,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -4812,6 +4819,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? uploadedDate { get; set; }
@@ -11608,6 +11616,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform platform { get; set; } = default;
                     public int trafficProportion { get; set; } = 0;
@@ -11650,6 +11659,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public int? trafficProportion { get; set; }
@@ -12784,6 +12794,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -13130,6 +13141,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform platform { get; set; } = default;
                     public string versionString { get; set; } = "";
@@ -13205,6 +13217,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -14639,6 +14652,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -26479,6 +26493,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -42766,6 +42781,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                 }
@@ -42875,6 +42891,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -43030,6 +43047,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                 }
@@ -44594,6 +44612,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? submittedDate { get; set; }
@@ -44764,6 +44783,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -44855,6 +44875,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform platform { get; set; } = default;
                 }
@@ -44895,6 +44916,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? submittedDate { get; set; }
@@ -45239,6 +45261,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -56539,6 +56562,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
 
                     public Platforms[]? platforms { get; set; }
@@ -56652,6 +56676,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
 
                     public Platforms[]? platforms { get; set; }
@@ -58955,6 +58980,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                 }
@@ -63024,6 +63050,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -63823,6 +63850,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public int? trafficProportion { get; set; }
@@ -64152,6 +64180,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -64519,6 +64548,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -65737,6 +65767,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -66567,6 +66598,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -67858,6 +67890,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -68214,6 +68247,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -71174,6 +71208,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                 }
@@ -72778,6 +72813,7 @@ namespace StudioDrydock.AppStoreConnect.Api
                         IOS,
                         MAC_OS,
                         TV_OS,
+                        VISION_OS,
                     }
                     public Platform? platform { get; set; }
                     public string? versionString { get; set; }
@@ -72880,6 +72916,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -76726,6 +76763,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -82978,6 +83016,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
@@ -88343,6 +88382,7 @@ namespace StudioDrydock.AppStoreConnect.Api
             IOS,
             MAC_OS,
             TV_OS,
+            VISION_OS,
         }
 
         [JsonConverter(typeof(JsonStringEnumMemberConverter))]
