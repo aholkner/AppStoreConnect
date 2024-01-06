@@ -145,8 +145,10 @@ async Task GetAppVersions(InvocationContext context)
     var versions = response.data.Select(x => new AppVersion(x)).ToArray();
     foreach (var version in versions)
     {
-        var localizationResponse = await api.GetAppStoreVersionsAppStoreVersionLocalizations(version.id);
-        version.localizations = localizationResponse.data.Select(x => new AppVersionLocalization(x)).ToArray();
+        var localizations = await api.GetAppStoreVersionsAppStoreVersionLocalizations(version.id);
+        var localizationRequests = localizations.data.Select(localization => api.GetAppStoreVersionLocalizations(localization.id));
+        var localizationResponses = await Task.WhenAll(localizationRequests);
+        version.localizations = localizationResponses.Select(response => new AppVersionLocalization(response.data)).ToArray();
     }
 
     Output(context, new AppVersions() { appVersions = versions });
