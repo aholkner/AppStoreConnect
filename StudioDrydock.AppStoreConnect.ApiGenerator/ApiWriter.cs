@@ -256,6 +256,8 @@ namespace StudioDrydock.AppStoreConnect.ApiGenerator
 
             switch (schema.Type)
             {
+                case "string" when schema.Enum?.Count > 1:
+                    return false;
                 case "array":
                 case "string":
                 case "object":
@@ -458,6 +460,12 @@ namespace StudioDrydock.AppStoreConnect.ApiGenerator
                     break;
                 case "string":
                     cs.Write(param.Name.MakeValidIdentifier());
+                    if (schema.Enum?.Count > 1)
+                    {
+                        if (!param.Required)
+                            cs.Write(".Value");
+                        cs.Write(".ToString()");
+                    }
                     break;
                 case "object":
                     throw new NotSupportedException("Parameter cannot be object type");
