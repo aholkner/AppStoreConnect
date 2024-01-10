@@ -13,9 +13,8 @@ namespace StudioDrydock.AppStoreConnect.Cli.Models
         public string supportUrl { get; set; }
         public string whatsNew { get; set; }
 
-        public AppVersionLocalization(string id)
+        public AppVersionLocalization()
         {
-            this.id = id;
         }
 
         public AppVersionLocalization(AppStoreClient.AppStoreVersionLocalizationResponse.Data data)
